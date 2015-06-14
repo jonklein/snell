@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		481CC3331B2D0ABA009D7895 /* CGIAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481CC3321B2D0ABA009D7895 /* CGIAdapterTests.swift */; };
+		481CC3381B2D0BB3009D7895 /* CGIAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635D91B2C94E700857520 /* CGIAdapter.swift */; };
+		481CC3391B2D0BB3009D7895 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DA1B2C94E700857520 /* Controller.swift */; };
+		481CC33B1B2D0BB3009D7895 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DD1B2C94E700857520 /* Request.swift */; };
+		481CC33C1B2D0BB3009D7895 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DE1B2C94E700857520 /* Response.swift */; };
+		481CC33D1B2D0BB3009D7895 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DF1B2C94E700857520 /* Router.swift */; };
+		481CC33E1B2D0C59009D7895 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DB1B2C94E700857520 /* main.swift */; };
+		481CC35F1B2D0D79009D7895 /* CGIAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635D91B2C94E700857520 /* CGIAdapter.swift */; };
+		481CC3601B2D0D79009D7895 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DA1B2C94E700857520 /* Controller.swift */; };
+		481CC3611B2D0D79009D7895 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DD1B2C94E700857520 /* Request.swift */; };
+		481CC3621B2D0D79009D7895 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DE1B2C94E700857520 /* Response.swift */; };
+		481CC3631B2D0D79009D7895 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DF1B2C94E700857520 /* Router.swift */; };
+		48E635E91B2C950F00857520 /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635E71B2C950700857520 /* TestController.swift */; };
+		48E635EA1B2C950F00857520 /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635E81B2C950700857520 /* TestRouter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		48E635CC1B2C94B400857520 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		160C78F5D8BC35BC45CFD40C /* Pods-SwiftServer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftServer.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftServer/Pods-SwiftServer.release.xcconfig"; sourceTree = "<group>"; };
+		481CC3301B2D0ABA009D7895 /* SwiftServer.temp_caseinsensitive_rename.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftServer.temp_caseinsensitive_rename.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		481CC3321B2D0ABA009D7895 /* CGIAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGIAdapterTests.swift; sourceTree = "<group>"; };
+		481CC3341B2D0ABA009D7895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48E635CE1B2C94B500857520 /* SwiftServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E635D91B2C94E700857520 /* CGIAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGIAdapter.swift; path = ../SwiftServer/SwiftServer/CGIAdapter.swift; sourceTree = "<group>"; };
+		48E635DA1B2C94E700857520 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Controller.swift; path = ../SwiftServer/SwiftServer/Controller.swift; sourceTree = "<group>"; };
+		48E635DB1B2C94E700857520 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../SwiftServer/SwiftServer/main.swift; sourceTree = "<group>"; };
+		48E635DD1B2C94E700857520 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Request.swift; path = ../SwiftServer/SwiftServer/Request.swift; sourceTree = "<group>"; };
+		48E635DE1B2C94E700857520 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Response.swift; path = ../SwiftServer/SwiftServer/Response.swift; sourceTree = "<group>"; };
+		48E635DF1B2C94E700857520 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = ../SwiftServer/SwiftServer/Router.swift; sourceTree = "<group>"; };
+		48E635E71B2C950700857520 /* TestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
+		48E635E81B2C950700857520 /* TestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRouter.swift; sourceTree = "<group>"; };
+		642989756D1A74D40B8DEEB4 /* Pods-SwiftServer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftServer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftServer/Pods-SwiftServer.debug.xcconfig"; sourceTree = "<group>"; };
+		9880649A1C2212661A6B16BA /* Pods_SwiftServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		481CC32D1B2D0ABA009D7895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E635CB1B2C94B400857520 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		470C3D4B8A9F84A704E9C960 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9880649A1C2212661A6B16BA /* Pods_SwiftServer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		481CC3311B2D0ABA009D7895 /* SwiftServerTests */ = {
+			isa = PBXGroup;
+			children = (
+				481CC3321B2D0ABA009D7895 /* CGIAdapterTests.swift */,
+				481CC3341B2D0ABA009D7895 /* Info.plist */,
+			);
+			path = SwiftServerTests;
+			sourceTree = "<group>";
+		};
+		481CC3441B2D0CA6009D7895 /* SwiftServerLib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SwiftServerLib;
+			sourceTree = "<group>";
+		};
+		48E635C51B2C94B400857520 = {
+			isa = PBXGroup;
+			children = (
+				48E635DB1B2C94E700857520 /* main.swift */,
+				48E635D91B2C94E700857520 /* CGIAdapter.swift */,
+				48E635DA1B2C94E700857520 /* Controller.swift */,
+				48E635DD1B2C94E700857520 /* Request.swift */,
+				48E635DE1B2C94E700857520 /* Response.swift */,
+				48E635DF1B2C94E700857520 /* Router.swift */,
+				48E635E61B2C950700857520 /* ProtoProject */,
+				481CC3311B2D0ABA009D7895 /* SwiftServerTests */,
+				481CC3441B2D0CA6009D7895 /* SwiftServerLib */,
+				48E635CF1B2C94B500857520 /* Products */,
+				6803A07E25B1B5661D3272CD /* Pods */,
+				470C3D4B8A9F84A704E9C960 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		48E635CF1B2C94B500857520 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48E635CE1B2C94B500857520 /* SwiftServer */,
+				481CC3301B2D0ABA009D7895 /* SwiftServer.temp_caseinsensitive_rename.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48E635E61B2C950700857520 /* ProtoProject */ = {
+			isa = PBXGroup;
+			children = (
+				48E635E71B2C950700857520 /* TestController.swift */,
+				48E635E81B2C950700857520 /* TestRouter.swift */,
+			);
+			name = ProtoProject;
+			path = ../SwiftServer/SwiftServer/ProtoProject;
+			sourceTree = "<group>";
+		};
+		6803A07E25B1B5661D3272CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				642989756D1A74D40B8DEEB4 /* Pods-SwiftServer.debug.xcconfig */,
+				160C78F5D8BC35BC45CFD40C /* Pods-SwiftServer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		481CC32F1B2D0ABA009D7895 /* SwiftServerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 481CC3371B2D0ABA009D7895 /* Build configuration list for PBXNativeTarget "SwiftServerTests" */;
+			buildPhases = (
+				481CC32C1B2D0ABA009D7895 /* Sources */,
+				481CC32D1B2D0ABA009D7895 /* Frameworks */,
+				481CC32E1B2D0ABA009D7895 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftServerTests;
+			productName = SwiftServerTests;
+			productReference = 481CC3301B2D0ABA009D7895 /* SwiftServer.temp_caseinsensitive_rename.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		48E635CD1B2C94B400857520 /* SwiftServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48E635D51B2C94B500857520 /* Build configuration list for PBXNativeTarget "SwiftServer" */;
+			buildPhases = (
+				48E635CA1B2C94B400857520 /* Sources */,
+				48E635CB1B2C94B400857520 /* Frameworks */,
+				48E635CC1B2C94B400857520 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftServer;
+			productName = Swails;
+			productReference = 48E635CE1B2C94B500857520 /* SwiftServer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48E635C61B2C94B400857520 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = artificial;
+				TargetAttributes = {
+					481CC32F1B2D0ABA009D7895 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					48E635CD1B2C94B400857520 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 48E635C91B2C94B400857520 /* Build configuration list for PBXProject "SwiftServer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 48E635C51B2C94B400857520;
+			productRefGroup = 48E635CF1B2C94B500857520 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48E635CD1B2C94B400857520 /* SwiftServer */,
+				481CC32F1B2D0ABA009D7895 /* SwiftServerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		481CC32E1B2D0ABA009D7895 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		481CC32C1B2D0ABA009D7895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				481CC3391B2D0BB3009D7895 /* Controller.swift in Sources */,
+				481CC3331B2D0ABA009D7895 /* CGIAdapterTests.swift in Sources */,
+				481CC33B1B2D0BB3009D7895 /* Request.swift in Sources */,
+				481CC33D1B2D0BB3009D7895 /* Router.swift in Sources */,
+				481CC33C1B2D0BB3009D7895 /* Response.swift in Sources */,
+				481CC3381B2D0BB3009D7895 /* CGIAdapter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E635CA1B2C94B400857520 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				481CC3631B2D0D79009D7895 /* Router.swift in Sources */,
+				481CC3601B2D0D79009D7895 /* Controller.swift in Sources */,
+				481CC3611B2D0D79009D7895 /* Request.swift in Sources */,
+				481CC33E1B2D0C59009D7895 /* main.swift in Sources */,
+				48E635EA1B2C950F00857520 /* TestRouter.swift in Sources */,
+				48E635E91B2C950F00857520 /* TestController.swift in Sources */,
+				481CC35F1B2D0D79009D7895 /* CGIAdapter.swift in Sources */,
+				481CC3621B2D0D79009D7895 /* Response.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		481CC3361B2D0ABA009D7895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftServerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.artificial.SwiftServerTests;
+				PRODUCT_NAME = SwiftServer.temp_caseinsensitive_rename;
+			};
+			name = Release;
+		};
+		48E635D41B2C94B500857520 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		48E635D71B2C94B500857520 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		481CC3371B2D0ABA009D7895 /* Build configuration list for PBXNativeTarget "SwiftServerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				481CC3361B2D0ABA009D7895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48E635C91B2C94B400857520 /* Build configuration list for PBXProject "SwiftServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48E635D41B2C94B500857520 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48E635D51B2C94B500857520 /* Build configuration list for PBXNativeTarget "SwiftServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48E635D71B2C94B500857520 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48E635C61B2C94B400857520 /* Project object */;
+}

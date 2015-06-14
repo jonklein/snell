@@ -7,7 +7,12 @@
 //
 
 class Router {
-  class func route(pattern:String, controller:Controller.Type) {}
+  var routing:[String:] = [:]
 
+  class func route(pattern:String, controller:Controller.Type) {}
   class func route(pattern:String, closure: (request:Request) -> (Response)) {}
+
+  func dispatch(request:Request) {
+
+  }
 }

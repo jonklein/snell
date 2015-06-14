@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import SwiftServerLib
 
 class TestController: Controller {
   override func run() -> Response {
@@ -15,7 +16,7 @@ class TestController: Controller {
   }
 
   func content() -> String {
-    return "Hello, world!!"
+    return "Hello, Swift."
   }
 
   func params() -> String {
