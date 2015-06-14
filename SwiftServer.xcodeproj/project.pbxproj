@@ -8,20 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		481CC3331B2D0ABA009D7895 /* CGIAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481CC3321B2D0ABA009D7895 /* CGIAdapterTests.swift */; };
-		481CC3381B2D0BB3009D7895 /* CGIAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635D91B2C94E700857520 /* CGIAdapter.swift */; };
-		481CC3391B2D0BB3009D7895 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DA1B2C94E700857520 /* Controller.swift */; };
-		481CC33B1B2D0BB3009D7895 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DD1B2C94E700857520 /* Request.swift */; };
-		481CC33C1B2D0BB3009D7895 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DE1B2C94E700857520 /* Response.swift */; };
-		481CC33D1B2D0BB3009D7895 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DF1B2C94E700857520 /* Router.swift */; };
 		481CC33E1B2D0C59009D7895 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DB1B2C94E700857520 /* main.swift */; };
-		481CC35F1B2D0D79009D7895 /* CGIAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635D91B2C94E700857520 /* CGIAdapter.swift */; };
-		481CC3601B2D0D79009D7895 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DA1B2C94E700857520 /* Controller.swift */; };
-		481CC3611B2D0D79009D7895 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DD1B2C94E700857520 /* Request.swift */; };
-		481CC3621B2D0D79009D7895 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DE1B2C94E700857520 /* Response.swift */; };
-		481CC3631B2D0D79009D7895 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DF1B2C94E700857520 /* Router.swift */; };
+		48A1D5001B2D9D1B00EB727E /* CGIAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635D91B2C94E700857520 /* CGIAdapter.swift */; };
+		48A1D5011B2D9D1B00EB727E /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DA1B2C94E700857520 /* Controller.swift */; };
+		48A1D5021B2D9D1B00EB727E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DD1B2C94E700857520 /* Request.swift */; };
+		48A1D5031B2D9D1B00EB727E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DE1B2C94E700857520 /* Response.swift */; };
+		48A1D5041B2D9D1B00EB727E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DF1B2C94E700857520 /* Router.swift */; };
+		48A1D5051B2D9D1E00EB727E /* CGIAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635D91B2C94E700857520 /* CGIAdapter.swift */; };
+		48A1D5061B2D9D1E00EB727E /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DA1B2C94E700857520 /* Controller.swift */; };
+		48A1D5071B2D9D1E00EB727E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DD1B2C94E700857520 /* Request.swift */; };
+		48A1D5081B2D9D1E00EB727E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DE1B2C94E700857520 /* Response.swift */; };
+		48A1D5091B2D9D1E00EB727E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DF1B2C94E700857520 /* Router.swift */; };
+		48A1D50A1B2D9D2F00EB727E /* CGIAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635D91B2C94E700857520 /* CGIAdapter.swift */; };
+		48A1D50B1B2D9D2F00EB727E /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DA1B2C94E700857520 /* Controller.swift */; };
+		48A1D50C1B2D9D2F00EB727E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DD1B2C94E700857520 /* Request.swift */; };
+		48A1D50D1B2D9D2F00EB727E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DE1B2C94E700857520 /* Response.swift */; };
+		48A1D50E1B2D9D2F00EB727E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DF1B2C94E700857520 /* Router.swift */; };
 		48E635E91B2C950F00857520 /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635E71B2C950700857520 /* TestController.swift */; };
 		48E635EA1B2C950F00857520 /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635E81B2C950700857520 /* TestRouter.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48A1D4FE1B2D9D0500EB727E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48E635C61B2C94B400857520 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48A1D4E91B2D9CF300EB727E;
+			remoteInfo = SwiftServerLib;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		48E635CC1B2C94B400857520 /* CopyFiles */ = {
@@ -40,6 +55,8 @@
 		481CC3301B2D0ABA009D7895 /* SwiftServer.temp_caseinsensitive_rename.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftServer.temp_caseinsensitive_rename.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		481CC3321B2D0ABA009D7895 /* CGIAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGIAdapterTests.swift; sourceTree = "<group>"; };
 		481CC3341B2D0ABA009D7895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48A1D4EA1B2D9CF300EB727E /* libSwiftServerLib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libSwiftServerLib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		48A1D4F91B2D9CF400EB727E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48E635CE1B2C94B500857520 /* SwiftServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E635D91B2C94E700857520 /* CGIAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGIAdapter.swift; path = ../SwiftServer/SwiftServer/CGIAdapter.swift; sourceTree = "<group>"; };
 		48E635DA1B2C94E700857520 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Controller.swift; path = ../SwiftServer/SwiftServer/Controller.swift; sourceTree = "<group>"; };
@@ -55,6 +72,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		481CC32D1B2D0ABA009D7895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A1D4E71B2D9CF300EB727E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -88,11 +112,19 @@
 			path = SwiftServerTests;
 			sourceTree = "<group>";
 		};
-		481CC3441B2D0CA6009D7895 /* SwiftServerLib */ = {
+		48A1D4EB1B2D9CF400EB727E /* SwiftServerLib */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = SwiftServerLib;
+			sourceTree = "<group>";
+		};
+		48A1D4F81B2D9CF400EB727E /* SwiftServerLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				48A1D4F91B2D9CF400EB727E /* Info.plist */,
+			);
+			path = SwiftServerLibTests;
 			sourceTree = "<group>";
 		};
 		48E635C51B2C94B400857520 = {
@@ -106,7 +138,8 @@
 				48E635DF1B2C94E700857520 /* Router.swift */,
 				48E635E61B2C950700857520 /* ProtoProject */,
 				481CC3311B2D0ABA009D7895 /* SwiftServerTests */,
-				481CC3441B2D0CA6009D7895 /* SwiftServerLib */,
+				48A1D4EB1B2D9CF400EB727E /* SwiftServerLib */,
+				48A1D4F81B2D9CF400EB727E /* SwiftServerLibTests */,
 				48E635CF1B2C94B500857520 /* Products */,
 				6803A07E25B1B5661D3272CD /* Pods */,
 				470C3D4B8A9F84A704E9C960 /* Frameworks */,
@@ -118,6 +151,7 @@
 			children = (
 				48E635CE1B2C94B500857520 /* SwiftServer */,
 				481CC3301B2D0ABA009D7895 /* SwiftServer.temp_caseinsensitive_rename.xctest */,
+				48A1D4EA1B2D9CF300EB727E /* libSwiftServerLib.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +177,16 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		48A1D4E81B2D9CF300EB727E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		481CC32F1B2D0ABA009D7895 /* SwiftServerTests */ = {
 			isa = PBXNativeTarget;
@@ -161,6 +205,23 @@
 			productReference = 481CC3301B2D0ABA009D7895 /* SwiftServer.temp_caseinsensitive_rename.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		48A1D4E91B2D9CF300EB727E /* SwiftServerLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48A1D4FC1B2D9CF400EB727E /* Build configuration list for PBXNativeTarget "SwiftServerLib" */;
+			buildPhases = (
+				48A1D4E61B2D9CF300EB727E /* Sources */,
+				48A1D4E71B2D9CF300EB727E /* Frameworks */,
+				48A1D4E81B2D9CF300EB727E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftServerLib;
+			productName = SwiftServerLib;
+			productReference = 48A1D4EA1B2D9CF300EB727E /* libSwiftServerLib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
 		48E635CD1B2C94B400857520 /* SwiftServer */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48E635D51B2C94B500857520 /* Build configuration list for PBXNativeTarget "SwiftServer" */;
@@ -172,6 +233,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				48A1D4FF1B2D9D0500EB727E /* PBXTargetDependency */,
 			);
 			name = SwiftServer;
 			productName = Swails;
@@ -188,6 +250,9 @@
 				ORGANIZATIONNAME = artificial;
 				TargetAttributes = {
 					481CC32F1B2D0ABA009D7895 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					48A1D4E91B2D9CF300EB727E = {
 						CreatedOnToolsVersion = 7.0;
 					};
 					48E635CD1B2C94B400857520 = {
@@ -209,6 +274,7 @@
 			targets = (
 				48E635CD1B2C94B400857520 /* SwiftServer */,
 				481CC32F1B2D0ABA009D7895 /* SwiftServerTests */,
+				48A1D4E91B2D9CF300EB727E /* SwiftServerLib */,
 			);
 		};
 /* End PBXProject section */
@@ -228,12 +294,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				481CC3391B2D0BB3009D7895 /* Controller.swift in Sources */,
+				48A1D5061B2D9D1E00EB727E /* Controller.swift in Sources */,
+				48A1D5071B2D9D1E00EB727E /* Request.swift in Sources */,
 				481CC3331B2D0ABA009D7895 /* CGIAdapterTests.swift in Sources */,
-				481CC33B1B2D0BB3009D7895 /* Request.swift in Sources */,
-				481CC33D1B2D0BB3009D7895 /* Router.swift in Sources */,
-				481CC33C1B2D0BB3009D7895 /* Response.swift in Sources */,
-				481CC3381B2D0BB3009D7895 /* CGIAdapter.swift in Sources */,
+				48A1D5051B2D9D1E00EB727E /* CGIAdapter.swift in Sources */,
+				48A1D5091B2D9D1E00EB727E /* Router.swift in Sources */,
+				48A1D5081B2D9D1E00EB727E /* Response.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A1D4E61B2D9CF300EB727E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A1D5031B2D9D1B00EB727E /* Response.swift in Sources */,
+				48A1D5001B2D9D1B00EB727E /* CGIAdapter.swift in Sources */,
+				48A1D5041B2D9D1B00EB727E /* Router.swift in Sources */,
+				48A1D5021B2D9D1B00EB727E /* Request.swift in Sources */,
+				48A1D5011B2D9D1B00EB727E /* Controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,18 +319,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				481CC3631B2D0D79009D7895 /* Router.swift in Sources */,
-				481CC3601B2D0D79009D7895 /* Controller.swift in Sources */,
-				481CC3611B2D0D79009D7895 /* Request.swift in Sources */,
+				48A1D50E1B2D9D2F00EB727E /* Router.swift in Sources */,
+				48A1D50B1B2D9D2F00EB727E /* Controller.swift in Sources */,
+				48A1D50C1B2D9D2F00EB727E /* Request.swift in Sources */,
 				481CC33E1B2D0C59009D7895 /* main.swift in Sources */,
 				48E635EA1B2C950F00857520 /* TestRouter.swift in Sources */,
 				48E635E91B2C950F00857520 /* TestController.swift in Sources */,
-				481CC35F1B2D0D79009D7895 /* CGIAdapter.swift in Sources */,
-				481CC3621B2D0D79009D7895 /* Response.swift in Sources */,
+				48A1D50A1B2D9D2F00EB727E /* CGIAdapter.swift in Sources */,
+				48A1D50D1B2D9D2F00EB727E /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48A1D4FF1B2D9D0500EB727E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48A1D4E91B2D9CF300EB727E /* SwiftServerLib */;
+			targetProxy = 48A1D4FE1B2D9D0500EB727E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		481CC3361B2D0ABA009D7895 /* Release */ = {
@@ -263,6 +349,16 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.artificial.SwiftServerTests;
 				PRODUCT_NAME = SwiftServer.temp_caseinsensitive_rename;
+			};
+			name = Release;
+		};
+		48A1D4FA1B2D9CF400EB727E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -318,6 +414,13 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		48A1D4FC1B2D9CF400EB727E /* Build configuration list for PBXNativeTarget "SwiftServerLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48A1D4FA1B2D9CF400EB727E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		48E635C91B2C94B400857520 /* Build configuration list for PBXProject "SwiftServer" */ = {
 			isa = XCConfigurationList;

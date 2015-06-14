@@ -26,6 +26,6 @@ class TestController: Controller {
   func debugInfo() -> String {
     let env:Dictionary = NSProcessInfo().environment
 
-    return "<h2>Environment</h2>" + "<br/>".join(env.keys.map{ "\($0) => \(env[$0])" })
+    return "<h2>Environment</h2>" + "<br/>".join(env.keys.map{ "\($0) => \(env[$0]!)" })
   }
 }

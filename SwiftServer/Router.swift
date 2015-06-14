@@ -7,8 +7,6 @@
 //
 
 class Router {
-  var routing:[String:] = [:]
-
   class func route(pattern:String, controller:Controller.Type) {}
   class func route(pattern:String, closure: (request:Request) -> (Response)) {}
 
