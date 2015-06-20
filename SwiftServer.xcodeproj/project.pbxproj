@@ -7,39 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		480E622D1B2EECE5007FC4AA /* GCDWebServerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FED8771B2E13F50063A175 /* GCDWebServerAdapter.swift */; };
+		480E622F1B2EECE5007FC4AA /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DA1B2C94E700857520 /* Controller.swift */; };
+		480E62301B2EECE5007FC4AA /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DD1B2C94E700857520 /* Request.swift */; };
+		480E62311B2EECE5007FC4AA /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DE1B2C94E700857520 /* Response.swift */; };
+		480E62321B2EECE5007FC4AA /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DF1B2C94E700857520 /* Router.swift */; };
 		481CC3331B2D0ABA009D7895 /* CGIAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481CC3321B2D0ABA009D7895 /* CGIAdapterTests.swift */; };
-		481CC33E1B2D0C59009D7895 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DB1B2C94E700857520 /* main.swift */; };
-		48A1D5001B2D9D1B00EB727E /* CGIAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635D91B2C94E700857520 /* CGIAdapter.swift */; };
-		48A1D5011B2D9D1B00EB727E /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DA1B2C94E700857520 /* Controller.swift */; };
-		48A1D5021B2D9D1B00EB727E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DD1B2C94E700857520 /* Request.swift */; };
-		48A1D5031B2D9D1B00EB727E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DE1B2C94E700857520 /* Response.swift */; };
-		48A1D5041B2D9D1B00EB727E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DF1B2C94E700857520 /* Router.swift */; };
-		48A1D5051B2D9D1E00EB727E /* CGIAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635D91B2C94E700857520 /* CGIAdapter.swift */; };
+		4842F18B1B32DFF300C28CC3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DF1B2C94E700857520 /* Router.swift */; };
+		4842F18F1B32DFF300C28CC3 /* GCDWebServerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FED8771B2E13F50063A175 /* GCDWebServerAdapter.swift */; };
+		4842F1991B32DFF300C28CC3 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DE1B2C94E700857520 /* Response.swift */; };
+		4842F19B1B32DFF300C28CC3 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DA1B2C94E700857520 /* Controller.swift */; };
+		4842F19E1B32DFF300C28CC3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DD1B2C94E700857520 /* Request.swift */; };
+		4842F1A21B32DFF300C28CC3 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FED8811B2E152A0063A175 /* libz.1.dylib */; };
+		4842F1B61B33A0BE00C28CC3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1B51B33A0BE00C28CC3 /* main.swift */; };
+		4842F1BB1B33A4B300C28CC3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1BA1B33A4B300C28CC3 /* main.swift */; };
+		4842F1C11B33A4E600C28CC3 /* CGIAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1BD1B33A4E100C28CC3 /* CGIAdapter.swift */; };
+		4842F1C21B33A4E600C28CC3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1BE1B33A4E100C28CC3 /* main.swift */; };
+		4842F1CB1B33A5A900C28CC3 /* TemplateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1CA1B33A5A900C28CC3 /* TemplateParser.swift */; };
+		4842F1D51B35859700C28CC3 /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1D11B35855500C28CC3 /* TestController.swift */; };
+		4842F1D61B35859700C28CC3 /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1D31B35855500C28CC3 /* TestRouter.swift */; };
+		4842F1D71B35859700C28CC3 /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1D11B35855500C28CC3 /* TestController.swift */; };
+		4842F1D81B35859700C28CC3 /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1D31B35855500C28CC3 /* TestRouter.swift */; };
+		4842F1F91B3586C700C28CC3 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1DC1B3586C700C28CC3 /* GCDWebServer.m */; };
+		4842F1FA1B3586C700C28CC3 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1DE1B3586C700C28CC3 /* GCDWebServerConnection.m */; };
+		4842F1FB1B3586C700C28CC3 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1E01B3586C700C28CC3 /* GCDWebServerFunctions.m */; };
+		4842F1FC1B3586C700C28CC3 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1E41B3586C700C28CC3 /* GCDWebServerRequest.m */; };
+		4842F1FD1B3586C700C28CC3 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1E61B3586C700C28CC3 /* GCDWebServerResponse.m */; };
+		4842F1FE1B3586C700C28CC3 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1E91B3586C700C28CC3 /* GCDWebServerDataRequest.m */; };
+		4842F1FF1B3586C700C28CC3 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1EB1B3586C700C28CC3 /* GCDWebServerFileRequest.m */; };
+		4842F2001B3586C700C28CC3 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1ED1B3586C700C28CC3 /* GCDWebServerMultiPartFormRequest.m */; };
+		4842F2011B3586C700C28CC3 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1EF1B3586C700C28CC3 /* GCDWebServerURLEncodedFormRequest.m */; };
+		4842F2021B3586C700C28CC3 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1F21B3586C700C28CC3 /* GCDWebServerDataResponse.m */; };
+		4842F2031B3586C700C28CC3 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1F41B3586C700C28CC3 /* GCDWebServerErrorResponse.m */; };
+		4842F2041B3586C700C28CC3 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1F61B3586C700C28CC3 /* GCDWebServerFileResponse.m */; };
+		4842F2051B3586C700C28CC3 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1F81B3586C700C28CC3 /* GCDWebServerStreamedResponse.m */; };
+		4842F2071B35880800C28CC3 /* Hello.swtl in Sources */ = {isa = PBXBuildFile; fileRef = 4842F2061B35880800C28CC3 /* Hello.swtl */; };
 		48A1D5061B2D9D1E00EB727E /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DA1B2C94E700857520 /* Controller.swift */; };
 		48A1D5071B2D9D1E00EB727E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DD1B2C94E700857520 /* Request.swift */; };
 		48A1D5081B2D9D1E00EB727E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DE1B2C94E700857520 /* Response.swift */; };
 		48A1D5091B2D9D1E00EB727E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DF1B2C94E700857520 /* Router.swift */; };
-		48A1D50A1B2D9D2F00EB727E /* CGIAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635D91B2C94E700857520 /* CGIAdapter.swift */; };
-		48A1D50B1B2D9D2F00EB727E /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DA1B2C94E700857520 /* Controller.swift */; };
-		48A1D50C1B2D9D2F00EB727E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DD1B2C94E700857520 /* Request.swift */; };
-		48A1D50D1B2D9D2F00EB727E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DE1B2C94E700857520 /* Response.swift */; };
-		48A1D50E1B2D9D2F00EB727E /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635DF1B2C94E700857520 /* Router.swift */; };
-		48E635E91B2C950F00857520 /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635E71B2C950700857520 /* TestController.swift */; };
-		48E635EA1B2C950F00857520 /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E635E81B2C950700857520 /* TestRouter.swift */; };
+		48FED8841B2E16200063A175 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FED8811B2E152A0063A175 /* libz.1.dylib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		48A1D4FE1B2D9D0500EB727E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 48E635C61B2C94B400857520 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 48A1D4E91B2D9CF300EB727E;
-			remoteInfo = SwiftServerLib;
+/* Begin PBXBuildRule section */
+		4842F1CF1B35821300C28CC3 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.swtl";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(INPUT_FILE_BASE).swtl.swift",
+			);
+			script = "${BUILT_PRODUCTS_DIR}/swtl ${INPUT_FILE_PATH}\nmv ${INPUT_FILE_PATH}.swift ${TARGET_BUILD_DIR}";
 		};
-/* End PBXContainerItemProxy section */
+/* End PBXBuildRule section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		48E635CC1B2C94B400857520 /* CopyFiles */ = {
+		4842F1A31B32DFF300C28CC3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Frameworks;
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		4842F1B11B33A0BE00C28CC3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -48,24 +82,71 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		48E635CC1B2C94B400857520 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Frameworks;
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		160C78F5D8BC35BC45CFD40C /* Pods-SwiftServer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftServer.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftServer/Pods-SwiftServer.release.xcconfig"; sourceTree = "<group>"; };
-		481CC3301B2D0ABA009D7895 /* SwiftServer.temp_caseinsensitive_rename.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftServer.temp_caseinsensitive_rename.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		481CC3301B2D0ABA009D7895 /* SwiftServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		481CC3321B2D0ABA009D7895 /* CGIAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGIAdapterTests.swift; sourceTree = "<group>"; };
 		481CC3341B2D0ABA009D7895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48A1D4EA1B2D9CF300EB727E /* libSwiftServerLib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libSwiftServerLib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		48A1D4F91B2D9CF400EB727E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48E635CE1B2C94B500857520 /* SwiftServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftServer; sourceTree = BUILT_PRODUCTS_DIR; };
-		48E635D91B2C94E700857520 /* CGIAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGIAdapter.swift; path = ../SwiftServer/SwiftServer/CGIAdapter.swift; sourceTree = "<group>"; };
-		48E635DA1B2C94E700857520 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Controller.swift; path = ../SwiftServer/SwiftServer/Controller.swift; sourceTree = "<group>"; };
-		48E635DB1B2C94E700857520 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = ../SwiftServer/SwiftServer/main.swift; sourceTree = "<group>"; };
-		48E635DD1B2C94E700857520 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Request.swift; path = ../SwiftServer/SwiftServer/Request.swift; sourceTree = "<group>"; };
-		48E635DE1B2C94E700857520 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Response.swift; path = ../SwiftServer/SwiftServer/Response.swift; sourceTree = "<group>"; };
-		48E635DF1B2C94E700857520 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = ../SwiftServer/SwiftServer/Router.swift; sourceTree = "<group>"; };
-		48E635E71B2C950700857520 /* TestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
-		48E635E81B2C950700857520 /* TestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRouter.swift; sourceTree = "<group>"; };
+		4842F1A71B32DFF300C28CC3 /* ss-cgi */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ss-cgi"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4842F1B31B33A0BE00C28CC3 /* swtl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swtl; sourceTree = BUILT_PRODUCTS_DIR; };
+		4842F1B51B33A0BE00C28CC3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4842F1BA1B33A4B300C28CC3 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4842F1BD1B33A4E100C28CC3 /* CGIAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGIAdapter.swift; sourceTree = "<group>"; };
+		4842F1BE1B33A4E100C28CC3 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4842F1C41B33A53500C28CC3 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4842F1C51B33A53500C28CC3 /* TemplateParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateParser.swift; sourceTree = "<group>"; };
+		4842F1CA1B33A5A900C28CC3 /* TemplateParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateParser.swift; sourceTree = "<group>"; };
+		4842F1CD1B3581EB00C28CC3 /* test.swtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.swtl; sourceTree = "<group>"; };
+		4842F1D11B35855500C28CC3 /* TestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestController.swift; sourceTree = "<group>"; };
+		4842F1D31B35855500C28CC3 /* TestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRouter.swift; sourceTree = "<group>"; };
+		4842F1DB1B3586C700C28CC3 /* GCDWebServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServer.h; sourceTree = "<group>"; };
+		4842F1DC1B3586C700C28CC3 /* GCDWebServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServer.m; sourceTree = "<group>"; };
+		4842F1DD1B3586C700C28CC3 /* GCDWebServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerConnection.h; sourceTree = "<group>"; };
+		4842F1DE1B3586C700C28CC3 /* GCDWebServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerConnection.m; sourceTree = "<group>"; };
+		4842F1DF1B3586C700C28CC3 /* GCDWebServerFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFunctions.h; sourceTree = "<group>"; };
+		4842F1E01B3586C700C28CC3 /* GCDWebServerFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFunctions.m; sourceTree = "<group>"; };
+		4842F1E11B3586C700C28CC3 /* GCDWebServerHTTPStatusCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerHTTPStatusCodes.h; sourceTree = "<group>"; };
+		4842F1E21B3586C700C28CC3 /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerPrivate.h; sourceTree = "<group>"; };
+		4842F1E31B3586C700C28CC3 /* GCDWebServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerRequest.h; sourceTree = "<group>"; };
+		4842F1E41B3586C700C28CC3 /* GCDWebServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerRequest.m; sourceTree = "<group>"; };
+		4842F1E51B3586C700C28CC3 /* GCDWebServerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerResponse.h; sourceTree = "<group>"; };
+		4842F1E61B3586C700C28CC3 /* GCDWebServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerResponse.m; sourceTree = "<group>"; };
+		4842F1E81B3586C700C28CC3 /* GCDWebServerDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataRequest.h; sourceTree = "<group>"; };
+		4842F1E91B3586C700C28CC3 /* GCDWebServerDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataRequest.m; sourceTree = "<group>"; };
+		4842F1EA1B3586C700C28CC3 /* GCDWebServerFileRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileRequest.h; sourceTree = "<group>"; };
+		4842F1EB1B3586C700C28CC3 /* GCDWebServerFileRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileRequest.m; sourceTree = "<group>"; };
+		4842F1EC1B3586C700C28CC3 /* GCDWebServerMultiPartFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerMultiPartFormRequest.h; sourceTree = "<group>"; };
+		4842F1ED1B3586C700C28CC3 /* GCDWebServerMultiPartFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerMultiPartFormRequest.m; sourceTree = "<group>"; };
+		4842F1EE1B3586C700C28CC3 /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
+		4842F1EF1B3586C700C28CC3 /* GCDWebServerURLEncodedFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerURLEncodedFormRequest.m; sourceTree = "<group>"; };
+		4842F1F11B3586C700C28CC3 /* GCDWebServerDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataResponse.h; sourceTree = "<group>"; };
+		4842F1F21B3586C700C28CC3 /* GCDWebServerDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataResponse.m; sourceTree = "<group>"; };
+		4842F1F31B3586C700C28CC3 /* GCDWebServerErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerErrorResponse.h; sourceTree = "<group>"; };
+		4842F1F41B3586C700C28CC3 /* GCDWebServerErrorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerErrorResponse.m; sourceTree = "<group>"; };
+		4842F1F51B3586C700C28CC3 /* GCDWebServerFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileResponse.h; sourceTree = "<group>"; };
+		4842F1F61B3586C700C28CC3 /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileResponse.m; sourceTree = "<group>"; };
+		4842F1F71B3586C700C28CC3 /* GCDWebServerStreamedResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerStreamedResponse.h; sourceTree = "<group>"; };
+		4842F1F81B3586C700C28CC3 /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
+		4842F2061B35880800C28CC3 /* Hello.swtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Hello.swtl; sourceTree = "<group>"; };
+		48E635CE1B2C94B500857520 /* ss-server */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ss-server"; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E635DA1B2C94E700857520 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Controller.swift; path = SwiftServer/Core/Controller.swift; sourceTree = "<group>"; };
+		48E635DD1B2C94E700857520 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Request.swift; path = SwiftServer/Core/Request.swift; sourceTree = "<group>"; };
+		48E635DE1B2C94E700857520 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Response.swift; path = SwiftServer/Core/Response.swift; sourceTree = "<group>"; };
+		48E635DF1B2C94E700857520 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = SwiftServer/Core/Router.swift; sourceTree = "<group>"; };
+		48FED8751B2E13D20063A175 /* SwiftServer */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; path = SwiftServer; sourceTree = "<group>"; };
+		48FED8771B2E13F50063A175 /* GCDWebServerAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDWebServerAdapter.swift; sourceTree = "<group>"; };
+		48FED8811B2E152A0063A175 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		642989756D1A74D40B8DEEB4 /* Pods-SwiftServer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftServer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftServer/Pods-SwiftServer.debug.xcconfig"; sourceTree = "<group>"; };
 		9880649A1C2212661A6B16BA /* Pods_SwiftServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -78,7 +159,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		48A1D4E71B2D9CF300EB727E /* Frameworks */ = {
+		4842F1A11B32DFF300C28CC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4842F1A21B32DFF300C28CC3 /* libz.1.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4842F1B01B33A0BE00C28CC3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -89,6 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48FED8841B2E16200063A175 /* libz.1.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,9 +188,22 @@
 		470C3D4B8A9F84A704E9C960 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4842F1C31B33A53500C28CC3 /* SWTL */,
+				48FED8811B2E152A0063A175 /* libz.1.dylib */,
 				9880649A1C2212661A6B16BA /* Pods_SwiftServer.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		480E622C1B2EECDB007FC4AA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				48E635DA1B2C94E700857520 /* Controller.swift */,
+				48E635DD1B2C94E700857520 /* Request.swift */,
+				48E635DE1B2C94E700857520 /* Response.swift */,
+				48E635DF1B2C94E700857520 /* Router.swift */,
+			);
+			name = Core;
 			sourceTree = "<group>";
 		};
 		481CC3311B2D0ABA009D7895 /* SwiftServerTests */ = {
@@ -112,34 +215,140 @@
 			path = SwiftServerTests;
 			sourceTree = "<group>";
 		};
-		48A1D4EB1B2D9CF400EB727E /* SwiftServerLib */ = {
+		4842F1B41B33A0BE00C28CC3 /* swtl */ = {
 			isa = PBXGroup;
 			children = (
+				4842F1CD1B3581EB00C28CC3 /* test.swtl */,
+				4842F1CA1B33A5A900C28CC3 /* TemplateParser.swift */,
+				4842F1B51B33A0BE00C28CC3 /* main.swift */,
 			);
-			path = SwiftServerLib;
+			path = swtl;
 			sourceTree = "<group>";
 		};
-		48A1D4F81B2D9CF400EB727E /* SwiftServerLibTests */ = {
+		4842F1B91B33A4B300C28CC3 /* GDCServer */ = {
 			isa = PBXGroup;
 			children = (
-				48A1D4F91B2D9CF400EB727E /* Info.plist */,
+				4842F1BA1B33A4B300C28CC3 /* main.swift */,
+				48FED8771B2E13F50063A175 /* GCDWebServerAdapter.swift */,
+				4842F1D91B3586C700C28CC3 /* GCDWebServer */,
 			);
-			path = SwiftServerLibTests;
+			name = GDCServer;
+			path = SwiftServer/Server;
+			sourceTree = "<group>";
+		};
+		4842F1BC1B33A4E100C28CC3 /* CGI */ = {
+			isa = PBXGroup;
+			children = (
+				4842F1BD1B33A4E100C28CC3 /* CGIAdapter.swift */,
+				4842F1BE1B33A4E100C28CC3 /* main.swift */,
+			);
+			name = CGI;
+			path = SwiftServer/CGI;
+			sourceTree = "<group>";
+		};
+		4842F1C31B33A53500C28CC3 /* SWTL */ = {
+			isa = PBXGroup;
+			children = (
+				4842F1C41B33A53500C28CC3 /* main.swift */,
+				4842F1C51B33A53500C28CC3 /* TemplateParser.swift */,
+			);
+			name = SWTL;
+			path = SwiftServer/SWTL;
+			sourceTree = "<group>";
+		};
+		4842F1D01B35855500C28CC3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4842F1D11B35855500C28CC3 /* TestController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4842F1D21B35855500C28CC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4842F1D41B35855500C28CC3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4842F2061B35880800C28CC3 /* Hello.swtl */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4842F1D91B3586C700C28CC3 /* GCDWebServer */ = {
+			isa = PBXGroup;
+			children = (
+				4842F1DA1B3586C700C28CC3 /* Core */,
+				4842F1E71B3586C700C28CC3 /* Requests */,
+				4842F1F01B3586C700C28CC3 /* Responses */,
+			);
+			name = GCDWebServer;
+			path = "GCDWebServer-3.2.4/GCDWebServer";
+			sourceTree = "<group>";
+		};
+		4842F1DA1B3586C700C28CC3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4842F1DB1B3586C700C28CC3 /* GCDWebServer.h */,
+				4842F1DC1B3586C700C28CC3 /* GCDWebServer.m */,
+				4842F1DD1B3586C700C28CC3 /* GCDWebServerConnection.h */,
+				4842F1DE1B3586C700C28CC3 /* GCDWebServerConnection.m */,
+				4842F1DF1B3586C700C28CC3 /* GCDWebServerFunctions.h */,
+				4842F1E01B3586C700C28CC3 /* GCDWebServerFunctions.m */,
+				4842F1E11B3586C700C28CC3 /* GCDWebServerHTTPStatusCodes.h */,
+				4842F1E21B3586C700C28CC3 /* GCDWebServerPrivate.h */,
+				4842F1E31B3586C700C28CC3 /* GCDWebServerRequest.h */,
+				4842F1E41B3586C700C28CC3 /* GCDWebServerRequest.m */,
+				4842F1E51B3586C700C28CC3 /* GCDWebServerResponse.h */,
+				4842F1E61B3586C700C28CC3 /* GCDWebServerResponse.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4842F1E71B3586C700C28CC3 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				4842F1E81B3586C700C28CC3 /* GCDWebServerDataRequest.h */,
+				4842F1E91B3586C700C28CC3 /* GCDWebServerDataRequest.m */,
+				4842F1EA1B3586C700C28CC3 /* GCDWebServerFileRequest.h */,
+				4842F1EB1B3586C700C28CC3 /* GCDWebServerFileRequest.m */,
+				4842F1EC1B3586C700C28CC3 /* GCDWebServerMultiPartFormRequest.h */,
+				4842F1ED1B3586C700C28CC3 /* GCDWebServerMultiPartFormRequest.m */,
+				4842F1EE1B3586C700C28CC3 /* GCDWebServerURLEncodedFormRequest.h */,
+				4842F1EF1B3586C700C28CC3 /* GCDWebServerURLEncodedFormRequest.m */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		4842F1F01B3586C700C28CC3 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				4842F1F11B3586C700C28CC3 /* GCDWebServerDataResponse.h */,
+				4842F1F21B3586C700C28CC3 /* GCDWebServerDataResponse.m */,
+				4842F1F31B3586C700C28CC3 /* GCDWebServerErrorResponse.h */,
+				4842F1F41B3586C700C28CC3 /* GCDWebServerErrorResponse.m */,
+				4842F1F51B3586C700C28CC3 /* GCDWebServerFileResponse.h */,
+				4842F1F61B3586C700C28CC3 /* GCDWebServerFileResponse.m */,
+				4842F1F71B3586C700C28CC3 /* GCDWebServerStreamedResponse.h */,
+				4842F1F81B3586C700C28CC3 /* GCDWebServerStreamedResponse.m */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 		48E635C51B2C94B400857520 = {
 			isa = PBXGroup;
 			children = (
-				48E635DB1B2C94E700857520 /* main.swift */,
-				48E635D91B2C94E700857520 /* CGIAdapter.swift */,
-				48E635DA1B2C94E700857520 /* Controller.swift */,
-				48E635DD1B2C94E700857520 /* Request.swift */,
-				48E635DE1B2C94E700857520 /* Response.swift */,
-				48E635DF1B2C94E700857520 /* Router.swift */,
+				4842F1BC1B33A4E100C28CC3 /* CGI */,
+				4842F1B91B33A4B300C28CC3 /* GDCServer */,
+				480E622C1B2EECDB007FC4AA /* Core */,
+				48FED8751B2E13D20063A175 /* SwiftServer */,
 				48E635E61B2C950700857520 /* ProtoProject */,
 				481CC3311B2D0ABA009D7895 /* SwiftServerTests */,
-				48A1D4EB1B2D9CF400EB727E /* SwiftServerLib */,
-				48A1D4F81B2D9CF400EB727E /* SwiftServerLibTests */,
+				4842F1B41B33A0BE00C28CC3 /* swtl */,
 				48E635CF1B2C94B500857520 /* Products */,
 				6803A07E25B1B5661D3272CD /* Pods */,
 				470C3D4B8A9F84A704E9C960 /* Frameworks */,
@@ -149,9 +358,10 @@
 		48E635CF1B2C94B500857520 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				48E635CE1B2C94B500857520 /* SwiftServer */,
-				481CC3301B2D0ABA009D7895 /* SwiftServer.temp_caseinsensitive_rename.xctest */,
-				48A1D4EA1B2D9CF300EB727E /* libSwiftServerLib.dylib */,
+				48E635CE1B2C94B500857520 /* ss-server */,
+				481CC3301B2D0ABA009D7895 /* SwiftServerTests.xctest */,
+				4842F1A71B32DFF300C28CC3 /* ss-cgi */,
+				4842F1B31B33A0BE00C28CC3 /* swtl */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,8 +369,10 @@
 		48E635E61B2C950700857520 /* ProtoProject */ = {
 			isa = PBXGroup;
 			children = (
-				48E635E71B2C950700857520 /* TestController.swift */,
-				48E635E81B2C950700857520 /* TestRouter.swift */,
+				4842F1D01B35855500C28CC3 /* Controllers */,
+				4842F1D21B35855500C28CC3 /* Models */,
+				4842F1D31B35855500C28CC3 /* TestRouter.swift */,
+				4842F1D41B35855500C28CC3 /* Views */,
 			);
 			name = ProtoProject;
 			path = ../SwiftServer/SwiftServer/ProtoProject;
@@ -177,16 +389,6 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		48A1D4E81B2D9CF300EB727E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		481CC32F1B2D0ABA009D7895 /* SwiftServerTests */ = {
 			isa = PBXNativeTarget;
@@ -202,29 +404,47 @@
 			);
 			name = SwiftServerTests;
 			productName = SwiftServerTests;
-			productReference = 481CC3301B2D0ABA009D7895 /* SwiftServer.temp_caseinsensitive_rename.xctest */;
+			productReference = 481CC3301B2D0ABA009D7895 /* SwiftServerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		48A1D4E91B2D9CF300EB727E /* SwiftServerLib */ = {
+		4842F1891B32DFF300C28CC3 /* ss-cgi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 48A1D4FC1B2D9CF400EB727E /* Build configuration list for PBXNativeTarget "SwiftServerLib" */;
+			buildConfigurationList = 4842F1A51B32DFF300C28CC3 /* Build configuration list for PBXNativeTarget "ss-cgi" */;
 			buildPhases = (
-				48A1D4E61B2D9CF300EB727E /* Sources */,
-				48A1D4E71B2D9CF300EB727E /* Frameworks */,
-				48A1D4E81B2D9CF300EB727E /* Headers */,
+				4842F18A1B32DFF300C28CC3 /* Sources */,
+				4842F1A11B32DFF300C28CC3 /* Frameworks */,
+				4842F1A31B32DFF300C28CC3 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SwiftServerLib;
-			productName = SwiftServerLib;
-			productReference = 48A1D4EA1B2D9CF300EB727E /* libSwiftServerLib.dylib */;
-			productType = "com.apple.product-type.library.dynamic";
+			name = "ss-cgi";
+			productName = Swails;
+			productReference = 4842F1A71B32DFF300C28CC3 /* ss-cgi */;
+			productType = "com.apple.product-type.tool";
 		};
-		48E635CD1B2C94B400857520 /* SwiftServer */ = {
+		4842F1B21B33A0BE00C28CC3 /* swtl */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 48E635D51B2C94B500857520 /* Build configuration list for PBXNativeTarget "SwiftServer" */;
+			buildConfigurationList = 4842F1B71B33A0BE00C28CC3 /* Build configuration list for PBXNativeTarget "swtl" */;
+			buildPhases = (
+				4842F1AF1B33A0BE00C28CC3 /* Sources */,
+				4842F1B01B33A0BE00C28CC3 /* Frameworks */,
+				4842F1B11B33A0BE00C28CC3 /* CopyFiles */,
+			);
+			buildRules = (
+				4842F1CF1B35821300C28CC3 /* PBXBuildRule */,
+			);
+			dependencies = (
+			);
+			name = swtl;
+			productName = swtl;
+			productReference = 4842F1B31B33A0BE00C28CC3 /* swtl */;
+			productType = "com.apple.product-type.tool";
+		};
+		48E635CD1B2C94B400857520 /* ss-server */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48E635D51B2C94B500857520 /* Build configuration list for PBXNativeTarget "ss-server" */;
 			buildPhases = (
 				48E635CA1B2C94B400857520 /* Sources */,
 				48E635CB1B2C94B400857520 /* Frameworks */,
@@ -233,11 +453,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				48A1D4FF1B2D9D0500EB727E /* PBXTargetDependency */,
 			);
-			name = SwiftServer;
+			name = "ss-server";
 			productName = Swails;
-			productReference = 48E635CE1B2C94B500857520 /* SwiftServer */;
+			productReference = 48E635CE1B2C94B500857520 /* ss-server */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -252,7 +471,7 @@
 					481CC32F1B2D0ABA009D7895 = {
 						CreatedOnToolsVersion = 7.0;
 					};
-					48A1D4E91B2D9CF300EB727E = {
+					4842F1B21B33A0BE00C28CC3 = {
 						CreatedOnToolsVersion = 7.0;
 					};
 					48E635CD1B2C94B400857520 = {
@@ -272,9 +491,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				48E635CD1B2C94B400857520 /* SwiftServer */,
+				48E635CD1B2C94B400857520 /* ss-server */,
+				4842F1891B32DFF300C28CC3 /* ss-cgi */,
 				481CC32F1B2D0ABA009D7895 /* SwiftServerTests */,
-				48A1D4E91B2D9CF300EB727E /* SwiftServerLib */,
+				4842F1B21B33A0BE00C28CC3 /* swtl */,
 			);
 		};
 /* End PBXProject section */
@@ -297,21 +517,33 @@
 				48A1D5061B2D9D1E00EB727E /* Controller.swift in Sources */,
 				48A1D5071B2D9D1E00EB727E /* Request.swift in Sources */,
 				481CC3331B2D0ABA009D7895 /* CGIAdapterTests.swift in Sources */,
-				48A1D5051B2D9D1E00EB727E /* CGIAdapter.swift in Sources */,
 				48A1D5091B2D9D1E00EB727E /* Router.swift in Sources */,
 				48A1D5081B2D9D1E00EB727E /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		48A1D4E61B2D9CF300EB727E /* Sources */ = {
+		4842F18A1B32DFF300C28CC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48A1D5031B2D9D1B00EB727E /* Response.swift in Sources */,
-				48A1D5001B2D9D1B00EB727E /* CGIAdapter.swift in Sources */,
-				48A1D5041B2D9D1B00EB727E /* Router.swift in Sources */,
-				48A1D5021B2D9D1B00EB727E /* Request.swift in Sources */,
-				48A1D5011B2D9D1B00EB727E /* Controller.swift in Sources */,
+				4842F18B1B32DFF300C28CC3 /* Router.swift in Sources */,
+				4842F1C21B33A4E600C28CC3 /* main.swift in Sources */,
+				4842F18F1B32DFF300C28CC3 /* GCDWebServerAdapter.swift in Sources */,
+				4842F1D71B35859700C28CC3 /* TestController.swift in Sources */,
+				4842F1991B32DFF300C28CC3 /* Response.swift in Sources */,
+				4842F19B1B32DFF300C28CC3 /* Controller.swift in Sources */,
+				4842F1D81B35859700C28CC3 /* TestRouter.swift in Sources */,
+				4842F1C11B33A4E600C28CC3 /* CGIAdapter.swift in Sources */,
+				4842F19E1B32DFF300C28CC3 /* Request.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4842F1AF1B33A0BE00C28CC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4842F1CB1B33A5A900C28CC3 /* TemplateParser.swift in Sources */,
+				4842F1B61B33A0BE00C28CC3 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,26 +551,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48A1D50E1B2D9D2F00EB727E /* Router.swift in Sources */,
-				48A1D50B1B2D9D2F00EB727E /* Controller.swift in Sources */,
-				48A1D50C1B2D9D2F00EB727E /* Request.swift in Sources */,
-				481CC33E1B2D0C59009D7895 /* main.swift in Sources */,
-				48E635EA1B2C950F00857520 /* TestRouter.swift in Sources */,
-				48E635E91B2C950F00857520 /* TestController.swift in Sources */,
-				48A1D50A1B2D9D2F00EB727E /* CGIAdapter.swift in Sources */,
-				48A1D50D1B2D9D2F00EB727E /* Response.swift in Sources */,
+				480E62321B2EECE5007FC4AA /* Router.swift in Sources */,
+				4842F2051B3586C700C28CC3 /* GCDWebServerStreamedResponse.m in Sources */,
+				4842F1BB1B33A4B300C28CC3 /* main.swift in Sources */,
+				480E622D1B2EECE5007FC4AA /* GCDWebServerAdapter.swift in Sources */,
+				4842F2011B3586C700C28CC3 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				4842F1FE1B3586C700C28CC3 /* GCDWebServerDataRequest.m in Sources */,
+				4842F2001B3586C700C28CC3 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				4842F1D61B35859700C28CC3 /* TestRouter.swift in Sources */,
+				4842F2041B3586C700C28CC3 /* GCDWebServerFileResponse.m in Sources */,
+				480E62311B2EECE5007FC4AA /* Response.swift in Sources */,
+				4842F1FB1B3586C700C28CC3 /* GCDWebServerFunctions.m in Sources */,
+				4842F2031B3586C700C28CC3 /* GCDWebServerErrorResponse.m in Sources */,
+				480E622F1B2EECE5007FC4AA /* Controller.swift in Sources */,
+				4842F1D51B35859700C28CC3 /* TestController.swift in Sources */,
+				4842F1FD1B3586C700C28CC3 /* GCDWebServerResponse.m in Sources */,
+				4842F1FC1B3586C700C28CC3 /* GCDWebServerRequest.m in Sources */,
+				4842F1FA1B3586C700C28CC3 /* GCDWebServerConnection.m in Sources */,
+				4842F2071B35880800C28CC3 /* Hello.swtl in Sources */,
+				4842F1F91B3586C700C28CC3 /* GCDWebServer.m in Sources */,
+				4842F1FF1B3586C700C28CC3 /* GCDWebServerFileRequest.m in Sources */,
+				4842F2021B3586C700C28CC3 /* GCDWebServerDataResponse.m in Sources */,
+				480E62301B2EECE5007FC4AA /* Request.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		48A1D4FF1B2D9D0500EB727E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 48A1D4E91B2D9CF300EB727E /* SwiftServerLib */;
-			targetProxy = 48A1D4FE1B2D9D0500EB727E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		481CC3361B2D0ABA009D7895 /* Release */ = {
@@ -348,16 +586,21 @@
 				INFOPLIST_FILE = SwiftServerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.artificial.SwiftServerTests;
-				PRODUCT_NAME = SwiftServer.temp_caseinsensitive_rename;
+				PRODUCT_NAME = SwiftServerTests;
 			};
 			name = Release;
 		};
-		48A1D4FA1B2D9CF400EB727E /* Release */ = {
+		4842F1A61B32DFF300C28CC3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SwiftServer/SwiftServerBridge.h;
+			};
+			name = Release;
+		};
+		4842F1B81B33A0BE00C28CC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -401,6 +644,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SwiftServer/SwiftServerBridge.h;
 			};
 			name = Release;
 		};
@@ -415,12 +659,21 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		48A1D4FC1B2D9CF400EB727E /* Build configuration list for PBXNativeTarget "SwiftServerLib" */ = {
+		4842F1A51B32DFF300C28CC3 /* Build configuration list for PBXNativeTarget "ss-cgi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				48A1D4FA1B2D9CF400EB727E /* Release */,
+				4842F1A61B32DFF300C28CC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4842F1B71B33A0BE00C28CC3 /* Build configuration list for PBXNativeTarget "swtl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4842F1B81B33A0BE00C28CC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		48E635C91B2C94B400857520 /* Build configuration list for PBXProject "SwiftServer" */ = {
 			isa = XCConfigurationList;
@@ -430,7 +683,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		48E635D51B2C94B500857520 /* Build configuration list for PBXNativeTarget "SwiftServer" */ = {
+		48E635D51B2C94B500857520 /* Build configuration list for PBXNativeTarget "ss-server" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				48E635D71B2C94B500857520 /* Release */,

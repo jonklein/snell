@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "48E635CD1B2C94B400857520"
-               BuildableName = "SwiftServer.temp_caseinsensitive_rename"
-               BlueprintName = "SwiftServer"
+               BuildableName = "ss-server"
+               BlueprintName = "ss-server"
                ReferencedContainer = "container:SwiftServer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,8 +43,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "48E635CD1B2C94B400857520"
-            BuildableName = "SwiftServer.temp_caseinsensitive_rename"
-            BlueprintName = "SwiftServer"
+            BuildableName = "ss-server"
+            BlueprintName = "ss-server"
             ReferencedContainer = "container:SwiftServer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -66,8 +66,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "48E635CD1B2C94B400857520"
-            BuildableName = "SwiftServer.temp_caseinsensitive_rename"
-            BlueprintName = "SwiftServer"
+            BuildableName = "ss-server"
+            BlueprintName = "ss-server"
             ReferencedContainer = "container:SwiftServer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -85,8 +85,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "48E635CD1B2C94B400857520"
-            BuildableName = "SwiftServer.temp_caseinsensitive_rename"
-            BlueprintName = "SwiftServer"
+            BuildableName = "ss-server"
+            BlueprintName = "ss-server"
             ReferencedContainer = "container:SwiftServer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

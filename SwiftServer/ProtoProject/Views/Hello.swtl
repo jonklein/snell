@@ -1,0 +1,18 @@
+<html>
+  <body>
+    <h3>Welcome to Swell.</h3>
+    <div>
+      <h2>Request Params</h2>
+      <% for i in scope.request.params.keys { %>
+        <li><%= i %>
+      <% } %>
+    </div>
+
+    <div>
+      <h2>Environment</h2>
+      <% for i in scope.environment.params.keys { %>
+        <li><%= i %> = <%= 1 %>
+      <% } %>
+    </div>
+  </body>
+</html>

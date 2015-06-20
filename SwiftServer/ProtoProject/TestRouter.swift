@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import SwiftServerLib
 
 class TestRouter : Router {
   init(request: Request) {
@@ -18,5 +19,6 @@ class TestRouter : Router {
 
     Router.route(".*", controller: TestController.self)
 
+    super.init()
   }
 }

@@ -1,0 +1,9 @@
+<html>
+  <body>
+
+    <% for index in 1...5 { %>
+      <p>Hello <%= (scope["arguments"]) as Array %></p>
+    <% } %>
+  
+  </body>
+</html>
