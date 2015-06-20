@@ -15,7 +15,7 @@ To build a project with Snell, you can modify files in the "SnellProject" group.
 
 ### Running a Snell Project
 
-There are currently two ways to run the framework: CGI, or standalone server.  Neither of these methods are considered high-performance options.
+There are currently two ways to run the framework: CGI, or standalone server.
 
 - Running with CGI
 

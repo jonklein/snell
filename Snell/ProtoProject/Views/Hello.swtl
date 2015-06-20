@@ -1,18 +1,31 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  </head>
   <body>
-    <h1>Gee, this is Snell.</h1>
-    <div>
-      <h2>Request Params</h2>
-      <% for i in scope.request.params.keys { %>
-        <li><%= i %> = <%= scope.request.params[i]! %>
-      <% } %>
-    </div>
+    <div class="container">
+      <h1>Gee, this is Snell.</h1>
 
-    <div>
-      <h2>Environment</h2>
-      <% for i in scope.environment.keys { %>
-        <li><%= i %> = <%= scope.environment[i]! %>
-      <% } %>
+      <div>
+        <p>Snell is a simple proof-of-concept web framework written in Swift.  Read more about <a href="http://github.com/jonklein/snell">Snell on GitHub</a></p>
+        <p>Built by <a href="http://artificial.com">jon klein</a>.</p>
+      </div>
+
+      <div>
+        <h4 class="lead">Request Parameters</h4>
+          <% for i in scope.request.params.keys { %>
+            <li><code><%= i %> = <%= scope.request.params[i]! %></code></li>
+          <% } %>
+        </code>
+      </div>
+
+      <div>
+        <h4 class="lead">Environment</h4>
+          <% for i in scope.environment.keys { %>
+            <li><code><%= i %> = <%= scope.environment[i]! %></code></li>
+          <% } %>
+        </code>
+      </div>
     </div>
   </body>
 </html>
