@@ -7,42 +7,43 @@ Currently, a Swift Web framework has limited utility due to platform restriction
 
 In the same sense that frameworks like Node.js offer the promise of a common web frontend & backend language, a Swift web framework could offer a common frontend/backend language for iOS/OSX apps, and again, eventually other platforms.
 
+The design basis for Snell is largely Rails-inspired in some of the structure and terminology, though differences between Ruby & Swift do lead to different design considerations.  In particular, the relative lack of reflection & metaprogramming functionality in Swift presents a challenge in following many Rails design patterns.
+
 *This project is only a proof-of-concept*.  It currently supports only the simplest of requests.  It goes without saying that it's not appopriate for production use.  See the section "Known Issues & Limitations" below for more details.
 
-## Building a Project
+### Using Snell in a Project
 
-To build a project with Snell, you can modify files in the "SnellProject" group.
+To build a project with Snell, you can clone the demo project and modify files in the "SnellProject" group.  The files/directories of interest in the demo project are:
+
+- `main.swift`: where the server is started and the router is configured
+- `DemoRouter.swift`: routing between URL routes and server actions
+- `DemoController.swift`: handling of server actions, trigger rendering, etc
+- `Views`: templated Swift HTML views (see the section on `swtl` below)
+
+In the future, Snell should be able to integrate into a project as an external framework or library, but there are currently some limitations in the Swift workflow that complicate this approach.  See "Known Issues & Limitations" below for more information.
 
 ### Running a Snell Project
 
-There are currently two ways to run the framework: CGI, or standalone server.
+There are currently two ways to run the framework: CGI, or standalone server.  The demo project is configured to run as a standalone server on port 3000.  If you run the `Snell` target in XCode via "Command-R", you should be able to reach the server in a browser at `http://localhost:3000`.  This will invoke the `main` action of `DemoController`, which will render the `Demo` template.
 
-- Running with CGI
+### `swtl` – templating with Swift
 
-A Snell project can be compiled to run as a standlone CGI binary.
-
-- Running as a standalone server
-
-Snell uses the Cocoa GDCWebServer project to run as a simple standalone server.
-
-## `swtl` – templating with Swift
-
-Part of the Snell project 
-
-`swtl` is a simple tool for building templates using Swift.  In the context of Snell, this is most likely HTML templates, but the tool can be used for any kind of templating.  `swtl` allows for ERB-style Swift statements to be embedded in any kind of text content:
+Part of the Snell project is `swtl` (pronounced "Swaddle"), a simple tool for is a simple tool for building templates using Swift.  In the context of Snell, this is most likely HTML templates, but the tool can be used for any kind of templating.  `swtl` allows for ERB-style Swift statements to be embedded in any kind of text content:
 
 ```
 <html>
   <body>
-    <p>Hello, <%= scope.request.params["username"] %>
+    <p>Hello, <%= scope.request.params["name"] %></p>
+    <% for i in 1...3 { %>
+      <p>Iteration in a template (<%= i %>)
+    <% } %>
   </body>
 </html>
 ```
 
+### Known Issues & Limitations
 
-## Known Issues & Limitations
-
-- Snell is a proof of concept: *it is currently only built to handle simple GET requests*
+- Most importantly -- Snell is just a proof of concept: *it is currently only built to handle simple GET requests*
 
 The framework should be easily extensible to a more complete feature-set, but at this time, only simple GET returning HTML is 
 

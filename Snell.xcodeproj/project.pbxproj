@@ -19,9 +19,9 @@
 		4842F5CB1B35909D00C28CC3 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C11B35900900C28CC3 /* Response.swift */; };
 		4842F5CC1B35909D00C28CC3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C21B35900900C28CC3 /* Router.swift */; };
 		4842F5D21B3593EE00C28CC3 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5D11B3593EE00C28CC3 /* View.swift */; };
-		4866A9451B3597F400BCF429 /* TestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1D31B35855500C28CC3 /* TestRouter.swift */; };
-		4866A9461B35980800BCF429 /* TestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1D11B35855500C28CC3 /* TestController.swift */; };
-		4866A9481B359CD200BCF429 /* Hello.swtl in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C81B35908A00C28CC3 /* Hello.swtl */; };
+		4866A9451B3597F400BCF429 /* DemoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1D31B35855500C28CC3 /* DemoRouter.swift */; };
+		4866A9461B35980800BCF429 /* DemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1D11B35855500C28CC3 /* DemoController.swift */; };
+		4866A9481B359CD200BCF429 /* Demo.swtl in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C81B35908A00C28CC3 /* Demo.swtl */; };
 		4866A94B1B35A0C200BCF429 /* SwtlParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866A9491B35A02E00BCF429 /* SwtlParserTests.swift */; };
 		4866A94D1B35A57900BCF429 /* Scope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866A94C1B35A57900BCF429 /* Scope.swift */; };
 		4866A94F1B35E57E00BCF429 /* Snell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866A94E1B35E57E00BCF429 /* Snell.swift */; };
@@ -113,14 +113,14 @@
 		4842F1B51B33A0BE00C28CC3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4842F1CA1B33A5A900C28CC3 /* TemplateParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateParser.swift; sourceTree = "<group>"; };
 		4842F1CD1B3581EB00C28CC3 /* test.swtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.swtl; sourceTree = "<group>"; };
-		4842F1D11B35855500C28CC3 /* TestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestController.swift; path = Snell/ProtoProject/Controllers/TestController.swift; sourceTree = SOURCE_ROOT; };
-		4842F1D31B35855500C28CC3 /* TestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TestRouter.swift; path = Snell/ProtoProject/TestRouter.swift; sourceTree = SOURCE_ROOT; };
+		4842F1D11B35855500C28CC3 /* DemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DemoController.swift; path = Snell/ProtoProject/Controllers/DemoController.swift; sourceTree = SOURCE_ROOT; };
+		4842F1D31B35855500C28CC3 /* DemoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DemoRouter.swift; path = Snell/ProtoProject/DemoRouter.swift; sourceTree = SOURCE_ROOT; };
 		4842F5BF1B35900900C28CC3 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		4842F5C01B35900900C28CC3 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		4842F5C11B35900900C28CC3 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		4842F5C21B35900900C28CC3 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		4842F5C71B35905800C28CC3 /* SnellServerBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SnellServerBridge.h; path = Snell/SnellServerBridge.h; sourceTree = SOURCE_ROOT; };
-		4842F5C81B35908A00C28CC3 /* Hello.swtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Hello.swtl; path = Snell/ProtoProject/Views/Hello.swtl; sourceTree = SOURCE_ROOT; };
+		4842F5C81B35908A00C28CC3 /* Demo.swtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Demo.swtl; path = Snell/ProtoProject/Views/Demo.swtl; sourceTree = SOURCE_ROOT; };
 		4842F5D11B3593EE00C28CC3 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		4866A9491B35A02E00BCF429 /* SwtlParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwtlParserTests.swift; path = SnellServerTests/SwtlParserTests.swift; sourceTree = SOURCE_ROOT; };
 		4866A94C1B35A57900BCF429 /* Scope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scope.swift; sourceTree = "<group>"; };
@@ -218,7 +218,7 @@
 		4842F1D01B35855500C28CC3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				4842F1D11B35855500C28CC3 /* TestController.swift */,
+				4842F1D11B35855500C28CC3 /* DemoController.swift */,
 			);
 			name = Controllers;
 			path = ../../Snell/ProtoProject/Controllers;
@@ -234,7 +234,7 @@
 		4842F1D41B35855500C28CC3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4842F5C81B35908A00C28CC3 /* Hello.swtl */,
+				4842F5C81B35908A00C28CC3 /* Demo.swtl */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -358,7 +358,7 @@
 		48E635E61B2C950700857520 /* SnellProject */ = {
 			isa = PBXGroup;
 			children = (
-				4842F1D31B35855500C28CC3 /* TestRouter.swift */,
+				4842F1D31B35855500C28CC3 /* DemoRouter.swift */,
 				4866A9501B35E5DE00BCF429 /* main.swift */,
 				4842F1D01B35855500C28CC3 /* Controllers */,
 				4842F1D21B35855500C28CC3 /* Models */,
@@ -517,10 +517,10 @@
 			files = (
 				48922A041B360AAB0001E69D /* GCDWebServer.m in Sources */,
 				48922A121B360AAB0001E69D /* GCDWebServerMultiPartFormRequest.m in Sources */,
-				4866A9481B359CD200BCF429 /* Hello.swtl in Sources */,
+				4866A9481B359CD200BCF429 /* Demo.swtl in Sources */,
 				48922A0E1B360AAB0001E69D /* GCDWebServerDataRequest.m in Sources */,
 				48922A061B360AAB0001E69D /* GCDWebServerConnection.m in Sources */,
-				4866A9461B35980800BCF429 /* TestController.swift in Sources */,
+				4866A9461B35980800BCF429 /* DemoController.swift in Sources */,
 				4842F5CB1B35909D00C28CC3 /* Response.swift in Sources */,
 				48922A0C1B360AAB0001E69D /* GCDWebServerResponse.m in Sources */,
 				48922A1C1B360AAB0001E69D /* GCDWebServerStreamedResponse.m in Sources */,
@@ -538,7 +538,7 @@
 				48922A181B360AAB0001E69D /* GCDWebServerErrorResponse.m in Sources */,
 				4866A94F1B35E57E00BCF429 /* Snell.swift in Sources */,
 				48922A101B360AAB0001E69D /* GCDWebServerFileRequest.m in Sources */,
-				4866A9451B3597F400BCF429 /* TestRouter.swift in Sources */,
+				4866A9451B3597F400BCF429 /* DemoRouter.swift in Sources */,
 				48922A081B360AAB0001E69D /* GCDWebServerFunctions.m in Sources */,
 				489229FE1B360AAB0001E69D /* CGIAdapter.swift in Sources */,
 			);

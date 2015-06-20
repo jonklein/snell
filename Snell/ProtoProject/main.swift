@@ -8,5 +8,5 @@
 
 import Foundation
 
-let snell = Snell(router: TestRouter())
+let snell = Snell(router: DemoRouter())
 snell.startServer()
