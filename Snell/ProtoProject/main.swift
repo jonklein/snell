@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SwiftServerLib
 
-let CGI = CGIAdapter()
-CGI.render(TestController(request: CGI.request()!).run())
+let snell = Snell(router: TestRouter())
+snell.startServer()

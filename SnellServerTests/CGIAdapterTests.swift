@@ -33,5 +33,4 @@ class CGIAdapterTests: XCTestCase {
     XCTAssertEqual(CGIAdapter().request()!.params["x"]!, "1")
     XCTAssertEqual(CGIAdapter().request()!.params["y"]!, "2%&")
   }
-
 }

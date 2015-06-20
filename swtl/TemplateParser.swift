@@ -8,9 +8,14 @@
 
 import Foundation
 
+/**
+ * SWTL parser class
+ */
+
 class Template {
   func parse(file:String) -> String? {
-    var result = templateStart()
+    let basename = file.lastPathComponent.stringByDeletingPathExtension
+    var result = templateStart(basename)
 
     do {
       let fileContent = try NSString(contentsOfFile: file, encoding: NSUTF8StringEncoding)
@@ -25,14 +30,14 @@ class Template {
         let command = fileContent.substringWithRange(i.rangeAtIndex(2))
         let shouldPrint = i.rangeAtIndex(1).length == 1
 
-        result += "  print(" + " \"" + sanitize(prefix) + "\")\n"
-        result += "  " + (shouldPrint ? "print(\(command))" : command) + "\n"
+        result += "    append(" + " \"" + sanitize(prefix) + "\")\n"
+        result += "    " + (shouldPrint ? "append(\(command))" : command) + "\n"
 
         start = i.rangeAtIndex(0).location + i.rangeAtIndex(0).length
       }
 
       let last = fileContent.substringWithRange(NSMakeRange(start, fileContent.length - start))
-      result += "  print(" + " \"" + sanitize(last) + "\")\n"
+      result += "  append(" + " \"" + sanitize(last) + "\")\n"
 
       result += templateEnd()
 
@@ -43,6 +48,7 @@ class Template {
     }
   }
 
+private
   func matches(content:NSString) throws -> [NSTextCheckingResult] {
     let parsingRegex = "<%(=?)(((?!%>).)*)%>"
     let regex = try NSRegularExpression(pattern: parsingRegex, options: .DotMatchesLineSeparators)
@@ -56,16 +62,20 @@ class Template {
       .stringByReplacingOccurrencesOfString("\"", withString: "\\\"")
   }
 
-private
-  func templateStart() -> String {
-    return "import Foundation\n\nfunc parse(scope:[String:AnyObject]) {\n"
+  func templateStart(name:String) -> String {
+    return
+      "#line 1 \"\(name).swtl\"\n" +
+      "import Foundation\n\npublic class \(name) : View {\n" +
+      "  var result = \"\"\n\n" +
+      "  public func append(value: AnyObject) {\n" +
+      "    self.result += \"\\(value)\"\n" +
+      "  }\n\n" +
+      "  public override func parse(scope:Scope) -> String {\n"
   }
 
   func templateEnd() -> String {
     return
-      "}\n" +
-      "var scope:[String:AnyObject] = [:]\n" +
-      "scope[\"arguments\"] = Process.arguments\n" +
-      "parse(scope)\n"
+      "    return self.result\n" +
+      "  }\n}\n"
   }
 }

@@ -17,9 +17,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "481CC32F1B2D0ABA009D7895"
-               BuildableName = "SwiftServer.temp_caseinsensitive_rename.xctest"
-               BlueprintName = "SwiftServerTests"
-               ReferencedContainer = "container:SwiftServer.xcodeproj">
+               BuildableName = "SnellTests.xctest"
+               BlueprintName = "SnellTests"
+               ReferencedContainer = "container:Snell.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "48E635CD1B2C94B400857520"
-               BuildableName = "ss-server"
-               BlueprintName = "ss-server"
-               ReferencedContainer = "container:SwiftServer.xcodeproj">
+               BuildableName = "Snell"
+               BlueprintName = "Snell"
+               ReferencedContainer = "container:Snell.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "481CC32F1B2D0ABA009D7895"
-               BuildableName = "SwiftServer.temp_caseinsensitive_rename.xctest"
-               BlueprintName = "SwiftServerTests"
-               ReferencedContainer = "container:SwiftServer.xcodeproj">
+               BuildableName = "SnellTests.xctest"
+               BlueprintName = "SnellTests"
+               ReferencedContainer = "container:Snell.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "48E635CD1B2C94B400857520"
-            BuildableName = "ss-server"
-            BlueprintName = "ss-server"
-            ReferencedContainer = "container:SwiftServer.xcodeproj">
+            BuildableName = "Snell"
+            BlueprintName = "Snell"
+            ReferencedContainer = "container:Snell.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -66,9 +66,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "48E635CD1B2C94B400857520"
-            BuildableName = "ss-server"
-            BlueprintName = "ss-server"
-            ReferencedContainer = "container:SwiftServer.xcodeproj">
+            BuildableName = "Snell"
+            BlueprintName = "Snell"
+            ReferencedContainer = "container:Snell.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "48E635CD1B2C94B400857520"
-            BuildableName = "ss-server"
-            BlueprintName = "ss-server"
-            ReferencedContainer = "container:SwiftServer.xcodeproj">
+            BuildableName = "Snell"
+            BlueprintName = "Snell"
+            ReferencedContainer = "container:Snell.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
