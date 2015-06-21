@@ -45,11 +45,11 @@ Part of the Snell project is `swtl` (pronounced "Swaddle"), a simple tool for is
 
 - Most importantly -- Snell is just a proof of concept: *it is currently only built to handle simple GET requests*
 
-The framework should be easily extensible to a more complete feature-set, but at this time, only simple GET returning HTML is 
+The framework should be easily extensible to a more complete feature-set, but at this time, only simple GET requests returning HTML are supported.
 
 - Not yet possible to build Swift CLI tools linked against a framework...
 
-This limitation means that we cannot build a standalone command-line binary linking against a compiled Snell framework 
+This limitation means that we cannot build a standalone command-line binary linking against a compiled Snell framework.
 
 - ... nor is it possible to build static Swift libraries
 
@@ -67,5 +67,4 @@ Looking forward to an open-source Swift that runs on many platforms, Snell shoul
 
 - `swtl` is a total hack
 
-`swtl` simply turns mixes text/code templates into standalone Swift classes with a mass of print-statements.  This works in basic optmistic cases, but it likely to be fragile.  Furthermore, syntax errors or other compilation problems in template files are reported in the generated file, so line numbers 
-
+`swtl` simply turns mixes text/code templates into standalone Swift classes with a mass of print-statements.  This works in basic optmistic cases, but it likely to be fragile.  Furthermore, syntax errors or other compilation problems in template files are reported in the generated file, so filenames & line numbers can be difficult to track down.
