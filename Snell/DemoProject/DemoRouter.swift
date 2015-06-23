@@ -14,9 +14,9 @@ class DemoRouter : Router {
   override init() {
     super.init()
 
-    // Route the homepage to the "DemoController.Main" action
+    // Route the homepage to the "DemoController.index" action
 
-    route("/", controller: DemoController.Main.self)
+    route("/", to: DemoController.index)
 
     // Route "/closure" to a demo of defining an action as a closure, rather than a controller
 

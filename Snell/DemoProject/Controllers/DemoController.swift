@@ -9,11 +9,9 @@
 import Foundation
 
 class DemoController: Controller {
-  // Internal controller subclasses allow for shared controller functionality in a single class/file.
-
-  class Main : DemoController {
-    internal override func run() -> Response {
-      return render(Demo.self, status: 200)
-    }
+  
+  func index() -> Response {
+    return render(Demo.self, status: 200)
   }
+  
 }
