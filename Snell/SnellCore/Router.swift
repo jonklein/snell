@@ -6,14 +6,17 @@
 //  Copyright © 2015 artificial. All rights reserved.
 //
 
+import Foundation
+
 public class Router {
+  
   public var routingTable:[NSRegularExpression:(request:Request) -> Response] = [:]
 
   public init() {
   }
 
-  public func route(pattern:String, controller:Controller.Type) {
-    route(pattern, closure: { request in controller(request: request).run() })
+  public func route<T: Controller>(pattern:String, to action:(T) -> () -> Response) {
+    route(pattern, closure: { request in action(T(request: request))() })
   }
 
   public func route(pattern:String, closure: (request:Request) -> Response) {

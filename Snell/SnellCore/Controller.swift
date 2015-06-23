@@ -6,6 +6,8 @@
 //  Copyright © 2015 artificial. All rights reserved.
 //
 
+import Foundation
+
 public class Controller {
   public var request:Request
 
