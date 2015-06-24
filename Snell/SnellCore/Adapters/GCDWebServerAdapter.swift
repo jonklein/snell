@@ -38,7 +38,7 @@ public class GCDWebServerAdapter {
 
     let request = Request(params: params, method: GDCRequest.method, path: GDCRequest.path)
 
-    return router.dispatch(request)!
+    return router.dispatch(request)
   }
 
   public func response(response:Response) -> GCDWebServerDataResponse {

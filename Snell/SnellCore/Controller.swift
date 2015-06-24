@@ -15,10 +15,6 @@ public class Controller {
     self.request = request
   }
 
-  public func run() -> Response {
-    return Response(status: 200, body: "Hello, world")
-  }
-
   public func render(type:View.Type, status:Int) -> Response {
     return Response(status: status, body: type().render(scope()))
   }

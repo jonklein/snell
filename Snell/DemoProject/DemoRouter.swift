@@ -18,6 +18,12 @@ class DemoRouter : Router {
 
     route("/", to: DemoController.index)
 
+    // Route showing how to do a post 
+    
+    route("/", via:HTTPMethod.Post) { request in
+      Response(status: 201, body: "Created!")
+    }
+    
     // Route "/closure" to a demo of defining an action as a closure, rather than a controller
 
     route("/closure") { (request:Request) -> Response in
