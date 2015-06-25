@@ -16,9 +16,14 @@ public class GCDWebServerAdapter {
   public init(router:Router, port:Int = 3000) {
     self.port = port
     self.router = router
-    webServer.addDefaultHandlerForMethod("GET", requestClass: GCDWebServerRequest.self, processBlock: { gdcRequest in
-      return self.response(self.handleRequest(gdcRequest))
+
+    ["GET", "POST", "PATCH", "PUT", "DELETE"].map({ (method:String) -> String in
+      webServer.addDefaultHandlerForMethod(method, requestClass: GCDWebServerRequest.self, processBlock: { gdcRequest in
+        return self.response(self.handleRequest(gdcRequest))
+      })
+      return ""
     })
+
   }
 
   public func run() {
