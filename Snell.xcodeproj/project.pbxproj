@@ -67,6 +67,8 @@
 		48CBCB191B3D81B90028F2C6 /* TestScope.swtl in Sources */ = {isa = PBXBuildFile; fileRef = 48CBCB171B3D81AB0028F2C6 /* TestScope.swtl */; };
 		48FED8841B2E16200063A175 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FED8811B2E152A0063A175 /* libz.1.dylib */; };
 		A47B6336DE2221863FB0EB6D /* Pods_SnellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB5A99499D1EFB28731C805 /* Pods_SnellTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C94D07471B3E4C1C00AF49DA /* Failable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D07461B3E4C1C00AF49DA /* Failable.swift */; };
+		C94D07481B3E4C1C00AF49DA /* Failable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D07461B3E4C1C00AF49DA /* Failable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -184,6 +186,7 @@
 		48FED8811B2E152A0063A175 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		4F11EA7C64B409495E22E8AA /* Pods-SnellTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnellTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnellTests/Pods-SnellTests.release.xcconfig"; sourceTree = "<group>"; };
 		AEB5A99499D1EFB28731C805 /* Pods_SnellTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnellTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C94D07461B3E4C1C00AF49DA /* Failable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Failable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +250,7 @@
 		4842F5BE1B35900900C28CC3 /* SnellCore */ = {
 			isa = PBXGroup;
 			children = (
+				C94D07461B3E4C1C00AF49DA /* Failable.swift */,
 				4842F5BF1B35900900C28CC3 /* Controller.swift */,
 				4866A94E1B35E57E00BCF429 /* Snell.swift */,
 				4842F5C01B35900900C28CC3 /* Request.swift */,
@@ -591,6 +595,7 @@
 				489229FF1B360AAB0001E69D /* CGIAdapter.swift in Sources */,
 				48CBCB041B3CEB770028F2C6 /* Snell.swift in Sources */,
 				48CBCAFE1B3CEB660028F2C6 /* CGIAdapterSpec.swift in Sources */,
+				C94D07481B3E4C1C00AF49DA /* Failable.swift in Sources */,
 				48CBCB0B1B3D7B7B0028F2C6 /* SwtlTemplate.swift in Sources */,
 				48CBCB051B3CEB770028F2C6 /* Request.swift in Sources */,
 				48922A1D1B360AAB0001E69D /* GCDWebServerStreamedResponse.m in Sources */,
@@ -639,6 +644,7 @@
 				48922A181B360AAB0001E69D /* GCDWebServerErrorResponse.m in Sources */,
 				4866A94F1B35E57E00BCF429 /* Snell.swift in Sources */,
 				48922A101B360AAB0001E69D /* GCDWebServerFileRequest.m in Sources */,
+				C94D07471B3E4C1C00AF49DA /* Failable.swift in Sources */,
 				48922A081B360AAB0001E69D /* GCDWebServerFunctions.m in Sources */,
 				489229FE1B360AAB0001E69D /* CGIAdapter.swift in Sources */,
 			);

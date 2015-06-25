@@ -10,7 +10,7 @@ import Foundation
 
 public class Router {
   
-  typealias Handler = (Request) -> () -> Response
+  typealias Handler = (Request) -> () -> Controller.Result
   
   public enum HTTPMethod : String {
     case Get     = "GET"
@@ -45,14 +45,14 @@ public class Router {
   public init() {
   }
   
-  public func route<T: Controller>(pattern:String, via:HTTPMethod = HTTPMethod.Get, to action:(T) -> () -> Response) {
+  public func route<T: Controller>(pattern:String, via:HTTPMethod = HTTPMethod.Get, to action:(T) -> () -> Controller.Result) {
     route(pattern, via:via, closure: { request in action(T(request: request))() })
   }
 
-  public func route(pattern:String, via:HTTPMethod = HTTPMethod.Get, closure: (request:Request) -> Response) {
+  public func route(pattern:String, via:HTTPMethod = HTTPMethod.Get, closure: (request:Request) -> Controller.Result) {
     do {
       let regex = try NSRegularExpression(pattern: "^\(pattern)$", options: NSRegularExpressionOptions())
-      self.routingTable.append(Route(method: via, pattern: regex, handler: { (r:Request) -> () -> Response in { closure(request: r) } }))
+      self.routingTable.append(Route(method: via, pattern: regex, handler: { (r:Request) -> () -> Controller.Result in { closure(request: r) } }))
     } catch {
       NSLog("Error: could not compile pattern \(pattern)")
     }
@@ -61,7 +61,12 @@ public class Router {
   func dispatch(request:Request) -> Response {
     var response:Response
     if let route = routingTable.filter({ route in route.matches(request) }).first {
-      response = route.handler(request)()
+      let result = route.handler(request)()
+      if let r = result.success() {
+        response = r
+      } else {
+        response = Response(status: 500, body: "An error occurred")
+      }
     } else {
       response = Response(status: 404, body: "No route matches this action")
     }
