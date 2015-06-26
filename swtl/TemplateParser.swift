@@ -9,25 +9,37 @@
 import Foundation
 
 /**
- * SWTL parser class
+ * SWTL parser class.  
+ *
+ * SWTL takes a template file, and translates it into a Swift View class file which produces the
+ * contents of the template, including execution of embedded Swift expressions and control structures.
  */
 
 class Template {
   func parse(file:String) -> String? {
     let basename = file.lastPathComponent.stringByDeletingPathExtension
-    var result = templateStart(basename)
 
     do {
       let fileContent = try NSString(contentsOfFile: file, encoding: NSUTF8StringEncoding)
+      return parse(fileContent, basename: basename)
+    } catch let e {
+      print(e)
+      return nil
+    }
+  }
 
+  func parse(text:NSString, basename:String) -> String? {
+    var result = templateStart(basename)
+
+    do {
       let regex = try NSRegularExpression(pattern: "<%(=?)(((?!%>).)*)%>", options: .DotMatchesLineSeparators)
 
-      let matches:Array = regex.matchesInString(fileContent as String, options: .ReportProgress, range: NSMakeRange(0, fileContent.length))
+      let matches:Array = regex.matchesInString(text as String, options: .ReportProgress, range: NSMakeRange(0, text.length))
 
       var start = 0
       for i:NSTextCheckingResult in matches {
-        let prefix = fileContent.substringWithRange(NSMakeRange(start, i.rangeAtIndex(0).location - start))
-        let command = fileContent.substringWithRange(i.rangeAtIndex(2))
+        let prefix = text.substringWithRange(NSMakeRange(start, i.rangeAtIndex(0).location - start))
+        let command = text.substringWithRange(i.rangeAtIndex(2))
         let shouldPrint = i.rangeAtIndex(1).length == 1
 
         result += "    append(" + " \"" + sanitize(prefix) + "\")\n"
@@ -36,7 +48,7 @@ class Template {
         start = i.rangeAtIndex(0).location + i.rangeAtIndex(0).length
       }
 
-      let last = fileContent.substringWithRange(NSMakeRange(start, fileContent.length - start))
+      let last = text.substringWithRange(NSMakeRange(start, text.length - start))
       result += "  append(" + " \"" + sanitize(last) + "\")\n"
 
       result += templateEnd()

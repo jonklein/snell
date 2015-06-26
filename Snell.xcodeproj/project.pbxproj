@@ -60,6 +60,11 @@
 		48CBCB081B3CEB770028F2C6 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5D11B3593EE00C28CC3 /* View.swift */; };
 		48CBCB091B3CEB770028F2C6 /* Scope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866A94C1B35A57900BCF429 /* Scope.swift */; };
 		48CBCB0A1B3CEB9E0028F2C6 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FED8811B2E152A0063A175 /* libz.1.dylib */; };
+		48CBCB0B1B3D7B7B0028F2C6 /* TemplateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1CA1B33A5A900C28CC3 /* TemplateParser.swift */; };
+		48CBCB141B3D81080028F2C6 /* TestControl.swtl in Sources */ = {isa = PBXBuildFile; fileRef = 48CBCB0D1B3D7EF90028F2C6 /* TestControl.swtl */; };
+		48CBCB151B3D81080028F2C6 /* TestExpression.swtl in Sources */ = {isa = PBXBuildFile; fileRef = 48CBCB0E1B3D7EF90028F2C6 /* TestExpression.swtl */; };
+		48CBCB161B3D81080028F2C6 /* TestText.swtl in Sources */ = {isa = PBXBuildFile; fileRef = 48CBCB0F1B3D7EF90028F2C6 /* TestText.swtl */; };
+		48CBCB191B3D81B90028F2C6 /* TestScope.swtl in Sources */ = {isa = PBXBuildFile; fileRef = 48CBCB171B3D81AB0028F2C6 /* TestScope.swtl */; };
 		48FED8841B2E16200063A175 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FED8811B2E152A0063A175 /* libz.1.dylib */; };
 		A47B6336DE2221863FB0EB6D /* Pods_SnellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB5A99499D1EFB28731C805 /* Pods_SnellTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -72,6 +77,17 @@
 			fileType = pattern.proxy;
 			isEditable = 1;
 			name = "SWTL Files";
+			outputFiles = (
+				"$(INPUT_FILE_BASE).swtl.swift",
+			);
+			script = "${BUILT_PRODUCTS_DIR}/swtl ${INPUT_FILE_PATH}\nmv ${INPUT_FILE_PATH}.swift ${DERIVED_FILE_DIR}";
+		};
+		48CBCB131B3D7F0C0028F2C6 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.swtl";
+			fileType = pattern.proxy;
+			isEditable = 1;
 			outputFiles = (
 				"$(INPUT_FILE_BASE).swtl.swift",
 			);
@@ -116,7 +132,6 @@
 		4842F1B31B33A0BE00C28CC3 /* swtl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swtl; sourceTree = BUILT_PRODUCTS_DIR; };
 		4842F1B51B33A0BE00C28CC3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4842F1CA1B33A5A900C28CC3 /* TemplateParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateParser.swift; sourceTree = "<group>"; };
-		4842F1CD1B3581EB00C28CC3 /* test.swtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.swtl; sourceTree = "<group>"; };
 		4842F5BF1B35900900C28CC3 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		4842F5C01B35900900C28CC3 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		4842F5C11B35900900C28CC3 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
@@ -161,6 +176,10 @@
 		48922D601B362A510001E69D /* Demo.swtl */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; fileEncoding = 4; path = Demo.swtl; sourceTree = "<group>"; };
 		48CBCAFC1B3CEB660028F2C6 /* CGIAdapterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGIAdapterTests.swift; path = SnellServerTests/CGIAdapterTests.swift; sourceTree = SOURCE_ROOT; };
 		48CBCAFD1B3CEB660028F2C6 /* SwtlParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwtlParserTests.swift; path = SnellServerTests/SwtlParserTests.swift; sourceTree = SOURCE_ROOT; };
+		48CBCB0D1B3D7EF90028F2C6 /* TestControl.swtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestControl.swtl; sourceTree = "<group>"; };
+		48CBCB0E1B3D7EF90028F2C6 /* TestExpression.swtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestExpression.swtl; sourceTree = "<group>"; };
+		48CBCB0F1B3D7EF90028F2C6 /* TestText.swtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestText.swtl; sourceTree = "<group>"; };
+		48CBCB171B3D81AB0028F2C6 /* TestScope.swtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestScope.swtl; sourceTree = "<group>"; };
 		48E635CE1B2C94B500857520 /* Snell */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Snell; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FED8811B2E152A0063A175 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		4F11EA7C64B409495E22E8AA /* Pods-SnellTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnellTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnellTests/Pods-SnellTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -218,8 +237,8 @@
 		4842F1B41B33A0BE00C28CC3 /* swtl */ = {
 			isa = PBXGroup;
 			children = (
-				4842F1CD1B3581EB00C28CC3 /* test.swtl */,
 				4842F1CA1B33A5A900C28CC3 /* TemplateParser.swift */,
+				48CBCB0C1B3D7EF90028F2C6 /* tests */,
 				4842F1B51B33A0BE00C28CC3 /* main.swift */,
 			);
 			path = swtl;
@@ -346,6 +365,17 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		48CBCB0C1B3D7EF90028F2C6 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				48CBCB0D1B3D7EF90028F2C6 /* TestControl.swtl */,
+				48CBCB0E1B3D7EF90028F2C6 /* TestExpression.swtl */,
+				48CBCB0F1B3D7EF90028F2C6 /* TestText.swtl */,
+				48CBCB171B3D81AB0028F2C6 /* TestScope.swtl */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
 		48E635C51B2C94B400857520 = {
 			isa = PBXGroup;
 			children = (
@@ -393,6 +423,7 @@
 				10AAB740CCD90A820751B231 /* Copy Pods Resources */,
 			);
 			buildRules = (
+				48CBCB131B3D7F0C0028F2C6 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -560,9 +591,14 @@
 				489229FF1B360AAB0001E69D /* CGIAdapter.swift in Sources */,
 				48CBCB041B3CEB770028F2C6 /* Snell.swift in Sources */,
 				48CBCAFE1B3CEB660028F2C6 /* CGIAdapterTests.swift in Sources */,
+				48CBCB0B1B3D7B7B0028F2C6 /* TemplateParser.swift in Sources */,
 				48CBCB051B3CEB770028F2C6 /* Request.swift in Sources */,
 				48922A1D1B360AAB0001E69D /* GCDWebServerStreamedResponse.m in Sources */,
 				48922A1B1B360AAB0001E69D /* GCDWebServerFileResponse.m in Sources */,
+				48CBCB191B3D81B90028F2C6 /* TestScope.swtl in Sources */,
+				48CBCB141B3D81080028F2C6 /* TestControl.swtl in Sources */,
+				48CBCB151B3D81080028F2C6 /* TestExpression.swtl in Sources */,
+				48CBCB161B3D81080028F2C6 /* TestText.swtl in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -43,6 +43,8 @@ Part of the Snell project is `swtl` (pronounced "Swaddle"), a simple tool for is
 </html>
 ```
 
+To use `swtl` in your project, you'll need to setup a custom build rule in Xcode to process the `.swtl` file into a `.swift` file.  See the demo project for an example.
+
 ### Known Issues & Limitations
 
 - Most importantly -- Snell is just a proof of concept: *it is currently only built to handle simple GET requests*

@@ -4,7 +4,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>Gee, this is Snell.</h1>
+      <h1>Gee, this is Snell!</h1>
 
       <div>
         <p>Snell is a simple proof-of-concept web framework written in Swift.  Read more about <a href="http://github.com/jonklein/snell">Snell on GitHub</a></p>
