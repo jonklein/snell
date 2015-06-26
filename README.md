@@ -13,6 +13,8 @@ The design basis for Snell is largely Rails-inspired in some of the structure an
 
 ### Using Snell in a Project
 
+*Snell requires Swift 2.0.*
+
 To build a project with Snell, you can clone the demo project and modify files in the "SnellProject" group.  The files/directories of interest in the demo project are:
 
 - `main.swift`: where the server is started and the router is configured

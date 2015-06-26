@@ -9,15 +9,15 @@
 import Foundation
 import XCTest
 
-class CGIAdapterTests: XCTestCase {
-  override func setUp() {
-    super.setUp()
-  }
-
-  override func tearDown() {
-    super.tearDown()
-  }
-
-  func testShouldSetRequestMethod() {
-  }
-}
+//class CGIAdapterTests: XCTestCase {
+//  override func setUp() {
+//    super.setUp()
+//  }
+//
+//  override func tearDown() {
+//    super.tearDown()
+//  }
+//
+//  func testShouldSetRequestMethod() {
+//  }
+//}

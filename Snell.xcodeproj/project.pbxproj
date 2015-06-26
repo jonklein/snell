@@ -7,19 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		481CC3331B2D0ABA009D7895 /* CGIAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481CC3321B2D0ABA009D7895 /* CGIAdapterTests.swift */; };
 		4842F1B61B33A0BE00C28CC3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1B51B33A0BE00C28CC3 /* main.swift */; };
 		4842F1CB1B33A5A900C28CC3 /* TemplateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1CA1B33A5A900C28CC3 /* TemplateParser.swift */; };
-		4842F5C31B35900900C28CC3 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5BF1B35900900C28CC3 /* Controller.swift */; };
-		4842F5C41B35900900C28CC3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C01B35900900C28CC3 /* Request.swift */; };
-		4842F5C51B35900900C28CC3 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C11B35900900C28CC3 /* Response.swift */; };
-		4842F5C61B35900900C28CC3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C21B35900900C28CC3 /* Router.swift */; };
 		4842F5C91B35909D00C28CC3 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5BF1B35900900C28CC3 /* Controller.swift */; };
 		4842F5CA1B35909D00C28CC3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C01B35900900C28CC3 /* Request.swift */; };
 		4842F5CB1B35909D00C28CC3 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C11B35900900C28CC3 /* Response.swift */; };
 		4842F5CC1B35909D00C28CC3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C21B35900900C28CC3 /* Router.swift */; };
 		4842F5D21B3593EE00C28CC3 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5D11B3593EE00C28CC3 /* View.swift */; };
-		4866A94B1B35A0C200BCF429 /* SwtlParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866A9491B35A02E00BCF429 /* SwtlParserTests.swift */; };
 		4866A94D1B35A57900BCF429 /* Scope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866A94C1B35A57900BCF429 /* Scope.swift */; };
 		4866A94F1B35E57E00BCF429 /* Snell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866A94E1B35E57E00BCF429 /* Snell.swift */; };
 		489229FE1B360AAB0001E69D /* CGIAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489226971B360AA80001E69D /* CGIAdapter.swift */; };
@@ -56,7 +50,18 @@
 		48922D621B362A510001E69D /* DemoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48922D5D1B362A510001E69D /* DemoRouter.swift */; };
 		48922D631B362A510001E69D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48922D5E1B362A510001E69D /* main.swift */; };
 		48922D641B362AF90001E69D /* Demo.swtl in Sources */ = {isa = PBXBuildFile; fileRef = 48922D601B362A510001E69D /* Demo.swtl */; };
+		48CBCAFE1B3CEB660028F2C6 /* CGIAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CBCAFC1B3CEB660028F2C6 /* CGIAdapterTests.swift */; };
+		48CBCAFF1B3CEB660028F2C6 /* SwtlParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CBCAFD1B3CEB660028F2C6 /* SwtlParserTests.swift */; };
+		48CBCB031B3CEB770028F2C6 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5BF1B35900900C28CC3 /* Controller.swift */; };
+		48CBCB041B3CEB770028F2C6 /* Snell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866A94E1B35E57E00BCF429 /* Snell.swift */; };
+		48CBCB051B3CEB770028F2C6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C01B35900900C28CC3 /* Request.swift */; };
+		48CBCB061B3CEB770028F2C6 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C11B35900900C28CC3 /* Response.swift */; };
+		48CBCB071B3CEB770028F2C6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C21B35900900C28CC3 /* Router.swift */; };
+		48CBCB081B3CEB770028F2C6 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5D11B3593EE00C28CC3 /* View.swift */; };
+		48CBCB091B3CEB770028F2C6 /* Scope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866A94C1B35A57900BCF429 /* Scope.swift */; };
+		48CBCB0A1B3CEB9E0028F2C6 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FED8811B2E152A0063A175 /* libz.1.dylib */; };
 		48FED8841B2E16200063A175 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FED8811B2E152A0063A175 /* libz.1.dylib */; };
+		A47B6336DE2221863FB0EB6D /* Pods_SnellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB5A99499D1EFB28731C805 /* Pods_SnellTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -107,7 +112,6 @@
 
 /* Begin PBXFileReference section */
 		481CC3301B2D0ABA009D7895 /* SnellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		481CC3321B2D0ABA009D7895 /* CGIAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CGIAdapterTests.swift; path = SnellServerTests/CGIAdapterTests.swift; sourceTree = "<group>"; };
 		481CC3341B2D0ABA009D7895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = SnellServerTests/Info.plist; sourceTree = "<group>"; };
 		4842F1B31B33A0BE00C28CC3 /* swtl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swtl; sourceTree = BUILT_PRODUCTS_DIR; };
 		4842F1B51B33A0BE00C28CC3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -119,7 +123,6 @@
 		4842F5C21B35900900C28CC3 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		4842F5C71B35905800C28CC3 /* SnellServerBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SnellServerBridge.h; path = Snell/SnellServerBridge.h; sourceTree = SOURCE_ROOT; };
 		4842F5D11B3593EE00C28CC3 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		4866A9491B35A02E00BCF429 /* SwtlParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwtlParserTests.swift; path = SnellServerTests/SwtlParserTests.swift; sourceTree = SOURCE_ROOT; };
 		4866A94C1B35A57900BCF429 /* Scope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scope.swift; sourceTree = "<group>"; };
 		4866A94E1B35E57E00BCF429 /* Snell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snell.swift; sourceTree = "<group>"; };
 		489226971B360AA80001E69D /* CGIAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGIAdapter.swift; sourceTree = "<group>"; };
@@ -156,8 +159,12 @@
 		48922D5D1B362A510001E69D /* DemoRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoRouter.swift; sourceTree = "<group>"; };
 		48922D5E1B362A510001E69D /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		48922D601B362A510001E69D /* Demo.swtl */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; fileEncoding = 4; path = Demo.swtl; sourceTree = "<group>"; };
+		48CBCAFC1B3CEB660028F2C6 /* CGIAdapterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGIAdapterTests.swift; path = SnellServerTests/CGIAdapterTests.swift; sourceTree = SOURCE_ROOT; };
+		48CBCAFD1B3CEB660028F2C6 /* SwtlParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwtlParserTests.swift; path = SnellServerTests/SwtlParserTests.swift; sourceTree = SOURCE_ROOT; };
 		48E635CE1B2C94B500857520 /* Snell */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Snell; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FED8811B2E152A0063A175 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		4F11EA7C64B409495E22E8AA /* Pods-SnellTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnellTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnellTests/Pods-SnellTests.release.xcconfig"; sourceTree = "<group>"; };
+		AEB5A99499D1EFB28731C805 /* Pods_SnellTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnellTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +172,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48CBCB0A1B3CEB9E0028F2C6 /* libz.1.dylib in Frameworks */,
+				A47B6336DE2221863FB0EB6D /* Pods_SnellTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				48FED8811B2E152A0063A175 /* libz.1.dylib */,
+				AEB5A99499D1EFB28731C805 /* Pods_SnellTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -197,8 +207,8 @@
 		481CC3311B2D0ABA009D7895 /* SnellServerTests */ = {
 			isa = PBXGroup;
 			children = (
-				481CC3321B2D0ABA009D7895 /* CGIAdapterTests.swift */,
-				4866A9491B35A02E00BCF429 /* SwtlParserTests.swift */,
+				48CBCAFC1B3CEB660028F2C6 /* CGIAdapterTests.swift */,
+				48CBCAFD1B3CEB660028F2C6 /* SwtlParserTests.swift */,
 				481CC3341B2D0ABA009D7895 /* Info.plist */,
 			);
 			name = SnellServerTests;
@@ -346,6 +356,7 @@
 				481CC3311B2D0ABA009D7895 /* SnellServerTests */,
 				48E635CF1B2C94B500857520 /* Products */,
 				470C3D4B8A9F84A704E9C960 /* Frameworks */,
+				65C0B079DB1D54B84812B360 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -359,6 +370,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		65C0B079DB1D54B84812B360 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F11EA7C64B409495E22E8AA /* Pods-SnellTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -366,9 +385,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 481CC3371B2D0ABA009D7895 /* Build configuration list for PBXNativeTarget "SnellTests" */;
 			buildPhases = (
+				00B8573E6A0E865110846809 /* Check Pods Manifest.lock */,
 				481CC32C1B2D0ABA009D7895 /* Sources */,
 				481CC32D1B2D0ABA009D7895 /* Frameworks */,
 				481CC32E1B2D0ABA009D7895 /* Resources */,
+				0756051B9DF1521B286337FE /* Embed Pods Frameworks */,
+				10AAB740CCD90A820751B231 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -464,31 +486,82 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00B8573E6A0E865110846809 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0756051B9DF1521B286337FE /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnellTests/Pods-SnellTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10AAB740CCD90A820751B231 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnellTests/Pods-SnellTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		481CC32C1B2D0ABA009D7895 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48CBCB071B3CEB770028F2C6 /* Router.swift in Sources */,
 				48922A0F1B360AAB0001E69D /* GCDWebServerDataRequest.m in Sources */,
 				48922A091B360AAB0001E69D /* GCDWebServerFunctions.m in Sources */,
-				4866A94B1B35A0C200BCF429 /* SwtlParserTests.swift in Sources */,
-				4842F5C31B35900900C28CC3 /* Controller.swift in Sources */,
 				48922A071B360AAB0001E69D /* GCDWebServerConnection.m in Sources */,
 				48922A151B360AAB0001E69D /* GCDWebServerURLEncodedFormRequest.m in Sources */,
 				48922A0B1B360AAB0001E69D /* GCDWebServerRequest.m in Sources */,
+				48CBCAFF1B3CEB660028F2C6 /* SwtlParserTests.swift in Sources */,
 				48922A0D1B360AAB0001E69D /* GCDWebServerResponse.m in Sources */,
 				48922A191B360AAB0001E69D /* GCDWebServerErrorResponse.m in Sources */,
+				48CBCB081B3CEB770028F2C6 /* View.swift in Sources */,
 				48922A171B360AAB0001E69D /* GCDWebServerDataResponse.m in Sources */,
+				48CBCB031B3CEB770028F2C6 /* Controller.swift in Sources */,
 				48922D521B360AAB0001E69D /* GCDWebServerAdapter.swift in Sources */,
-				4842F5C41B35900900C28CC3 /* Request.swift in Sources */,
-				481CC3331B2D0ABA009D7895 /* CGIAdapterTests.swift in Sources */,
 				48922A051B360AAB0001E69D /* GCDWebServer.m in Sources */,
 				48922A131B360AAB0001E69D /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				48CBCB061B3CEB770028F2C6 /* Response.swift in Sources */,
+				48CBCB091B3CEB770028F2C6 /* Scope.swift in Sources */,
 				48922A111B360AAB0001E69D /* GCDWebServerFileRequest.m in Sources */,
 				489229FF1B360AAB0001E69D /* CGIAdapter.swift in Sources */,
-				4842F5C61B35900900C28CC3 /* Router.swift in Sources */,
+				48CBCB041B3CEB770028F2C6 /* Snell.swift in Sources */,
+				48CBCAFE1B3CEB660028F2C6 /* CGIAdapterTests.swift in Sources */,
+				48CBCB051B3CEB770028F2C6 /* Request.swift in Sources */,
 				48922A1D1B360AAB0001E69D /* GCDWebServerStreamedResponse.m in Sources */,
-				4842F5C51B35900900C28CC3 /* Response.swift in Sources */,
 				48922A1B1B360AAB0001E69D /* GCDWebServerFileResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,9 +621,10 @@
 /* Begin XCBuildConfiguration section */
 		481CC3361B2D0ABA009D7895 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F11EA7C64B409495E22E8AA /* Pods-SnellTests.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SwiftServerTests/Info.plist;
+				INFOPLIST_FILE = SnellServerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.artificial.SwiftServerTests;
 				PRODUCT_NAME = SnellTests;
@@ -596,6 +670,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = Snell/SnellServerBridge.h;
 			};
 			name = Release;
 		};
