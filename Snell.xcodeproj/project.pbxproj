@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4842F1B61B33A0BE00C28CC3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1B51B33A0BE00C28CC3 /* main.swift */; };
-		4842F1CB1B33A5A900C28CC3 /* TemplateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1CA1B33A5A900C28CC3 /* TemplateParser.swift */; };
+		4842F1CB1B33A5A900C28CC3 /* SwtlTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1CA1B33A5A900C28CC3 /* SwtlTemplate.swift */; };
 		4842F5C91B35909D00C28CC3 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5BF1B35900900C28CC3 /* Controller.swift */; };
 		4842F5CA1B35909D00C28CC3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C01B35900900C28CC3 /* Request.swift */; };
 		4842F5CB1B35909D00C28CC3 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C11B35900900C28CC3 /* Response.swift */; };
@@ -50,8 +50,8 @@
 		48922D621B362A510001E69D /* DemoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48922D5D1B362A510001E69D /* DemoRouter.swift */; };
 		48922D631B362A510001E69D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48922D5E1B362A510001E69D /* main.swift */; };
 		48922D641B362AF90001E69D /* Demo.swtl in Sources */ = {isa = PBXBuildFile; fileRef = 48922D601B362A510001E69D /* Demo.swtl */; };
-		48CBCAFE1B3CEB660028F2C6 /* CGIAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CBCAFC1B3CEB660028F2C6 /* CGIAdapterTests.swift */; };
-		48CBCAFF1B3CEB660028F2C6 /* SwtlParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CBCAFD1B3CEB660028F2C6 /* SwtlParserTests.swift */; };
+		48CBCAFE1B3CEB660028F2C6 /* CGIAdapterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CBCAFC1B3CEB660028F2C6 /* CGIAdapterSpec.swift */; };
+		48CBCAFF1B3CEB660028F2C6 /* SwtlTemplateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CBCAFD1B3CEB660028F2C6 /* SwtlTemplateSpec.swift */; };
 		48CBCB031B3CEB770028F2C6 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5BF1B35900900C28CC3 /* Controller.swift */; };
 		48CBCB041B3CEB770028F2C6 /* Snell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866A94E1B35E57E00BCF429 /* Snell.swift */; };
 		48CBCB051B3CEB770028F2C6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C01B35900900C28CC3 /* Request.swift */; };
@@ -60,7 +60,7 @@
 		48CBCB081B3CEB770028F2C6 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5D11B3593EE00C28CC3 /* View.swift */; };
 		48CBCB091B3CEB770028F2C6 /* Scope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866A94C1B35A57900BCF429 /* Scope.swift */; };
 		48CBCB0A1B3CEB9E0028F2C6 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FED8811B2E152A0063A175 /* libz.1.dylib */; };
-		48CBCB0B1B3D7B7B0028F2C6 /* TemplateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1CA1B33A5A900C28CC3 /* TemplateParser.swift */; };
+		48CBCB0B1B3D7B7B0028F2C6 /* SwtlTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1CA1B33A5A900C28CC3 /* SwtlTemplate.swift */; };
 		48CBCB141B3D81080028F2C6 /* TestControl.swtl in Sources */ = {isa = PBXBuildFile; fileRef = 48CBCB0D1B3D7EF90028F2C6 /* TestControl.swtl */; };
 		48CBCB151B3D81080028F2C6 /* TestExpression.swtl in Sources */ = {isa = PBXBuildFile; fileRef = 48CBCB0E1B3D7EF90028F2C6 /* TestExpression.swtl */; };
 		48CBCB161B3D81080028F2C6 /* TestText.swtl in Sources */ = {isa = PBXBuildFile; fileRef = 48CBCB0F1B3D7EF90028F2C6 /* TestText.swtl */; };
@@ -131,7 +131,7 @@
 		481CC3341B2D0ABA009D7895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = SnellServerTests/Info.plist; sourceTree = "<group>"; };
 		4842F1B31B33A0BE00C28CC3 /* swtl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swtl; sourceTree = BUILT_PRODUCTS_DIR; };
 		4842F1B51B33A0BE00C28CC3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		4842F1CA1B33A5A900C28CC3 /* TemplateParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateParser.swift; sourceTree = "<group>"; };
+		4842F1CA1B33A5A900C28CC3 /* SwtlTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwtlTemplate.swift; sourceTree = "<group>"; };
 		4842F5BF1B35900900C28CC3 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		4842F5C01B35900900C28CC3 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		4842F5C11B35900900C28CC3 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
@@ -174,8 +174,8 @@
 		48922D5D1B362A510001E69D /* DemoRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoRouter.swift; sourceTree = "<group>"; };
 		48922D5E1B362A510001E69D /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		48922D601B362A510001E69D /* Demo.swtl */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; fileEncoding = 4; path = Demo.swtl; sourceTree = "<group>"; };
-		48CBCAFC1B3CEB660028F2C6 /* CGIAdapterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGIAdapterTests.swift; path = SnellServerTests/CGIAdapterTests.swift; sourceTree = SOURCE_ROOT; };
-		48CBCAFD1B3CEB660028F2C6 /* SwtlParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwtlParserTests.swift; path = SnellServerTests/SwtlParserTests.swift; sourceTree = SOURCE_ROOT; };
+		48CBCAFC1B3CEB660028F2C6 /* CGIAdapterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGIAdapterSpec.swift; path = SnellServerTests/CGIAdapterSpec.swift; sourceTree = SOURCE_ROOT; };
+		48CBCAFD1B3CEB660028F2C6 /* SwtlTemplateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwtlTemplateSpec.swift; path = SnellServerTests/SwtlTemplateSpec.swift; sourceTree = SOURCE_ROOT; };
 		48CBCB0D1B3D7EF90028F2C6 /* TestControl.swtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestControl.swtl; sourceTree = "<group>"; };
 		48CBCB0E1B3D7EF90028F2C6 /* TestExpression.swtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestExpression.swtl; sourceTree = "<group>"; };
 		48CBCB0F1B3D7EF90028F2C6 /* TestText.swtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestText.swtl; sourceTree = "<group>"; };
@@ -226,8 +226,8 @@
 		481CC3311B2D0ABA009D7895 /* SnellServerTests */ = {
 			isa = PBXGroup;
 			children = (
-				48CBCAFC1B3CEB660028F2C6 /* CGIAdapterTests.swift */,
-				48CBCAFD1B3CEB660028F2C6 /* SwtlParserTests.swift */,
+				48CBCAFC1B3CEB660028F2C6 /* CGIAdapterSpec.swift */,
+				48CBCAFD1B3CEB660028F2C6 /* SwtlTemplateSpec.swift */,
 				481CC3341B2D0ABA009D7895 /* Info.plist */,
 			);
 			name = SnellServerTests;
@@ -237,7 +237,7 @@
 		4842F1B41B33A0BE00C28CC3 /* swtl */ = {
 			isa = PBXGroup;
 			children = (
-				4842F1CA1B33A5A900C28CC3 /* TemplateParser.swift */,
+				4842F1CA1B33A5A900C28CC3 /* SwtlTemplate.swift */,
 				48CBCB0C1B3D7EF90028F2C6 /* tests */,
 				4842F1B51B33A0BE00C28CC3 /* main.swift */,
 			);
@@ -576,7 +576,7 @@
 				48922A071B360AAB0001E69D /* GCDWebServerConnection.m in Sources */,
 				48922A151B360AAB0001E69D /* GCDWebServerURLEncodedFormRequest.m in Sources */,
 				48922A0B1B360AAB0001E69D /* GCDWebServerRequest.m in Sources */,
-				48CBCAFF1B3CEB660028F2C6 /* SwtlParserTests.swift in Sources */,
+				48CBCAFF1B3CEB660028F2C6 /* SwtlTemplateSpec.swift in Sources */,
 				48922A0D1B360AAB0001E69D /* GCDWebServerResponse.m in Sources */,
 				48922A191B360AAB0001E69D /* GCDWebServerErrorResponse.m in Sources */,
 				48CBCB081B3CEB770028F2C6 /* View.swift in Sources */,
@@ -590,8 +590,8 @@
 				48922A111B360AAB0001E69D /* GCDWebServerFileRequest.m in Sources */,
 				489229FF1B360AAB0001E69D /* CGIAdapter.swift in Sources */,
 				48CBCB041B3CEB770028F2C6 /* Snell.swift in Sources */,
-				48CBCAFE1B3CEB660028F2C6 /* CGIAdapterTests.swift in Sources */,
-				48CBCB0B1B3D7B7B0028F2C6 /* TemplateParser.swift in Sources */,
+				48CBCAFE1B3CEB660028F2C6 /* CGIAdapterSpec.swift in Sources */,
+				48CBCB0B1B3D7B7B0028F2C6 /* SwtlTemplate.swift in Sources */,
 				48CBCB051B3CEB770028F2C6 /* Request.swift in Sources */,
 				48922A1D1B360AAB0001E69D /* GCDWebServerStreamedResponse.m in Sources */,
 				48922A1B1B360AAB0001E69D /* GCDWebServerFileResponse.m in Sources */,
@@ -606,7 +606,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4842F1CB1B33A5A900C28CC3 /* TemplateParser.swift in Sources */,
+				4842F1CB1B33A5A900C28CC3 /* SwtlTemplate.swift in Sources */,
 				4842F1B61B33A0BE00C28CC3 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

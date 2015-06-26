@@ -14,6 +14,6 @@ if Process.arguments.count < 2 {
 }
 
 let output = Process.arguments[1] + ".swift"
-let code = Template().parse(Process.arguments[1])
+let code = SwtlTemplate().parse(Process.arguments[1])
 
 try code?.writeToFile(output, atomically: true, encoding: NSUTF8StringEncoding)

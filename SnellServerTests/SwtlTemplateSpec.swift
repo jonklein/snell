@@ -1,5 +1,5 @@
 //
-//  SwtlParserTests.swift
+//  SwtlTemplateSpec.swift
 //  Snell
 //
 //  Created by Jonathan Klein on 6/20/15.
@@ -9,7 +9,7 @@
 import Quick
 import Nimble
 
-class SwtlParserSpec: QuickSpec {
+class SwtlTemplateSpec: QuickSpec {
   override func spec() {
     describe("swtl template functionality") {
       // Really rough code level template tests
@@ -17,7 +17,7 @@ class SwtlParserSpec: QuickSpec {
       var result:String!
 
       beforeEach {
-        result = Template().parse("testing <%= 3 + 4 % %>", basename: "SwtlSpec")!
+        result = SwtlTemplate().parse("testing <%= 3 + 4 % %>", basename: "SwtlSpec")!
       }
 
       it("should generate a class with the specified classname") {

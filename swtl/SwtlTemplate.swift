@@ -15,7 +15,7 @@ import Foundation
  * contents of the template, including execution of embedded Swift expressions and control structures.
  */
 
-class Template {
+class SwtlTemplate {
   func parse(file:String) -> String? {
     let basename = file.lastPathComponent.stringByDeletingPathExtension
 
