@@ -11,7 +11,7 @@ import Quick
 import Nimble
 import AppKit
 
-class TableOfContentsSpec: QuickSpec {
+class CGIAdapterSpec: QuickSpec {
   override func spec() {
     describe("CGI Requests") {
       it("should set request method") {
