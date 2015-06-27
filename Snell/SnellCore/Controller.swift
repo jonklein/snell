@@ -9,18 +9,16 @@
 import Foundation
 
 public class Controller {
+  public typealias Result = Failable<Response>
+  
   public var request:Request
 
   required public init(request:Request) {
     self.request = request
   }
 
-  public func run() -> Response {
-    return Response(status: 200, body: "Hello, world")
-  }
-
-  public func render(type:View.Type, status:Int) -> Response {
-    return Response(status: status, body: type().render(scope()))
+  public func render(type:View.Type, status:Int) -> Result {
+    return Result(value: Response(status: status, body: type().render(scope())))
   }
 
   public func scope() -> Scope {

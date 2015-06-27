@@ -21,11 +21,7 @@ public class Snell {
 
   public func startCGI() {
     let CGI = CGIAdapter()
-
-    if let response = router.dispatch(CGI.request()!) {
-      CGI.render(response)
-    } else {
-      CGI.render(Response(status: 500, body: "An internal error occured: action did not return a response"))
-    }
+    let response = router.dispatch(CGI.request()!)
+    CGI.render(response)
   }
 }
