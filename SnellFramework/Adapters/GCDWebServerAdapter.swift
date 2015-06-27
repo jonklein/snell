@@ -18,7 +18,7 @@ public class GCDWebServerAdapter {
     self.router = router
 
     for method in ["GET", "POST", "PUT", "DELETE", "PATCH"] {
-      webServer.addDefaultHandlerForMethod(method, requestClass: GCDWebServerRequest.self, processBlock: { gdcRequest in
+      webServer.addDefaultHandlerForMethod(method, requestClass: GCDWebServerURLEncodedFormRequest.self, processBlock: { gdcRequest in
         return self.response(self.handleRequest(gdcRequest))
       })
     }
@@ -30,10 +30,17 @@ public class GCDWebServerAdapter {
   }
 
   public func handleRequest(GDCRequest:GCDWebServerRequest) -> Response {
-    let params = GDCRequest.query.keys.reduce([:], combine: { (var dict, key) -> [String:String] in
+    var params = GDCRequest.query.keys.reduce([:], combine: { (var dict, key) -> [String:String] in
       dict[key as! String] = GDCRequest.query[key] as? String
       return dict
     })
+
+    if let postParams = (GDCRequest as? GCDWebServerURLEncodedFormRequest)?.arguments {
+      params = postParams.keys.reduce(params, combine: { (var dict, key) -> [String:String] in
+        dict[key as! String] = postParams[key] as? String
+        return dict
+      })
+    }
 
     let request = Request(params: params, method: GDCRequest.method, path: GDCRequest.path)
 

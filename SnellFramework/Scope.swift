@@ -11,14 +11,15 @@ import Foundation
 public class Scope {
   public var environment:[String:String]
   public var request:Request
-  public var values:[String:AnyObject] = [:]
+  public var locals:[String:AnyObject]
 
-  public init(request:Request, environment:[String:String]) {
+  public init(request:Request, environment:[String:String], locals:[String:AnyObject] = [:]) {
     self.environment = environment
     self.request = request
+    self.locals = locals
   }
 
   public func set(key:String, value: String) {
-    self.values[key] = value
+    self.locals[key] = value
   }
 }

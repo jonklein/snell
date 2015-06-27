@@ -43,7 +43,7 @@ class SwtlTemplate {
         let shouldPrint = i.rangeAtIndex(1).length == 1
 
         result += "    append(" + " \"" + sanitize(prefix) + "\")\n"
-        result += "    " + (shouldPrint ? "append(\(command))" : command) + "\n"
+        result += "    " + (shouldPrint ? "append(\(command) ?? \"\")" : command) + "\n"
 
         start = i.rangeAtIndex(0).location + i.rangeAtIndex(0).length
       }

@@ -242,6 +242,7 @@
 		481CC3311B2D0ABA009D7895 /* SnellServerTests */ = {
 			isa = PBXGroup;
 			children = (
+				48A1D9191B3EE35800DB56A7 /* SnormTests.swift */,
 				48CBCAFC1B3CEB660028F2C6 /* CGIAdapterSpec.swift */,
 				48CBCAFD1B3CEB660028F2C6 /* SwtlTemplateSpec.swift */,
 				481CC3341B2D0ABA009D7895 /* Info.plist */,
@@ -298,6 +299,7 @@
 		48922D5B1B362A510001E69D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				48A1D91D1B3F3D9C00DB56A7 /* CatsController.swift */,
 				48922D5C1B362A510001E69D /* DemoController.swift */,
 			);
 			name = Controllers;
@@ -308,6 +310,9 @@
 			isa = PBXGroup;
 			children = (
 				48922D601B362A510001E69D /* Demo.swtl */,
+				48A1D9211B3F3F3000DB56A7 /* CatsCreate.swtl */,
+				48A1D9221B3F3F3000DB56A7 /* CatsIndex.swtl */,
+				48A1D9231B3F3F3000DB56A7 /* CatsNew.swtl */,
 			);
 			name = Views;
 			path = ../../SnellDemo/Views;
@@ -330,6 +335,23 @@
 				48A1D94C1B40598600DB56A7 /* Info.plist */,
 			);
 			path = SnellFramework;
+			sourceTree = "<group>";
+		};
+		48A1D9161B3ECED200DB56A7 /* ORM */ = {
+			isa = PBXGroup;
+			children = (
+				48A1D9171B3ECF2400DB56A7 /* Snorm.swift */,
+			);
+			name = ORM;
+			sourceTree = "<group>";
+		};
+		48A1D91C1B3F3D4F00DB56A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				48A1D91F1B3F3DB600DB56A7 /* Cat.swift */,
+			);
+			name = Models;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		48CBCB0C1B3D7EF90028F2C6 /* tests */ = {
@@ -580,6 +602,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48A1D9291B3F401A00DB56A7 /* CatsCreate.swtl in Resources */,
+				48A1D92A1B3F401A00DB56A7 /* CatsIndex.swtl in Resources */,
+				48A1D92B1B3F401A00DB56A7 /* CatsNew.swtl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,6 +691,8 @@
 				48CBCB051B3CEB770028F2C6 /* Request.swift in Sources */,
 				48CBCB191B3D81B90028F2C6 /* TestScope.swtl in Sources */,
 				48CBCB141B3D81080028F2C6 /* TestControl.swtl in Sources */,
+				48A1D9281B3F401A00DB56A7 /* Demo.swtl in Sources */,
+				48A1D91A1B3EE35800DB56A7 /* SnormTests.swift in Sources */,
 				48CBCB151B3D81080028F2C6 /* TestExpression.swtl in Sources */,
 				48CBCB161B3D81080028F2C6 /* TestText.swtl in Sources */,
 				48E4CE051B40630A003C22C7 /* CGIAdapter.swift in Sources */,

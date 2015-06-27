@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Create a cat.</h1>
+      <%= scope.locals["flash"] %>
+      <form action="/cats" method="post">
+        Cat Name: <input type="text" name="name" />
+        Cat Color: <input type="text" name="color" />
+        <input type="submit" value="Submit">
+      </form>
+      <a href="/cats">Return to cat list.</a>
+    </div>
+  </body>
+</html>
