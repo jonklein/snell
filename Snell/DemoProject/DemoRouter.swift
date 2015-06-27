@@ -18,14 +18,14 @@ class DemoRouter : Router {
 
     route("/", to: DemoController.index)
 
-    // Route showing how to do a post 
+    // Route showing how to use other HTTP verbs
     
-    route("/", via:HTTPMethod.Post, to: DemoController.create)
-    
+    route("/", via:HTTPMethod.Put, to: DemoController.update)
+
     // Route "/closure" to a demo of defining an action as a closure, rather than a controller
 
     route("/closure") { request in
-      Controller.Result(value: Response(status: 200, body: "<h1>An action in a closure...</h1>"))
+      self.async(Response(status: 200, body: "<h1>An action in a closure...</h1>"))
     }
   }
 }

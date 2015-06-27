@@ -6,6 +6,8 @@
 //  Copyright © 2015 artificial. All rights reserved.
 //
 
+import PromiseKit
+
 public class Response {
   var status:Int
   var body:String
@@ -16,3 +18,5 @@ public class Response {
     self.status = status
   }
 }
+
+public typealias AsyncResponse = Promise<Response>

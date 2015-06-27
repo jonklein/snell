@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		078217C743876BB68C2F95D4 /* Pods_Snell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA26905E57871CEF7D0075FE /* Pods_Snell.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		4842F1B61B33A0BE00C28CC3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1B51B33A0BE00C28CC3 /* main.swift */; };
 		4842F1CB1B33A5A900C28CC3 /* SwtlTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1CA1B33A5A900C28CC3 /* SwtlTemplate.swift */; };
 		4842F5C91B35909D00C28CC3 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5BF1B35900900C28CC3 /* Controller.swift */; };
@@ -69,6 +70,7 @@
 		A47B6336DE2221863FB0EB6D /* Pods_SnellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB5A99499D1EFB28731C805 /* Pods_SnellTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C94D07471B3E4C1C00AF49DA /* Failable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D07461B3E4C1C00AF49DA /* Failable.swift */; };
 		C94D07481B3E4C1C00AF49DA /* Failable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D07461B3E4C1C00AF49DA /* Failable.swift */; };
+		C94D074A1B3E6F5C00AF49DA /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D07491B3E6F5C00AF49DA /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -187,6 +189,9 @@
 		4F11EA7C64B409495E22E8AA /* Pods-SnellTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnellTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnellTests/Pods-SnellTests.release.xcconfig"; sourceTree = "<group>"; };
 		AEB5A99499D1EFB28731C805 /* Pods_SnellTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnellTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94D07461B3E4C1C00AF49DA /* Failable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Failable.swift; sourceTree = "<group>"; };
+		C94D07491B3E6F5C00AF49DA /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		E63B6516C6805A424149F68F /* Pods-Snell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snell.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snell/Pods-Snell.release.xcconfig"; sourceTree = "<group>"; };
+		EA26905E57871CEF7D0075FE /* Pods_Snell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48FED8841B2E16200063A175 /* libz.1.dylib in Frameworks */,
+				078217C743876BB68C2F95D4 /* Pods_Snell.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +228,7 @@
 			children = (
 				48FED8811B2E152A0063A175 /* libz.1.dylib */,
 				AEB5A99499D1EFB28731C805 /* Pods_SnellTests.framework */,
+				EA26905E57871CEF7D0075FE /* Pods_Snell.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -259,6 +266,7 @@
 				4842F5D11B3593EE00C28CC3 /* View.swift */,
 				4866A94C1B35A57900BCF429 /* Scope.swift */,
 				489226961B360AA80001E69D /* Adapters */,
+				C94D07491B3E6F5C00AF49DA /* Repository.swift */,
 			);
 			name = SnellCore;
 			path = Snell/SnellCore;
@@ -408,6 +416,7 @@
 			isa = PBXGroup;
 			children = (
 				4F11EA7C64B409495E22E8AA /* Pods-SnellTests.release.xcconfig */,
+				E63B6516C6805A424149F68F /* Pods-Snell.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -457,9 +466,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48E635D51B2C94B500857520 /* Build configuration list for PBXNativeTarget "Snell" */;
 			buildPhases = (
+				1893D35A47190B67F8BEC4E3 /* Check Pods Manifest.lock */,
 				48E635CA1B2C94B400857520 /* Sources */,
 				48E635CB1B2C94B400857520 /* Frameworks */,
 				48E635CC1B2C94B400857520 /* CopyFiles */,
+				96BB5EFFE5D08066885017A5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 				4842F2081B35899900C28CC3 /* PBXBuildRule */,
@@ -567,6 +578,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnellTests/Pods-SnellTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		1893D35A47190B67F8BEC4E3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		96BB5EFFE5D08066885017A5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Snell/Pods-Snell-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -627,6 +668,7 @@
 				48922A061B360AAB0001E69D /* GCDWebServerConnection.m in Sources */,
 				48922D621B362A510001E69D /* DemoRouter.swift in Sources */,
 				48922D611B362A510001E69D /* DemoController.swift in Sources */,
+				C94D074A1B3E6F5C00AF49DA /* Repository.swift in Sources */,
 				48922D631B362A510001E69D /* main.swift in Sources */,
 				4842F5CB1B35909D00C28CC3 /* Response.swift in Sources */,
 				48922A0C1B360AAB0001E69D /* GCDWebServerResponse.m in Sources */,
@@ -718,6 +760,7 @@
 		};
 		48E635D71B2C94B500857520 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E63B6516C6805A424149F68F /* Pods-Snell.release.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = Snell/SnellServerBridge.h;

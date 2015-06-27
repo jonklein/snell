@@ -1,15 +1,20 @@
 PODS:
   - Nimble (2.0.0-rc.1)
+  - PromiseKit/CorePromise (2.0.3)
   - Quick (0.4.0)
 
 DEPENDENCIES:
   - Nimble (from `https://github.com/Quick/Nimble.git`, branch `swift-2.0`)
+  - PromiseKit/CorePromise (from `https://github.com/mxcl/PromiseKit`, branch `swift-2.0`)
   - Quick (from `https://github.com/Quick/Quick.git`, branch `swift-2.0`)
 
 EXTERNAL SOURCES:
   Nimble:
     :branch: swift-2.0
     :git: https://github.com/Quick/Nimble.git
+  PromiseKit:
+    :branch: swift-2.0
+    :git: https://github.com/mxcl/PromiseKit
   Quick:
     :branch: swift-2.0
     :git: https://github.com/Quick/Quick.git
@@ -18,12 +23,16 @@ CHECKOUT OPTIONS:
   Nimble:
     :commit: 463b70b9d4c0d4d9879fb35e24b2d2109b648eb8
     :git: https://github.com/Quick/Nimble.git
+  PromiseKit:
+    :commit: bc3471f95dde68244f758487e3e4c1c7c1816c27
+    :git: https://github.com/mxcl/PromiseKit
   Quick:
     :commit: 4609b61c8bd52ec7a4438888c7f6cb9b630537b4
     :git: https://github.com/Quick/Quick.git
 
 SPEC CHECKSUMS:
   Nimble: 9572458605e65c9fc5a56754ab19a970f6ab5a88
+  PromiseKit: 2f0b2d5bbf1277d72991ba899e194f69703c0fdc
   Quick: 5f29ead769ddfa8d3ff7a75dbcb98d838b52f53c
 
 COCOAPODS: 0.37.2
