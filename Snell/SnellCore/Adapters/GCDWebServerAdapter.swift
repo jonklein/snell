@@ -16,19 +16,29 @@ public class GCDWebServerAdapter {
   public init(router:Router, port:Int = 3000) {
     self.port = port
     self.router = router
-
-    for method in ["GET", "POST", "PUT", "DELETE", "PATCH"] {
-      webServer.addDefaultHandlerForMethod(method, requestClass: GCDWebServerRequest.self, processBlock: { gdcRequest in
-        return self.response(self.handleRequest(gdcRequest))
-      })
-    }
   }
 
   public func run() {
+    setUpRequestHandlers()
     webServer.runWithPort(3000, bonjourName: "")
   }
 
-  public func handleRequest(GDCRequest:GCDWebServerRequest) -> Response {
+  func setUpRequestHandlers() {
+    for method in ["GET", "POST", "PUT", "DELETE", "PATCH"] {
+      webServer.addDefaultHandlerForMethod(method, requestClass: GCDWebServerRequest.self, asyncProcessBlock: {
+        gdcRequest, continuation in
+        // Hack for swift compiler. Moves the reference into the same scope as the promise so that
+        // the then block can capture it. No fucking clue.
+        let cont = continuation
+        
+        self.handleRequest(gdcRequest)
+          .then { dispatcherResponse in cont(self.response(dispatcherResponse))
+        }
+      })
+    }
+  }
+  
+  func handleRequest(GDCRequest:GCDWebServerRequest) -> AsyncResponse {
     let params = GDCRequest.query.keys.reduce([:], combine: { (var dict, key) -> [String:String] in
       dict[key as! String] = GDCRequest.query[key] as? String
       return dict
@@ -39,7 +49,7 @@ public class GCDWebServerAdapter {
     return router.dispatch(request)
   }
 
-  public func response(response:Response) -> GCDWebServerDataResponse {
+  func response(response:Response) -> GCDWebServerDataResponse {
     return GCDWebServerDataResponse(HTML:response.body)
   }
 }

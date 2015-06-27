@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import PromiseKit
 
 public class Router {
   
-  typealias Handler = (Request) -> () -> Controller.Result
+  typealias Handler = (Request) -> () -> AsyncResponse
   
   public enum HTTPMethod : String {
     case Get     = "GET"
@@ -45,33 +46,38 @@ public class Router {
   public init() {
   }
   
-  public func route<T: Controller>(pattern:String, via:HTTPMethod = HTTPMethod.Get, to action:(T) -> () -> Controller.Result) {
+  public func route<T: Controller>(pattern:String, via:HTTPMethod = HTTPMethod.Get, to action:(T) -> () -> AsyncResponse) {
     route(pattern, via:via, closure: { request in action(T(request: request))() })
   }
 
-  public func route(pattern:String, via:HTTPMethod = HTTPMethod.Get, closure: (request:Request) -> Controller.Result) {
+  public func route(pattern:String, via:HTTPMethod = HTTPMethod.Get, closure: (request:Request) -> AsyncResponse) {
     do {
       let regex = try NSRegularExpression(pattern: "^\(pattern)$", options: NSRegularExpressionOptions())
-      self.routingTable.append(Route(method: via, pattern: regex, handler: { (r:Request) -> () -> Controller.Result in { closure(request: r) } }))
+      self.routingTable.append(Route(method: via, pattern: regex, handler: { (r:Request) -> () -> AsyncResponse in { closure(request: r) } }))
     } catch {
       NSLog("Error: could not compile pattern \(pattern)")
     }
   }
 
-  func dispatch(request:Request) -> Response {
-    var response:Response
-    if let route = routingTable.filter({ route in route.matches(request) }).first {
-      let result = route.handler(request)()
-      if let r = result.success() {
-        response = r
-      } else {
-        response = Response(status: 500, body: "An error occurred")
+  func dispatch(request:Request) -> AsyncResponse {
+    let route = routingTable.filter({ route in route.matches(request) }).first
+    let response:AsyncResponse = {
+      switch route {
+      case .Some(let route):
+        return route.handler(request)()
+          .recover { _ in Response(status: 500, body: "An error occurred") }
+      default:
+        return async(Response(status: 404, body: "No route matches this action"))
       }
-    } else {
-      response = Response(status: 404, body: "No route matches this action")
-    }
+    }()
     
-    NSLog("\(request.method) \(request.path) \(response.status)")
-    return response
+    return response.then { (response) -> Response in
+      NSLog("\(request.method) \(request.path) \(response.status)")
+      return response
+    }
+  }
+  
+  func async(response:Response) -> AsyncResponse {
+    return Promise { success, _ in success(response) }
   }
 }

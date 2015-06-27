@@ -21,7 +21,7 @@ public class Snell {
 
   public func startCGI() {
     let CGI = CGIAdapter()
-    let response = router.dispatch(CGI.request()!)
-    CGI.render(response)
+    router.dispatch(CGI.request()!)
+      .then { response in CGI.render(response) }
   }
 }
