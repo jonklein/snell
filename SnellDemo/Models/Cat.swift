@@ -7,13 +7,19 @@
 //
 
 import Foundation
+import SnellFramework
 
 public class Cat : SnormModel {
-  var name:String
-  var color:String
+  var name:String?
+  var color:String?
 
-  public init(name:String, color:String) {
+  init(name:String, color:String) {
     self.name = name
     self.color = color
+    super.init()
+  }
+
+  override init(coder aCoder:NSCoder!) {
+    super.init(coder: aCoder)
   }
 }

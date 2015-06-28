@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SnellFramework
 
 class CatsController: Controller {
   func index() -> Result {

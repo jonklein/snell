@@ -27,7 +27,6 @@
 		48A1D9B61B405EC400DB56A7 /* SnellFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A1D9481B40598600DB56A7 /* SnellFramework.framework */; };
 		48A1D9B71B405ED100DB56A7 /* DemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48922D5C1B362A510001E69D /* DemoController.swift */; };
 		48A1D9B81B405ED100DB56A7 /* DemoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48922D5D1B362A510001E69D /* DemoRouter.swift */; };
-		48A1D9BA1B405ED100DB56A7 /* Demo.swtl in Sources */ = {isa = PBXBuildFile; fileRef = 48922D601B362A510001E69D /* Demo.swtl */; };
 		48CBCAFE1B3CEB660028F2C6 /* CGIAdapterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CBCAFC1B3CEB660028F2C6 /* CGIAdapterSpec.swift */; };
 		48CBCAFF1B3CEB660028F2C6 /* SwtlTemplateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CBCAFD1B3CEB660028F2C6 /* SwtlTemplateSpec.swift */; };
 		48CBCB031B3CEB770028F2C6 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5BF1B35900900C28CC3 /* Controller.swift */; };
@@ -70,6 +69,15 @@
 		48E4CE3E1B4079D2003C22C7 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4CE221B4079D2003C22C7 /* GCDWebServerFileResponse.m */; };
 		48E4CE3F1B4079D2003C22C7 /* GCDWebServerStreamedResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E4CE231B4079D2003C22C7 /* GCDWebServerStreamedResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		48E4CE401B4079D2003C22C7 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E4CE241B4079D2003C22C7 /* GCDWebServerStreamedResponse.m */; };
+		48E4CE421B4086D2003C22C7 /* CatsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4CE411B4086D2003C22C7 /* CatsController.swift */; };
+		48E4CE501B408708003C22C7 /* SnormAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4CE4D1B408708003C22C7 /* SnormAdapter.swift */; };
+		48E4CE511B408708003C22C7 /* SnormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4CE4E1B408708003C22C7 /* SnormModel.swift */; };
+		48E4CE521B408708003C22C7 /* SnormScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4CE4F1B408708003C22C7 /* SnormScope.swift */; };
+		48E4CE5C1B40969E003C22C7 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4CE5A1B409694003C22C7 /* Cat.swift */; };
+		48E4CE6D1B40CFF7003C22C7 /* CatsCreate.swtl in Sources */ = {isa = PBXBuildFile; fileRef = 48E4CE611B40CFA3003C22C7 /* CatsCreate.swtl */; };
+		48E4CE6E1B40CFF7003C22C7 /* CatsIndex.swtl in Sources */ = {isa = PBXBuildFile; fileRef = 48E4CE621B40CFA3003C22C7 /* CatsIndex.swtl */; };
+		48E4CE6F1B40CFF7003C22C7 /* CatsNew.swtl in Sources */ = {isa = PBXBuildFile; fileRef = 48E4CE631B40CFA3003C22C7 /* CatsNew.swtl */; };
+		48E4CE701B40CFF7003C22C7 /* Demo.swtl in Sources */ = {isa = PBXBuildFile; fileRef = 48E4CE641B40CFA3003C22C7 /* Demo.swtl */; };
 		A47B6336DE2221863FB0EB6D /* Pods_SnellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB5A99499D1EFB28731C805 /* Pods_SnellTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		C94D07481B3E4C1C00AF49DA /* Failable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D07461B3E4C1C00AF49DA /* Failable.swift */; };
 /* End PBXBuildFile section */
@@ -81,6 +89,7 @@
 			filePatterns = "*.swtl";
 			fileType = pattern.proxy;
 			isEditable = 1;
+			name = "swtl files";
 			outputFiles = (
 				"$(INPUT_FILE_BASE).swtl.swift",
 			);
@@ -145,7 +154,6 @@
 		489229FD1B360AAB0001E69D /* GCDWebServerAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDWebServerAdapter.swift; sourceTree = "<group>"; };
 		48922D5C1B362A510001E69D /* DemoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoController.swift; sourceTree = "<group>"; };
 		48922D5D1B362A510001E69D /* DemoRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DemoRouter.swift; path = ../../SnellDemo/DemoRouter.swift; sourceTree = "<group>"; };
-		48922D601B362A510001E69D /* Demo.swtl */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; fileEncoding = 4; path = Demo.swtl; sourceTree = "<group>"; };
 		48A1D9481B40598600DB56A7 /* SnellFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnellFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A1D94A1B40598600DB56A7 /* SnellFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnellFramework.h; sourceTree = "<group>"; };
 		48A1D94C1B40598600DB56A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -188,6 +196,15 @@
 		48E4CE221B4079D2003C22C7 /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileResponse.m; sourceTree = "<group>"; };
 		48E4CE231B4079D2003C22C7 /* GCDWebServerStreamedResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerStreamedResponse.h; sourceTree = "<group>"; };
 		48E4CE241B4079D2003C22C7 /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
+		48E4CE411B4086D2003C22C7 /* CatsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatsController.swift; sourceTree = "<group>"; };
+		48E4CE4D1B408708003C22C7 /* SnormAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnormAdapter.swift; sourceTree = "<group>"; };
+		48E4CE4E1B408708003C22C7 /* SnormModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnormModel.swift; sourceTree = "<group>"; };
+		48E4CE4F1B408708003C22C7 /* SnormScope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnormScope.swift; sourceTree = "<group>"; };
+		48E4CE5A1B409694003C22C7 /* Cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		48E4CE611B40CFA3003C22C7 /* CatsCreate.swtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CatsCreate.swtl; sourceTree = "<group>"; };
+		48E4CE621B40CFA3003C22C7 /* CatsIndex.swtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CatsIndex.swtl; sourceTree = "<group>"; };
+		48E4CE631B40CFA3003C22C7 /* CatsNew.swtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CatsNew.swtl; sourceTree = "<group>"; };
+		48E4CE641B40CFA3003C22C7 /* Demo.swtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Demo.swtl; sourceTree = "<group>"; };
 		48FED8811B2E152A0063A175 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		4F11EA7C64B409495E22E8AA /* Pods-SnellTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnellTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnellTests/Pods-SnellTests.release.xcconfig"; sourceTree = "<group>"; };
 		AEB5A99499D1EFB28731C805 /* Pods_SnellTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnellTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -242,7 +259,6 @@
 		481CC3311B2D0ABA009D7895 /* SnellServerTests */ = {
 			isa = PBXGroup;
 			children = (
-				48A1D9191B3EE35800DB56A7 /* SnormTests.swift */,
 				48CBCAFC1B3CEB660028F2C6 /* CGIAdapterSpec.swift */,
 				48CBCAFD1B3CEB660028F2C6 /* SwtlTemplateSpec.swift */,
 				481CC3341B2D0ABA009D7895 /* Info.plist */,
@@ -284,12 +300,13 @@
 		48922D5A1B362A510001E69D /* SnellDemoProject */ = {
 			isa = PBXGroup;
 			children = (
-				48A1D9A81B405EB500DB56A7 /* AppDelegate.swift */,
 				48A1D9AA1B405EB500DB56A7 /* Assets.xcassets */,
+				48A1D9A81B405EB500DB56A7 /* AppDelegate.swift */,
 				48A1D9AC1B405EB500DB56A7 /* MainMenu.xib */,
 				48922D5D1B362A510001E69D /* DemoRouter.swift */,
+				48E4CE601B40CFA3003C22C7 /* Views */,
 				48922D5B1B362A510001E69D /* Controllers */,
-				48922D5F1B362A510001E69D /* Views */,
+				48E4CE431B4086DB003C22C7 /* Models */,
 				48A1D9AF1B405EB500DB56A7 /* Info.plist */,
 			);
 			name = SnellDemoProject;
@@ -299,23 +316,11 @@
 		48922D5B1B362A510001E69D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				48A1D91D1B3F3D9C00DB56A7 /* CatsController.swift */,
 				48922D5C1B362A510001E69D /* DemoController.swift */,
+				48E4CE411B4086D2003C22C7 /* CatsController.swift */,
 			);
 			name = Controllers;
 			path = ../../SnellDemo/Controllers;
-			sourceTree = "<group>";
-		};
-		48922D5F1B362A510001E69D /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				48922D601B362A510001E69D /* Demo.swtl */,
-				48A1D9211B3F3F3000DB56A7 /* CatsCreate.swtl */,
-				48A1D9221B3F3F3000DB56A7 /* CatsIndex.swtl */,
-				48A1D9231B3F3F3000DB56A7 /* CatsNew.swtl */,
-			);
-			name = Views;
-			path = ../../SnellDemo/Views;
 			sourceTree = "<group>";
 		};
 		48A1D9491B40598600DB56A7 /* SnellFramework */ = {
@@ -330,28 +335,12 @@
 				4842F5C21B35900900C28CC3 /* Router.swift */,
 				4842F5D11B3593EE00C28CC3 /* View.swift */,
 				4866A94C1B35A57900BCF429 /* Scope.swift */,
+				48E4CE4C1B408708003C22C7 /* Snorm */,
 				489226961B360AA80001E69D /* Adapters */,
 				4892269E1B360AA80001E69D /* GCDWebServer */,
 				48A1D94C1B40598600DB56A7 /* Info.plist */,
 			);
 			path = SnellFramework;
-			sourceTree = "<group>";
-		};
-		48A1D9161B3ECED200DB56A7 /* ORM */ = {
-			isa = PBXGroup;
-			children = (
-				48A1D9171B3ECF2400DB56A7 /* Snorm.swift */,
-			);
-			name = ORM;
-			sourceTree = "<group>";
-		};
-		48A1D91C1B3F3D4F00DB56A7 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				48A1D91F1B3F3DB600DB56A7 /* Cat.swift */,
-			);
-			name = Models;
-			path = Views;
 			sourceTree = "<group>";
 		};
 		48CBCB0C1B3D7EF90028F2C6 /* tests */ = {
@@ -415,6 +404,37 @@
 			);
 			name = Responses;
 			path = "SnellFramework/Adapters/GCDWebServer-3.2.4/GCDWebServer/Responses";
+			sourceTree = SOURCE_ROOT;
+		};
+		48E4CE431B4086DB003C22C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				48E4CE5A1B409694003C22C7 /* Cat.swift */,
+			);
+			name = Models;
+			path = SnellDemo/Models;
+			sourceTree = SOURCE_ROOT;
+		};
+		48E4CE4C1B408708003C22C7 /* Snorm */ = {
+			isa = PBXGroup;
+			children = (
+				48E4CE4D1B408708003C22C7 /* SnormAdapter.swift */,
+				48E4CE4E1B408708003C22C7 /* SnormModel.swift */,
+				48E4CE4F1B408708003C22C7 /* SnormScope.swift */,
+			);
+			path = Snorm;
+			sourceTree = "<group>";
+		};
+		48E4CE601B40CFA3003C22C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				48E4CE611B40CFA3003C22C7 /* CatsCreate.swtl */,
+				48E4CE621B40CFA3003C22C7 /* CatsIndex.swtl */,
+				48E4CE631B40CFA3003C22C7 /* CatsNew.swtl */,
+				48E4CE641B40CFA3003C22C7 /* Demo.swtl */,
+			);
+			name = Views;
+			path = SnellDemo/Views;
 			sourceTree = SOURCE_ROOT;
 		};
 		48E635C51B2C94B400857520 = {
@@ -688,7 +708,6 @@
 				48CBCB051B3CEB770028F2C6 /* Request.swift in Sources */,
 				48CBCB191B3D81B90028F2C6 /* TestScope.swtl in Sources */,
 				48CBCB141B3D81080028F2C6 /* TestControl.swtl in Sources */,
-				48A1D91A1B3EE35800DB56A7 /* SnormTests.swift in Sources */,
 				48CBCB151B3D81080028F2C6 /* TestExpression.swtl in Sources */,
 				48CBCB161B3D81080028F2C6 /* TestText.swtl in Sources */,
 				48E4CE051B40630A003C22C7 /* CGIAdapter.swift in Sources */,
@@ -716,11 +735,13 @@
 				48A1D9651B4059AC00DB56A7 /* CGIAdapter.swift in Sources */,
 				48E4CE2E1B4079D2003C22C7 /* GCDWebServerRequest.m in Sources */,
 				48E4CE301B4079D2003C22C7 /* GCDWebServerResponse.m in Sources */,
+				48E4CE521B408708003C22C7 /* SnormScope.swift in Sources */,
 				48A1D9601B40599F00DB56A7 /* Request.swift in Sources */,
 				48A1D95D1B40599F00DB56A7 /* Failable.swift in Sources */,
 				48E4CE3C1B4079D2003C22C7 /* GCDWebServerErrorResponse.m in Sources */,
 				48A1D95E1B40599F00DB56A7 /* Controller.swift in Sources */,
 				48A1D9621B40599F00DB56A7 /* Router.swift in Sources */,
+				48E4CE501B408708003C22C7 /* SnormAdapter.swift in Sources */,
 				48A1D9631B40599F00DB56A7 /* View.swift in Sources */,
 				48E4CE401B4079D2003C22C7 /* GCDWebServerStreamedResponse.m in Sources */,
 				48E4CE3E1B4079D2003C22C7 /* GCDWebServerFileResponse.m in Sources */,
@@ -731,6 +752,7 @@
 				48E4CE2A1B4079D2003C22C7 /* GCDWebServerFunctions.m in Sources */,
 				48A1D9611B40599F00DB56A7 /* Response.swift in Sources */,
 				48E4CE321B4079D2003C22C7 /* GCDWebServerDataRequest.m in Sources */,
+				48E4CE511B408708003C22C7 /* SnormModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,9 +760,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E4CE6D1B40CFF7003C22C7 /* CatsCreate.swtl in Sources */,
+				48E4CE6E1B40CFF7003C22C7 /* CatsIndex.swtl in Sources */,
+				48E4CE6F1B40CFF7003C22C7 /* CatsNew.swtl in Sources */,
+				48E4CE701B40CFF7003C22C7 /* Demo.swtl in Sources */,
+				48E4CE421B4086D2003C22C7 /* CatsController.swift in Sources */,
+				48E4CE5C1B40969E003C22C7 /* Cat.swift in Sources */,
 				48A1D9B71B405ED100DB56A7 /* DemoController.swift in Sources */,
 				48A1D9B81B405ED100DB56A7 /* DemoRouter.swift in Sources */,
-				48A1D9BA1B405ED100DB56A7 /* Demo.swtl in Sources */,
 				48A1D9A91B405EB500DB56A7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

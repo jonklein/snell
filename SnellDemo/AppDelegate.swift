@@ -23,9 +23,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     window.makeKeyAndOrderFront(self)
   }
 
-  func run() {
-  }
-
   func applicationWillTerminate(aNotification: NSNotification) {
   }
 }

@@ -9,8 +9,6 @@
 import Quick
 import Nimble
 
-
-
 class SnormSpec: QuickSpec {
   class Fruit : SnormModel {
     var name:String

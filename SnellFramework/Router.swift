@@ -92,9 +92,14 @@ public class Router {
       response = Response(status: 404, body: "No route matches this action")
     }
     
-    NSLog("\(request.method) \(request.path) \(response.status)")
+    NSLog("\(request.method) \(request.path) \(request.params) completed with status  \(response.status)")
     return response
   }
+
+  /**
+   * Replace :xxx style interpolations in the pattern with capturing regex fragments (":([a-zA-Z0-9_]+)"),
+   * and record interpolations for later use.
+   */
 
   func patternByReplacingInterpolations(pattern:String) -> (String, [String]) {
     do {
@@ -103,8 +108,6 @@ public class Router {
       let matches = regex.matchesInString(pattern, options: NSMatchingOptions(), range: range).map { match -> String in
         return NSString(string: pattern).substringWithRange(match.rangeAtIndex(1))
       }
-
-      print("Found matches: \(matches)")
 
       return (regex.stringByReplacingMatchesInString(pattern, options: NSMatchingOptions(), range: range, withTemplate: "(.*)"), matches)
     } catch {
