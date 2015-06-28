@@ -30,5 +30,6 @@ class DemoRouter : Router {
     route("/cats", to: CatsController.index)
     route("/cats", via: HTTPMethod.Post, to: CatsController.create)
     route("/cats/new", to: CatsController.new)
+    route("/cats/:id", via: HTTPMethod.Delete, to: CatsController.destroy)
   }
 }

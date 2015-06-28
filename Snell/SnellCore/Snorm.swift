@@ -19,7 +19,6 @@ public class SnormAdapter {
   }
 
   public func reset() {}
-
   public func fetch<T>(filter:SnormScope<T>) -> [T] { return [] }
   public func insert<T>(objects:[T]) {}
   public func update<T>(objects:[T]) {}
@@ -95,17 +94,20 @@ public class SnormScope<T> {
 
   lazy var objects:[T] = self.execute()
   lazy var array:[T]   = self.objects // more swifty?
+  var first:T? { return self.objects.first }
 
-  public init<T>(cls:T, expression:String, parent:SnormScope? = nil) {
-    self.expression = NSPredicate(format: expression)
+  public init<T>(cls:T, expression:String, parent:SnormScope? = nil, arguments: CVaListPointer? = nil) {
+    self.expression = arguments != nil ?
+      NSPredicate(format: expression, arguments: arguments!) :
+      NSPredicate(format: expression)
 
     if let p = parent {
       self.expression = NSCompoundPredicate.andPredicateWithSubpredicates([self.expression, p.expression])
     }
   }
 
-  func with(expression:String) -> SnormScope<T> {
-    return SnormScope(cls: T.self, expression: expression, parent: self)
+  func with(expression:String, arg: CVarArgType...) -> SnormScope<T> {
+    return SnormScope(cls: T.self, expression: expression, parent: self, arguments: getVaList(arg))
   }
 
   func execute() -> [T] {
@@ -123,11 +125,15 @@ public class SnormModel : NSObject {
   class func snormTableName() -> String { return NSStringFromClass(self) }
 
   class func all() -> SnormScope<SnormModel> {
-    return SnormScope(cls: self, expression: "TRUEPREDICATE")
+    return with("TRUEPREDICATE")
   }
 
-  class func with(expression:String) -> SnormScope<SnormModel> {
-    return SnormScope(cls: self, expression: expression)
+  class func first() -> SnormModel? {
+    return with("TRUEPREDICATE").first
+  }
+
+  class func with(expression:String, _ arg: CVarArgType...) -> SnormScope<SnormModel> {
+    return SnormScope(cls: self, expression: expression, arguments: getVaList(arg))
   }
 
   func save() -> SnormModel {

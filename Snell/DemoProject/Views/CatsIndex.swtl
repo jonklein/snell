@@ -6,11 +6,11 @@
     <div class="container">
       <h1>Your Cats:</h1>
 
-      <% for cat in scope.locals["cats"] as! Array<Cat> { %>
-        <li><%= cat.name %> (<%= cat.color %>)
+      <% for cat in scope.locals["cats"] as! [Cat] { %>
+        <li><%= cat.name %> (<%= cat.color %>) <a href="/cats/<%= cat.id %>?_method=DELETE">[delete]</a>
       <% } %>
 
-      <a href="/cats/new">Create a cat</a>
+      <p><a href="/cats/new">Create a cat</a></p>
     </div>
   </body>
 </html>

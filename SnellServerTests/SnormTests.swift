@@ -30,21 +30,21 @@ class SnormSpec: QuickSpec {
       }
 
       it("should return objects") {
-        expect(Fruit.all().execute().endIndex).to(equal(0))
+        expect(Fruit.all().array.endIndex).to(equal(0))
       }
 
       it("should insert objects") {
         let banana = Fruit(name: "Banana")
         banana.save()
-        expect(Fruit.all().execute().endIndex).to(equal(1))
+        expect(Fruit.all().array.endIndex).to(equal(1))
       }
 
       it("should delete objects") {
         let banana = Fruit(name: "Banana")
         banana.save()
-        expect(Fruit.all().execute().endIndex).to(equal(1))
+        expect(Fruit.all().array.endIndex).to(equal(1))
         banana.destroy()
-        expect(Fruit.all().execute().endIndex).to(equal(0))
+        expect(Fruit.all().array.endIndex).to(equal(0))
       }
 
       it("should have nil ID before save") {
@@ -76,7 +76,7 @@ class SnormSpec: QuickSpec {
         apple.save()
         banana.save()
 
-        expect(Fruit.all().execute()).to(equal([apple, banana]))
+        expect(Set(Fruit.all().array)).to(equal([apple, banana]))
       }
 
       it("should scope objects") {
@@ -88,7 +88,7 @@ class SnormSpec: QuickSpec {
         banana.save()
         cherry.save()
 
-        expect(Fruit.with("name like '*e*'").array).to(equal([apple, cherry]))
+        expect(Set(Fruit.with("name like '*e*'").array)).to(equal([apple, cherry]))
       }
 
       it("should chain object scopes") {
@@ -100,7 +100,19 @@ class SnormSpec: QuickSpec {
         banana.save()
         cherry.save()
 
-        expect(Fruit.with("name like '*e*'").with("name like '*y*'").array).to(equal([cherry]))
+        expect(Set(Fruit.with("name like '*e*'").with("name like '*y*'").array)).to(equal([cherry]))
+      }
+
+      it("should scope with arguments") {
+        let apple  = Fruit(name: "Apple")
+        let banana = Fruit(name: "Banana")
+        let cherry = Fruit(name: "Cherry")
+
+        apple.save()
+        banana.save()
+        cherry.save()
+
+        expect(Set(Fruit.with("name like %@", "*ppl*").array)).to(equal([apple]))
       }
     }
   }

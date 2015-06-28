@@ -25,4 +25,13 @@ class CatsController: Controller {
   func new() -> Result {
     return render(CatsNew.self, status: 200)
   }
+
+  func destroy() -> Result {
+    if let id = self.request.params["id"], cat = Cat.with("id = %@", id).first {
+      cat.destroy()
+      return index()
+    } else {
+      return render(CatsIndex.self, status: 404, locals: ["cats": Cat.all().array, "flash": "Cat not found!"])
+    }
+  }
 }
