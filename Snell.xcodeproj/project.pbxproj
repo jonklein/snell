@@ -9,51 +9,55 @@
 /* Begin PBXBuildFile section */
 		4842F1B61B33A0BE00C28CC3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1B51B33A0BE00C28CC3 /* main.swift */; };
 		4842F1CB1B33A5A900C28CC3 /* SwtlTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F1CA1B33A5A900C28CC3 /* SwtlTemplate.swift */; };
-		4842F5C91B35909D00C28CC3 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5BF1B35900900C28CC3 /* Controller.swift */; };
-		4842F5CA1B35909D00C28CC3 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C01B35900900C28CC3 /* Request.swift */; };
-		4842F5CB1B35909D00C28CC3 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C11B35900900C28CC3 /* Response.swift */; };
-		4842F5CC1B35909D00C28CC3 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C21B35900900C28CC3 /* Router.swift */; };
-		4842F5D21B3593EE00C28CC3 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5D11B3593EE00C28CC3 /* View.swift */; };
-		4866A94D1B35A57900BCF429 /* Scope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866A94C1B35A57900BCF429 /* Scope.swift */; };
-		4866A94F1B35E57E00BCF429 /* Snell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866A94E1B35E57E00BCF429 /* Snell.swift */; };
-		489229FE1B360AAB0001E69D /* CGIAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489226971B360AA80001E69D /* CGIAdapter.swift */; };
-		489229FF1B360AAB0001E69D /* CGIAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489226971B360AA80001E69D /* CGIAdapter.swift */; };
-		48922A041B360AAB0001E69D /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226A11B360AA80001E69D /* GCDWebServer.m */; };
-		48922A051B360AAB0001E69D /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226A11B360AA80001E69D /* GCDWebServer.m */; };
-		48922A061B360AAB0001E69D /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226A31B360AA80001E69D /* GCDWebServerConnection.m */; };
-		48922A071B360AAB0001E69D /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226A31B360AA80001E69D /* GCDWebServerConnection.m */; };
-		48922A081B360AAB0001E69D /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226A51B360AA80001E69D /* GCDWebServerFunctions.m */; };
-		48922A091B360AAB0001E69D /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226A51B360AA80001E69D /* GCDWebServerFunctions.m */; };
-		48922A0A1B360AAB0001E69D /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226A91B360AA80001E69D /* GCDWebServerRequest.m */; };
-		48922A0B1B360AAB0001E69D /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226A91B360AA80001E69D /* GCDWebServerRequest.m */; };
-		48922A0C1B360AAB0001E69D /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226AB1B360AA80001E69D /* GCDWebServerResponse.m */; };
-		48922A0D1B360AAB0001E69D /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226AB1B360AA80001E69D /* GCDWebServerResponse.m */; };
-		48922A0E1B360AAB0001E69D /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226AE1B360AA80001E69D /* GCDWebServerDataRequest.m */; };
-		48922A0F1B360AAB0001E69D /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226AE1B360AA80001E69D /* GCDWebServerDataRequest.m */; };
-		48922A101B360AAB0001E69D /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226B01B360AA80001E69D /* GCDWebServerFileRequest.m */; };
-		48922A111B360AAB0001E69D /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226B01B360AA80001E69D /* GCDWebServerFileRequest.m */; };
-		48922A121B360AAB0001E69D /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226B21B360AA80001E69D /* GCDWebServerMultiPartFormRequest.m */; };
-		48922A131B360AAB0001E69D /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226B21B360AA80001E69D /* GCDWebServerMultiPartFormRequest.m */; };
-		48922A141B360AAB0001E69D /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226B41B360AA80001E69D /* GCDWebServerURLEncodedFormRequest.m */; };
-		48922A151B360AAB0001E69D /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226B41B360AA80001E69D /* GCDWebServerURLEncodedFormRequest.m */; };
-		48922A161B360AAB0001E69D /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226B71B360AA80001E69D /* GCDWebServerDataResponse.m */; };
-		48922A171B360AAB0001E69D /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226B71B360AA80001E69D /* GCDWebServerDataResponse.m */; };
-		48922A181B360AAB0001E69D /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226B91B360AA80001E69D /* GCDWebServerErrorResponse.m */; };
-		48922A191B360AAB0001E69D /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226B91B360AA80001E69D /* GCDWebServerErrorResponse.m */; };
-		48922A1A1B360AAB0001E69D /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226BB1B360AA80001E69D /* GCDWebServerFileResponse.m */; };
-		48922A1B1B360AAB0001E69D /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226BB1B360AA80001E69D /* GCDWebServerFileResponse.m */; };
-		48922A1C1B360AAB0001E69D /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226BD1B360AA80001E69D /* GCDWebServerStreamedResponse.m */; };
-		48922A1D1B360AAB0001E69D /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226BD1B360AA80001E69D /* GCDWebServerStreamedResponse.m */; };
-		48922D511B360AAB0001E69D /* GCDWebServerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489229FD1B360AAB0001E69D /* GCDWebServerAdapter.swift */; };
-		48922D521B360AAB0001E69D /* GCDWebServerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489229FD1B360AAB0001E69D /* GCDWebServerAdapter.swift */; };
-		48922D611B362A510001E69D /* DemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48922D5C1B362A510001E69D /* DemoController.swift */; };
-		48922D621B362A510001E69D /* DemoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48922D5D1B362A510001E69D /* DemoRouter.swift */; };
-		48922D631B362A510001E69D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48922D5E1B362A510001E69D /* main.swift */; };
-		48922D641B362AF90001E69D /* Demo.swtl in Sources */ = {isa = PBXBuildFile; fileRef = 48922D601B362A510001E69D /* Demo.swtl */; };
+		48A1D94B1B40598600DB56A7 /* SnellFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 48A1D94A1B40598600DB56A7 /* SnellFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48A1D95D1B40599F00DB56A7 /* Failable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D07461B3E4C1C00AF49DA /* Failable.swift */; };
+		48A1D95E1B40599F00DB56A7 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5BF1B35900900C28CC3 /* Controller.swift */; };
+		48A1D95F1B40599F00DB56A7 /* Snell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866A94E1B35E57E00BCF429 /* Snell.swift */; };
+		48A1D9601B40599F00DB56A7 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C01B35900900C28CC3 /* Request.swift */; };
+		48A1D9611B40599F00DB56A7 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C11B35900900C28CC3 /* Response.swift */; };
+		48A1D9621B40599F00DB56A7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C21B35900900C28CC3 /* Router.swift */; };
+		48A1D9631B40599F00DB56A7 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5D11B3593EE00C28CC3 /* View.swift */; };
+		48A1D9641B40599F00DB56A7 /* Scope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866A94C1B35A57900BCF429 /* Scope.swift */; };
+		48A1D9651B4059AC00DB56A7 /* CGIAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489226971B360AA80001E69D /* CGIAdapter.swift */; };
+		48A1D9661B4059AC00DB56A7 /* GCDWebServerAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489229FD1B360AAB0001E69D /* GCDWebServerAdapter.swift */; };
+		48A1D9671B4059BD00DB56A7 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226A11B360AA80001E69D /* GCDWebServer.m */; };
+		48A1D9681B4059BD00DB56A7 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226A31B360AA80001E69D /* GCDWebServerConnection.m */; };
+		48A1D9691B4059BD00DB56A7 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226A51B360AA80001E69D /* GCDWebServerFunctions.m */; };
+		48A1D96A1B4059BD00DB56A7 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226A91B360AA80001E69D /* GCDWebServerRequest.m */; };
+		48A1D96B1B4059BD00DB56A7 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226AB1B360AA80001E69D /* GCDWebServerResponse.m */; };
+		48A1D96C1B4059C900DB56A7 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226AE1B360AA80001E69D /* GCDWebServerDataRequest.m */; };
+		48A1D96D1B4059C900DB56A7 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226B01B360AA80001E69D /* GCDWebServerFileRequest.m */; };
+		48A1D96E1B4059C900DB56A7 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226B21B360AA80001E69D /* GCDWebServerMultiPartFormRequest.m */; };
+		48A1D96F1B4059C900DB56A7 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226B41B360AA80001E69D /* GCDWebServerURLEncodedFormRequest.m */; };
+		48A1D9701B4059D700DB56A7 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226B71B360AA80001E69D /* GCDWebServerDataResponse.m */; };
+		48A1D9711B4059D700DB56A7 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226B91B360AA80001E69D /* GCDWebServerErrorResponse.m */; };
+		48A1D9721B4059D700DB56A7 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226BB1B360AA80001E69D /* GCDWebServerFileResponse.m */; };
+		48A1D9731B4059D700DB56A7 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 489226BD1B360AA80001E69D /* GCDWebServerStreamedResponse.m */; };
+		48A1D9851B405B9B00DB56A7 /* GCDWebServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 489226A01B360AA80001E69D /* GCDWebServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48A1D98B1B405B9B00DB56A7 /* GCDWebServerResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 489226AA1B360AA80001E69D /* GCDWebServerResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48A1D98D1B405B9B00DB56A7 /* GCDWebServerFileRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 489226AF1B360AA80001E69D /* GCDWebServerFileRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48A1D98F1B405B9B00DB56A7 /* GCDWebServerURLEncodedFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 489226B31B360AA80001E69D /* GCDWebServerURLEncodedFormRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48A1D9901B405B9C00DB56A7 /* GCDWebServerDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 489226B61B360AA80001E69D /* GCDWebServerDataResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48A1D9941B405BC800DB56A7 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FED8811B2E152A0063A175 /* libz.1.dylib */; };
+		48A1D9981B405D6600DB56A7 /* GCDWebServerConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 489226A21B360AA80001E69D /* GCDWebServerConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48A1D9991B405D6600DB56A7 /* GCDWebServerFunctions.h in Headers */ = {isa = PBXBuildFile; fileRef = 489226A41B360AA80001E69D /* GCDWebServerFunctions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48A1D99A1B405D6600DB56A7 /* GCDWebServerHTTPStatusCodes.h in Headers */ = {isa = PBXBuildFile; fileRef = 489226A61B360AA80001E69D /* GCDWebServerHTTPStatusCodes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48A1D99C1B405D6600DB56A7 /* GCDWebServerDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 489226AD1B360AA80001E69D /* GCDWebServerDataRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48A1D99D1B405D6600DB56A7 /* GCDWebServerMultiPartFormRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 489226B11B360AA80001E69D /* GCDWebServerMultiPartFormRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48A1D99E1B405D6600DB56A7 /* GCDWebServerErrorResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 489226B81B360AA80001E69D /* GCDWebServerErrorResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48A1D99F1B405D6600DB56A7 /* GCDWebServerFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 489226BA1B360AA80001E69D /* GCDWebServerFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48A1D9A01B405D6600DB56A7 /* GCDWebServerStreamedResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 489226BC1B360AA80001E69D /* GCDWebServerStreamedResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48A1D9A11B405E8500DB56A7 /* GCDWebServerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 489226A81B360AA80001E69D /* GCDWebServerRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48A1D9A91B405EB500DB56A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1D9A81B405EB500DB56A7 /* AppDelegate.swift */; };
+		48A1D9AB1B405EB500DB56A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A1D9AA1B405EB500DB56A7 /* Assets.xcassets */; };
+		48A1D9AE1B405EB500DB56A7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A1D9AC1B405EB500DB56A7 /* MainMenu.xib */; };
+		48A1D9B61B405EC400DB56A7 /* SnellFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48A1D9481B40598600DB56A7 /* SnellFramework.framework */; };
+		48A1D9B71B405ED100DB56A7 /* DemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48922D5C1B362A510001E69D /* DemoController.swift */; };
+		48A1D9B81B405ED100DB56A7 /* DemoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48922D5D1B362A510001E69D /* DemoRouter.swift */; };
+		48A1D9BA1B405ED100DB56A7 /* Demo.swtl in Sources */ = {isa = PBXBuildFile; fileRef = 48922D601B362A510001E69D /* Demo.swtl */; };
 		48CBCAFE1B3CEB660028F2C6 /* CGIAdapterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CBCAFC1B3CEB660028F2C6 /* CGIAdapterSpec.swift */; };
 		48CBCAFF1B3CEB660028F2C6 /* SwtlTemplateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CBCAFD1B3CEB660028F2C6 /* SwtlTemplateSpec.swift */; };
 		48CBCB031B3CEB770028F2C6 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5BF1B35900900C28CC3 /* Controller.swift */; };
-		48CBCB041B3CEB770028F2C6 /* Snell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4866A94E1B35E57E00BCF429 /* Snell.swift */; };
 		48CBCB051B3CEB770028F2C6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C01B35900900C28CC3 /* Request.swift */; };
 		48CBCB061B3CEB770028F2C6 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C11B35900900C28CC3 /* Response.swift */; };
 		48CBCB071B3CEB770028F2C6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4842F5C21B35900900C28CC3 /* Router.swift */; };
@@ -65,20 +69,18 @@
 		48CBCB151B3D81080028F2C6 /* TestExpression.swtl in Sources */ = {isa = PBXBuildFile; fileRef = 48CBCB0E1B3D7EF90028F2C6 /* TestExpression.swtl */; };
 		48CBCB161B3D81080028F2C6 /* TestText.swtl in Sources */ = {isa = PBXBuildFile; fileRef = 48CBCB0F1B3D7EF90028F2C6 /* TestText.swtl */; };
 		48CBCB191B3D81B90028F2C6 /* TestScope.swtl in Sources */ = {isa = PBXBuildFile; fileRef = 48CBCB171B3D81AB0028F2C6 /* TestScope.swtl */; };
-		48FED8841B2E16200063A175 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 48FED8811B2E152A0063A175 /* libz.1.dylib */; };
+		48E4CE051B40630A003C22C7 /* CGIAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489226971B360AA80001E69D /* CGIAdapter.swift */; };
 		A47B6336DE2221863FB0EB6D /* Pods_SnellTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEB5A99499D1EFB28731C805 /* Pods_SnellTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		C94D07471B3E4C1C00AF49DA /* Failable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D07461B3E4C1C00AF49DA /* Failable.swift */; };
 		C94D07481B3E4C1C00AF49DA /* Failable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94D07461B3E4C1C00AF49DA /* Failable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
-		4842F2081B35899900C28CC3 /* PBXBuildRule */ = {
+		48A1D9BB1B405EF700DB56A7 /* PBXBuildRule */ = {
 			isa = PBXBuildRule;
 			compilerSpec = com.apple.compilers.proxy.script;
 			filePatterns = "*.swtl";
 			fileType = pattern.proxy;
 			isEditable = 1;
-			name = "SWTL Files";
 			outputFiles = (
 				"$(INPUT_FILE_BASE).swtl.swift",
 			);
@@ -98,12 +100,19 @@
 /* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
-		4842F20E1B358A2900C28CC3 /* PBXContainerItemProxy */ = {
+		48A1D9B21B405EBF00DB56A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 48E635C61B2C94B400857520 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4842F1B21B33A0BE00C28CC3;
 			remoteInfo = swtl;
+		};
+		48A1D9B41B405EBF00DB56A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48E635C61B2C94B400857520 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48A1D9471B40598600DB56A7;
+			remoteInfo = SnellFramework;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -113,15 +122,6 @@
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-		48E635CC1B2C94B400857520 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = Frameworks;
-			dstSubfolderSpec = 16;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
@@ -138,7 +138,6 @@
 		4842F5C01B35900900C28CC3 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		4842F5C11B35900900C28CC3 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		4842F5C21B35900900C28CC3 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		4842F5C71B35905800C28CC3 /* SnellServerBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SnellServerBridge.h; path = Snell/SnellServerBridge.h; sourceTree = SOURCE_ROOT; };
 		4842F5D11B3593EE00C28CC3 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		4866A94C1B35A57900BCF429 /* Scope.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scope.swift; sourceTree = "<group>"; };
 		4866A94E1B35E57E00BCF429 /* Snell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snell.swift; sourceTree = "<group>"; };
@@ -174,15 +173,21 @@
 		489229FD1B360AAB0001E69D /* GCDWebServerAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDWebServerAdapter.swift; sourceTree = "<group>"; };
 		48922D5C1B362A510001E69D /* DemoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoController.swift; sourceTree = "<group>"; };
 		48922D5D1B362A510001E69D /* DemoRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoRouter.swift; sourceTree = "<group>"; };
-		48922D5E1B362A510001E69D /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		48922D601B362A510001E69D /* Demo.swtl */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; fileEncoding = 4; path = Demo.swtl; sourceTree = "<group>"; };
+		48A1D9481B40598600DB56A7 /* SnellFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnellFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		48A1D94A1B40598600DB56A7 /* SnellFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnellFramework.h; sourceTree = "<group>"; };
+		48A1D94C1B40598600DB56A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48A1D9A61B405EB500DB56A7 /* SnellDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnellDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48A1D9A81B405EB500DB56A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../SnellDemo/AppDelegate.swift; sourceTree = "<group>"; };
+		48A1D9AA1B405EB500DB56A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../SnellDemo/Assets.xcassets; sourceTree = "<group>"; };
+		48A1D9AD1B405EB500DB56A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		48A1D9AF1B405EB500DB56A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../SnellDemo/Info.plist; sourceTree = "<group>"; };
 		48CBCAFC1B3CEB660028F2C6 /* CGIAdapterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGIAdapterSpec.swift; path = SnellServerTests/CGIAdapterSpec.swift; sourceTree = SOURCE_ROOT; };
 		48CBCAFD1B3CEB660028F2C6 /* SwtlTemplateSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwtlTemplateSpec.swift; path = SnellServerTests/SwtlTemplateSpec.swift; sourceTree = SOURCE_ROOT; };
 		48CBCB0D1B3D7EF90028F2C6 /* TestControl.swtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestControl.swtl; sourceTree = "<group>"; };
 		48CBCB0E1B3D7EF90028F2C6 /* TestExpression.swtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestExpression.swtl; sourceTree = "<group>"; };
 		48CBCB0F1B3D7EF90028F2C6 /* TestText.swtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestText.swtl; sourceTree = "<group>"; };
 		48CBCB171B3D81AB0028F2C6 /* TestScope.swtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TestScope.swtl; sourceTree = "<group>"; };
-		48E635CE1B2C94B500857520 /* Snell */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Snell; sourceTree = BUILT_PRODUCTS_DIR; };
 		48FED8811B2E152A0063A175 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		4F11EA7C64B409495E22E8AA /* Pods-SnellTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnellTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnellTests/Pods-SnellTests.release.xcconfig"; sourceTree = "<group>"; };
 		AEB5A99499D1EFB28731C805 /* Pods_SnellTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnellTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,11 +211,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		48E635CB1B2C94B400857520 /* Frameworks */ = {
+		48A1D9441B40598600DB56A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48FED8841B2E16200063A175 /* libz.1.dylib in Frameworks */,
+				48A1D9941B405BC800DB56A7 /* libz.1.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A1D9A31B405EB500DB56A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A1D9B61B405EC400DB56A7 /* SnellFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +274,7 @@
 				489226961B360AA80001E69D /* Adapters */,
 			);
 			name = SnellCore;
-			path = Snell/SnellCore;
+			path = ../Snell/SnellCore;
 			sourceTree = "<group>";
 		};
 		489226961B360AA80001E69D /* Adapters */ = {
@@ -341,15 +354,18 @@
 			path = Responses;
 			sourceTree = "<group>";
 		};
-		48922D5A1B362A510001E69D /* DemoProject */ = {
+		48922D5A1B362A510001E69D /* SnellDemoProject */ = {
 			isa = PBXGroup;
 			children = (
-				48922D5B1B362A510001E69D /* Controllers */,
+				48A1D9A81B405EB500DB56A7 /* AppDelegate.swift */,
+				48A1D9AA1B405EB500DB56A7 /* Assets.xcassets */,
+				48A1D9AC1B405EB500DB56A7 /* MainMenu.xib */,
 				48922D5D1B362A510001E69D /* DemoRouter.swift */,
-				48922D5E1B362A510001E69D /* main.swift */,
+				48922D5B1B362A510001E69D /* Controllers */,
 				48922D5F1B362A510001E69D /* Views */,
+				48A1D9AF1B405EB500DB56A7 /* Info.plist */,
 			);
-			name = DemoProject;
+			name = SnellDemoProject;
 			path = Snell/DemoProject;
 			sourceTree = "<group>";
 		};
@@ -369,6 +385,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		48A1D9491B40598600DB56A7 /* SnellFramework */ = {
+			isa = PBXGroup;
+			children = (
+				4842F5BE1B35900900C28CC3 /* SnellCore */,
+				48A1D94A1B40598600DB56A7 /* SnellFramework.h */,
+				48A1D94C1B40598600DB56A7 /* Info.plist */,
+			);
+			path = SnellFramework;
+			sourceTree = "<group>";
+		};
 		48CBCB0C1B3D7EF90028F2C6 /* tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -383,10 +409,9 @@
 		48E635C51B2C94B400857520 = {
 			isa = PBXGroup;
 			children = (
-				48922D5A1B362A510001E69D /* DemoProject */,
-				4842F5BE1B35900900C28CC3 /* SnellCore */,
+				48922D5A1B362A510001E69D /* SnellDemoProject */,
+				48A1D9491B40598600DB56A7 /* SnellFramework */,
 				4842F1B41B33A0BE00C28CC3 /* swtl */,
-				4842F5C71B35905800C28CC3 /* SnellServerBridge.h */,
 				481CC3311B2D0ABA009D7895 /* SnellServerTests */,
 				48E635CF1B2C94B500857520 /* Products */,
 				470C3D4B8A9F84A704E9C960 /* Frameworks */,
@@ -397,9 +422,10 @@
 		48E635CF1B2C94B500857520 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				48E635CE1B2C94B500857520 /* Snell */,
 				481CC3301B2D0ABA009D7895 /* SnellTests.xctest */,
 				4842F1B31B33A0BE00C28CC3 /* swtl */,
+				48A1D9481B40598600DB56A7 /* SnellFramework.framework */,
+				48A1D9A61B405EB500DB56A7 /* SnellDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -413,6 +439,31 @@
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		48A1D9451B40598600DB56A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A1D94B1B40598600DB56A7 /* SnellFramework.h in Headers */,
+				48A1D9851B405B9B00DB56A7 /* GCDWebServer.h in Headers */,
+				48A1D98B1B405B9B00DB56A7 /* GCDWebServerResponse.h in Headers */,
+				48A1D98D1B405B9B00DB56A7 /* GCDWebServerFileRequest.h in Headers */,
+				48A1D98F1B405B9B00DB56A7 /* GCDWebServerURLEncodedFormRequest.h in Headers */,
+				48A1D9901B405B9C00DB56A7 /* GCDWebServerDataResponse.h in Headers */,
+				48A1D9981B405D6600DB56A7 /* GCDWebServerConnection.h in Headers */,
+				48A1D9991B405D6600DB56A7 /* GCDWebServerFunctions.h in Headers */,
+				48A1D99A1B405D6600DB56A7 /* GCDWebServerHTTPStatusCodes.h in Headers */,
+				48A1D99C1B405D6600DB56A7 /* GCDWebServerDataRequest.h in Headers */,
+				48A1D99D1B405D6600DB56A7 /* GCDWebServerMultiPartFormRequest.h in Headers */,
+				48A1D99E1B405D6600DB56A7 /* GCDWebServerErrorResponse.h in Headers */,
+				48A1D99F1B405D6600DB56A7 /* GCDWebServerFileResponse.h in Headers */,
+				48A1D9A11B405E8500DB56A7 /* GCDWebServerRequest.h in Headers */,
+				48A1D9A01B405D6600DB56A7 /* GCDWebServerStreamedResponse.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		481CC32F1B2D0ABA009D7895 /* SnellTests */ = {
@@ -453,24 +504,43 @@
 			productReference = 4842F1B31B33A0BE00C28CC3 /* swtl */;
 			productType = "com.apple.product-type.tool";
 		};
-		48E635CD1B2C94B400857520 /* Snell */ = {
+		48A1D9471B40598600DB56A7 /* SnellFramework */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 48E635D51B2C94B500857520 /* Build configuration list for PBXNativeTarget "Snell" */;
+			buildConfigurationList = 48A1D95B1B40598600DB56A7 /* Build configuration list for PBXNativeTarget "SnellFramework" */;
 			buildPhases = (
-				48E635CA1B2C94B400857520 /* Sources */,
-				48E635CB1B2C94B400857520 /* Frameworks */,
-				48E635CC1B2C94B400857520 /* CopyFiles */,
+				48A1D9431B40598600DB56A7 /* Sources */,
+				48A1D9441B40598600DB56A7 /* Frameworks */,
+				48A1D9451B40598600DB56A7 /* Headers */,
+				48A1D9461B40598600DB56A7 /* Resources */,
 			);
 			buildRules = (
-				4842F2081B35899900C28CC3 /* PBXBuildRule */,
 			);
 			dependencies = (
-				4842F20F1B358A2900C28CC3 /* PBXTargetDependency */,
 			);
-			name = Snell;
-			productName = Swails;
-			productReference = 48E635CE1B2C94B500857520 /* Snell */;
-			productType = "com.apple.product-type.tool";
+			name = SnellFramework;
+			productName = SnellFramework;
+			productReference = 48A1D9481B40598600DB56A7 /* SnellFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		48A1D9A51B405EB500DB56A7 /* SnellDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48A1D9B01B405EB500DB56A7 /* Build configuration list for PBXNativeTarget "SnellDemo" */;
+			buildPhases = (
+				48A1D9A21B405EB500DB56A7 /* Sources */,
+				48A1D9A31B405EB500DB56A7 /* Frameworks */,
+				48A1D9A41B405EB500DB56A7 /* Resources */,
+			);
+			buildRules = (
+				48A1D9BB1B405EF700DB56A7 /* PBXBuildRule */,
+			);
+			dependencies = (
+				48A1D9B31B405EBF00DB56A7 /* PBXTargetDependency */,
+				48A1D9B51B405EBF00DB56A7 /* PBXTargetDependency */,
+			);
+			name = SnellDemo;
+			productName = SnellDemo;
+			productReference = 48A1D9A61B405EB500DB56A7 /* SnellDemo.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -487,7 +557,10 @@
 					4842F1B21B33A0BE00C28CC3 = {
 						CreatedOnToolsVersion = 7.0;
 					};
-					48E635CD1B2C94B400857520 = {
+					48A1D9471B40598600DB56A7 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					48A1D9A51B405EB500DB56A7 = {
 						CreatedOnToolsVersion = 7.0;
 					};
 				};
@@ -498,15 +571,17 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 48E635C51B2C94B400857520;
 			productRefGroup = 48E635CF1B2C94B500857520 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				48E635CD1B2C94B400857520 /* Snell */,
 				481CC32F1B2D0ABA009D7895 /* SnellTests */,
 				4842F1B21B33A0BE00C28CC3 /* swtl */,
+				48A1D9471B40598600DB56A7 /* SnellFramework */,
+				48A1D9A51B405EB500DB56A7 /* SnellDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -516,6 +591,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A1D9461B40598600DB56A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A1D9A41B405EB500DB56A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A1D9AB1B405EB500DB56A7 /* Assets.xcassets in Resources */,
+				48A1D9AE1B405EB500DB56A7 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,35 +666,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				48CBCB071B3CEB770028F2C6 /* Router.swift in Sources */,
-				48922A0F1B360AAB0001E69D /* GCDWebServerDataRequest.m in Sources */,
-				48922A091B360AAB0001E69D /* GCDWebServerFunctions.m in Sources */,
-				48922A071B360AAB0001E69D /* GCDWebServerConnection.m in Sources */,
-				48922A151B360AAB0001E69D /* GCDWebServerURLEncodedFormRequest.m in Sources */,
-				48922A0B1B360AAB0001E69D /* GCDWebServerRequest.m in Sources */,
 				48CBCAFF1B3CEB660028F2C6 /* SwtlTemplateSpec.swift in Sources */,
-				48922A0D1B360AAB0001E69D /* GCDWebServerResponse.m in Sources */,
-				48922A191B360AAB0001E69D /* GCDWebServerErrorResponse.m in Sources */,
 				48CBCB081B3CEB770028F2C6 /* View.swift in Sources */,
-				48922A171B360AAB0001E69D /* GCDWebServerDataResponse.m in Sources */,
 				48CBCB031B3CEB770028F2C6 /* Controller.swift in Sources */,
-				48922D521B360AAB0001E69D /* GCDWebServerAdapter.swift in Sources */,
-				48922A051B360AAB0001E69D /* GCDWebServer.m in Sources */,
-				48922A131B360AAB0001E69D /* GCDWebServerMultiPartFormRequest.m in Sources */,
 				48CBCB061B3CEB770028F2C6 /* Response.swift in Sources */,
 				48CBCB091B3CEB770028F2C6 /* Scope.swift in Sources */,
-				48922A111B360AAB0001E69D /* GCDWebServerFileRequest.m in Sources */,
-				489229FF1B360AAB0001E69D /* CGIAdapter.swift in Sources */,
-				48CBCB041B3CEB770028F2C6 /* Snell.swift in Sources */,
 				48CBCAFE1B3CEB660028F2C6 /* CGIAdapterSpec.swift in Sources */,
 				C94D07481B3E4C1C00AF49DA /* Failable.swift in Sources */,
 				48CBCB0B1B3D7B7B0028F2C6 /* SwtlTemplate.swift in Sources */,
 				48CBCB051B3CEB770028F2C6 /* Request.swift in Sources */,
-				48922A1D1B360AAB0001E69D /* GCDWebServerStreamedResponse.m in Sources */,
-				48922A1B1B360AAB0001E69D /* GCDWebServerFileResponse.m in Sources */,
 				48CBCB191B3D81B90028F2C6 /* TestScope.swtl in Sources */,
 				48CBCB141B3D81080028F2C6 /* TestControl.swtl in Sources */,
 				48CBCB151B3D81080028F2C6 /* TestExpression.swtl in Sources */,
 				48CBCB161B3D81080028F2C6 /* TestText.swtl in Sources */,
+				48E4CE051B40630A003C22C7 /* CGIAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,49 +692,73 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		48E635CA1B2C94B400857520 /* Sources */ = {
+		48A1D9431B40598600DB56A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48922D641B362AF90001E69D /* Demo.swtl in Sources */,
-				48922A041B360AAB0001E69D /* GCDWebServer.m in Sources */,
-				48922A121B360AAB0001E69D /* GCDWebServerMultiPartFormRequest.m in Sources */,
-				48922A0E1B360AAB0001E69D /* GCDWebServerDataRequest.m in Sources */,
-				48922A061B360AAB0001E69D /* GCDWebServerConnection.m in Sources */,
-				48922D621B362A510001E69D /* DemoRouter.swift in Sources */,
-				48922D611B362A510001E69D /* DemoController.swift in Sources */,
-				48922D631B362A510001E69D /* main.swift in Sources */,
-				4842F5CB1B35909D00C28CC3 /* Response.swift in Sources */,
-				48922A0C1B360AAB0001E69D /* GCDWebServerResponse.m in Sources */,
-				48922A1C1B360AAB0001E69D /* GCDWebServerStreamedResponse.m in Sources */,
-				4842F5D21B3593EE00C28CC3 /* View.swift in Sources */,
-				48922A1A1B360AAB0001E69D /* GCDWebServerFileResponse.m in Sources */,
-				4842F5CC1B35909D00C28CC3 /* Router.swift in Sources */,
-				4842F5C91B35909D00C28CC3 /* Controller.swift in Sources */,
-				48922A0A1B360AAB0001E69D /* GCDWebServerRequest.m in Sources */,
-				4866A94D1B35A57900BCF429 /* Scope.swift in Sources */,
-				48922A161B360AAB0001E69D /* GCDWebServerDataResponse.m in Sources */,
-				48922A141B360AAB0001E69D /* GCDWebServerURLEncodedFormRequest.m in Sources */,
-				4842F5CA1B35909D00C28CC3 /* Request.swift in Sources */,
-				48922D511B360AAB0001E69D /* GCDWebServerAdapter.swift in Sources */,
-				48922A181B360AAB0001E69D /* GCDWebServerErrorResponse.m in Sources */,
-				4866A94F1B35E57E00BCF429 /* Snell.swift in Sources */,
-				48922A101B360AAB0001E69D /* GCDWebServerFileRequest.m in Sources */,
-				C94D07471B3E4C1C00AF49DA /* Failable.swift in Sources */,
-				48922A081B360AAB0001E69D /* GCDWebServerFunctions.m in Sources */,
-				489229FE1B360AAB0001E69D /* CGIAdapter.swift in Sources */,
+				48A1D96F1B4059C900DB56A7 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				48A1D9641B40599F00DB56A7 /* Scope.swift in Sources */,
+				48A1D96E1B4059C900DB56A7 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				48A1D95F1B40599F00DB56A7 /* Snell.swift in Sources */,
+				48A1D96B1B4059BD00DB56A7 /* GCDWebServerResponse.m in Sources */,
+				48A1D9721B4059D700DB56A7 /* GCDWebServerFileResponse.m in Sources */,
+				48A1D9681B4059BD00DB56A7 /* GCDWebServerConnection.m in Sources */,
+				48A1D96D1B4059C900DB56A7 /* GCDWebServerFileRequest.m in Sources */,
+				48A1D9661B4059AC00DB56A7 /* GCDWebServerAdapter.swift in Sources */,
+				48A1D9651B4059AC00DB56A7 /* CGIAdapter.swift in Sources */,
+				48A1D9711B4059D700DB56A7 /* GCDWebServerErrorResponse.m in Sources */,
+				48A1D9731B4059D700DB56A7 /* GCDWebServerStreamedResponse.m in Sources */,
+				48A1D9601B40599F00DB56A7 /* Request.swift in Sources */,
+				48A1D95D1B40599F00DB56A7 /* Failable.swift in Sources */,
+				48A1D95E1B40599F00DB56A7 /* Controller.swift in Sources */,
+				48A1D9671B4059BD00DB56A7 /* GCDWebServer.m in Sources */,
+				48A1D96C1B4059C900DB56A7 /* GCDWebServerDataRequest.m in Sources */,
+				48A1D9621B40599F00DB56A7 /* Router.swift in Sources */,
+				48A1D9631B40599F00DB56A7 /* View.swift in Sources */,
+				48A1D9691B4059BD00DB56A7 /* GCDWebServerFunctions.m in Sources */,
+				48A1D9701B4059D700DB56A7 /* GCDWebServerDataResponse.m in Sources */,
+				48A1D96A1B4059BD00DB56A7 /* GCDWebServerRequest.m in Sources */,
+				48A1D9611B40599F00DB56A7 /* Response.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48A1D9A21B405EB500DB56A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48A1D9B71B405ED100DB56A7 /* DemoController.swift in Sources */,
+				48A1D9B81B405ED100DB56A7 /* DemoRouter.swift in Sources */,
+				48A1D9BA1B405ED100DB56A7 /* Demo.swtl in Sources */,
+				48A1D9A91B405EB500DB56A7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4842F20F1B358A2900C28CC3 /* PBXTargetDependency */ = {
+		48A1D9B31B405EBF00DB56A7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4842F1B21B33A0BE00C28CC3 /* swtl */;
-			targetProxy = 4842F20E1B358A2900C28CC3 /* PBXContainerItemProxy */;
+			targetProxy = 48A1D9B21B405EBF00DB56A7 /* PBXContainerItemProxy */;
+		};
+		48A1D9B51B405EBF00DB56A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48A1D9471B40598600DB56A7 /* SnellFramework */;
+			targetProxy = 48A1D9B41B405EBF00DB56A7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		48A1D9AC1B405EB500DB56A7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48A1D9AD1B405EB500DB56A7 /* Base */,
+			);
+			name = MainMenu.xib;
+			path = ../../SnellDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		481CC3361B2D0ABA009D7895 /* Release */ = {
@@ -676,6 +776,41 @@
 		4842F1B81B33A0BE00C28CC3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		48A1D9591B40598600DB56A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = SnellFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.artificial.SnellFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		48A1D9B11B405EB500DB56A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SnellDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.artificial.SnellDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -712,15 +847,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SWIFT_OBJC_BRIDGING_HEADER = Snell/SnellServerBridge.h;
-			};
-			name = Release;
-		};
-		48E635D71B2C94B500857520 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = Snell/SnellServerBridge.h;
 			};
 			name = Release;
 		};
@@ -743,18 +869,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		48E635C91B2C94B400857520 /* Build configuration list for PBXProject "Snell" */ = {
+		48A1D95B1B40598600DB56A7 /* Build configuration list for PBXNativeTarget "SnellFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				48E635D41B2C94B500857520 /* Release */,
+				48A1D9591B40598600DB56A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		48E635D51B2C94B500857520 /* Build configuration list for PBXNativeTarget "Snell" */ = {
+		48A1D9B01B405EB500DB56A7 /* Build configuration list for PBXNativeTarget "SnellDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				48E635D71B2C94B500857520 /* Release */,
+				48A1D9B11B405EB500DB56A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48E635C91B2C94B400857520 /* Build configuration list for PBXProject "Snell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48E635D41B2C94B500857520 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

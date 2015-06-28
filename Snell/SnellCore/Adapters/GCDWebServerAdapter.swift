@@ -24,8 +24,9 @@ public class GCDWebServerAdapter {
     }
   }
 
-  public func run() {
-    webServer.runWithPort(3000, bonjourName: "")
+  public func run() -> String {
+    webServer.startWithPort(3000, bonjourName: "")
+    return webServer.serverURL.absoluteString
   }
 
   public func handleRequest(GDCRequest:GCDWebServerRequest) -> Response {

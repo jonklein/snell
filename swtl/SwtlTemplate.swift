@@ -77,7 +77,7 @@ private
   func templateStart(name:String) -> String {
     return
       "#line 1 \"\(name).swtl\"\n" +
-      "import Foundation\n\npublic class \(name) : View {\n" +
+      "import Foundation\n\nimport SnellFramework\n\npublic class \(name) : View {\n" +
       "  var result = \"\"\n\n" +
       "  public func append(value: AnyObject) {\n" +
       "    self.result += \"\\(value)\"\n" +

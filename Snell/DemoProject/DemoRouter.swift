@@ -6,7 +6,8 @@
 //  Copyright © 2015 artificial. All rights reserved.
 //
 
-import Cocoa
+import Foundation
+import SnellFramework
 
 class DemoRouter : Router {
   // The Router init is the main override point for your Snell app.

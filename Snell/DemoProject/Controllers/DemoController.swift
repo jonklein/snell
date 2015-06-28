@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SnellFramework
 
 class DemoController: Controller {
   

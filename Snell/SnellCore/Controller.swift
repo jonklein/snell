@@ -18,7 +18,7 @@ public class Controller {
   }
 
   public func render(type:View.Type, status:Int) -> Result {
-    return Result(value: Response(status: status, body: type().render(scope())))
+    return Result(value: Response(status: status, body: type.init().render(scope())))
   }
 
   public func scope() -> Scope {

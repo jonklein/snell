@@ -15,8 +15,8 @@ public class Snell {
     self.router = router
   }
 
-  public func startServer() {
-    GCDWebServerAdapter(router: router, port: 3000).run()
+  public func startServer() -> String {
+    return GCDWebServerAdapter(router: router, port: 3000).run()
   }
 
   public func startCGI() {
