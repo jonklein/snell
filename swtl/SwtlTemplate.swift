@@ -33,7 +33,6 @@ class SwtlTemplate {
 
     do {
       let regex = try NSRegularExpression(pattern: "<%(=?)(((?!%>).)*)%>", options: .DotMatchesLineSeparators)
-
       let matches:Array = regex.matchesInString(text as String, options: .ReportProgress, range: NSMakeRange(0, text.length))
 
       var start = 0
@@ -42,14 +41,14 @@ class SwtlTemplate {
         let command = text.substringWithRange(i.rangeAtIndex(2))
         let shouldPrint = i.rangeAtIndex(1).length == 1
 
-        result += "    append(" + " \"" + sanitize(prefix) + "\")\n"
+        result += "    append(" + "\"" + sanitize(prefix) + "\")\n"
         result += "    " + (shouldPrint ? "append(\(command) ?? \"\")" : command) + "\n"
 
         start = i.rangeAtIndex(0).location + i.rangeAtIndex(0).length
       }
 
       let last = text.substringWithRange(NSMakeRange(start, text.length - start))
-      result += "  append(" + " \"" + sanitize(last) + "\")\n"
+      result += "  append(" + "\"" + sanitize(last) + "\")\n"
 
       result += templateEnd()
 
@@ -77,7 +76,7 @@ private
   func templateStart(name:String) -> String {
     return
       "#line 1 \"\(name).swtl\"\n" +
-      "import Foundation\nimport SnellFramework\n\npublic class \(name) : View {\n" +
+      "\nimport Foundation\nimport SnellFramework\n\npublic class \(name) : View {\n" +
       "  var result = \"\"\n\n" +
       "  public func append(value: AnyObject) {\n" +
       "    self.result += \"\\(value)\"\n" +
