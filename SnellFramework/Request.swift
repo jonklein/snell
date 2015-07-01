@@ -14,7 +14,7 @@ public class Request {
   public var path:String
 
   public init(params:[String: String], method:String, path:String) {
-    self.method = method
+    self.method = params["_method"] ?? method
     self.params = params
     self.path = path
   }

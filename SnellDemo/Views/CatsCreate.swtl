@@ -1,0 +1,11 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Your cat <%= (scope.locals["cat"] as! Cat).name %> has been created.</h1>
+      <a href="/cats">Return to cat list.</a>
+    </div>
+  </body>
+</html>

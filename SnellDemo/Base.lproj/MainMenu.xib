@@ -670,31 +670,50 @@
         <window title="SnellDemo" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="335" y="390" width="480" height="360"/>
+            <rect key="contentRect" x="335" y="390" width="480" height="142"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
             <view key="contentView" id="EiT-Mj-1SZ">
-                <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                <rect key="frame" x="0.0" y="0.0" width="480" height="142"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Hd-EA-v1J">
-                        <rect key="frame" x="20" y="323" width="442" height="17"/>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9Hd-EA-v1J">
+                        <rect key="frame" x="20" y="105" width="48" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Status:" id="AGO-Ww-Pek">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0dI-u1-Q28">
-                        <rect key="frame" x="18" y="267" width="444" height="48"/>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0dI-u1-Q28">
+                        <rect key="frame" x="18" y="73" width="444" height="24"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" title="Label" id="a67-0V-opZ">
                             <font key="font" metaFont="system" size="20"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="n48-Cy-NEL">
+                        <rect key="frame" x="169" y="13" width="143" height="32"/>
+                        <buttonCell key="cell" type="push" title="Open in Browser" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="AkV-jR-9yG">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="openURL:" target="Voe-Tx-rLC" id="5Tw-1A-NPl"/>
+                        </connections>
+                    </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="n48-Cy-NEL" firstAttribute="centerX" secondItem="EiT-Mj-1SZ" secondAttribute="centerX" id="BKj-a9-OWd"/>
+                    <constraint firstAttribute="trailing" secondItem="0dI-u1-Q28" secondAttribute="trailing" constant="20" id="CPS-Il-OUG"/>
+                    <constraint firstItem="0dI-u1-Q28" firstAttribute="top" secondItem="9Hd-EA-v1J" secondAttribute="bottom" constant="8" id="Jfb-UA-iQm"/>
+                    <constraint firstItem="9Hd-EA-v1J" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="22" id="LaQ-yq-7HA"/>
+                    <constraint firstItem="9Hd-EA-v1J" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" constant="20" id="Lvf-Fn-Ufi"/>
+                    <constraint firstItem="0dI-u1-Q28" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="e5d-lq-p7F"/>
+                    <constraint firstAttribute="bottom" secondItem="n48-Cy-NEL" secondAttribute="bottom" constant="20" id="iow-Mq-ttK"/>
+                </constraints>
             </view>
-            <point key="canvasLocation" x="409" y="289"/>
+            <point key="canvasLocation" x="409" y="180"/>
         </window>
     </objects>
 </document>

@@ -24,11 +24,13 @@ public class Router {
     var method:HTTPMethod
     var pattern:NSRegularExpression
     var handler:Handler
-    
-    init(method:HTTPMethod, pattern:NSRegularExpression, handler:Handler) {
+    var interpolations:[String]
+
+    init(method:HTTPMethod, pattern:NSRegularExpression, handler:Handler, interpolations:[String] = []) {
       self.method = method
       self.pattern = pattern
       self.handler = handler
+      self.interpolations = interpolations
     }
     
     func matches(request:Request) -> Bool {
@@ -37,6 +39,16 @@ public class Router {
         return match.count > 0
       }
       return false
+    }
+
+    func interpolations(request:Request) -> [String:String] {
+      let matches = pattern.matchesInString(request.path as String, options: NSMatchingOptions(), range: NSMakeRange(0, request.path.characters.count))
+
+      return self.interpolations.enumerate().reduce([String:String]()) { (var memo:[String:String], t:(Int, String)) -> [String:String] in
+        let (index, name) = t
+        memo[name] = NSString(string: request.path).substringWithRange(matches[index].rangeAtIndex(1))
+        return memo
+      }
     }
   }
   
@@ -51,8 +63,10 @@ public class Router {
 
   public func route(pattern:String, via:HTTPMethod = HTTPMethod.Get, closure: (request:Request) -> Controller.Result) {
     do {
+      let (pattern, interpolations) = patternByReplacingInterpolations(pattern)
+
       let regex = try NSRegularExpression(pattern: "^\(pattern)$", options: NSRegularExpressionOptions())
-      self.routingTable.append(Route(method: via, pattern: regex, handler: { (r:Request) -> () -> Controller.Result in { closure(request: r) } }))
+      self.routingTable.append(Route(method: via, pattern: regex, handler: { (r:Request) -> () -> Controller.Result in { closure(request: r) } }, interpolations: interpolations))
     } catch {
       NSLog("Error: could not compile pattern \(pattern)")
     }
@@ -61,6 +75,13 @@ public class Router {
   func dispatch(request:Request) -> Response {
     var response:Response
     if let route = routingTable.filter({ route in route.matches(request) }).first {
+
+      route.interpolations(request).map { s -> String in
+        let (k, v) = s
+        request.params[k] = v
+        return ""
+      }
+
       let result = route.handler(request)()
       if let r = result.success() {
         response = r
@@ -71,7 +92,26 @@ public class Router {
       response = Response(status: 404, body: "No route matches this action")
     }
     
-    NSLog("\(request.method) \(request.path) \(response.status)")
+    NSLog("\(request.method) \(request.path) \(request.params) completed with status  \(response.status)")
     return response
+  }
+
+  /**
+   * Replace :xxx style interpolations in the pattern with capturing regex fragments (":([a-zA-Z0-9_]+)"),
+   * and record interpolations for later use.
+   */
+
+  func patternByReplacingInterpolations(pattern:String) -> (String, [String]) {
+    do {
+      let range = NSMakeRange(0, pattern.characters.count)
+      let regex = try NSRegularExpression(pattern: ":([a-zA-Z0-9_]+)", options: NSRegularExpressionOptions())
+      let matches = regex.matchesInString(pattern, options: NSMatchingOptions(), range: range).map { match -> String in
+        return NSString(string: pattern).substringWithRange(match.rangeAtIndex(1))
+      }
+
+      return (regex.stringByReplacingMatchesInString(pattern, options: NSMatchingOptions(), range: range, withTemplate: "(.*)"), matches)
+    } catch {
+      return (pattern, [])
+    }
   }
 }

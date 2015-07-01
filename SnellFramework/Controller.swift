@@ -17,11 +17,11 @@ public class Controller {
     self.request = request
   }
 
-  public func render(type:View.Type, status:Int) -> Result {
-    return Result(value: Response(status: status, body: type.init().render(scope())))
+  public func render(type:View.Type, status:Int, locals:[String:AnyObject] = [:]) -> Result {
+    return Result(value: Response(status: status, body: type.init().render(scope(locals))))
   }
 
-  public func scope() -> Scope {
-    return Scope(request: request, environment: NSProcessInfo.processInfo().environment)
+  public func scope(locals:[String:AnyObject] = [:]) -> Scope {
+    return Scope(request: request, environment: NSProcessInfo.processInfo().environment, locals: locals)
   }
 }
