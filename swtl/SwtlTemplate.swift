@@ -17,10 +17,11 @@ import Foundation
 
 class SwtlTemplate {
   func parse(file:String) -> String? {
-    let basename = file.lastPathComponent.stringByDeletingPathExtension
+    let fileURL:NSURL! = NSURL(fileURLWithPath: file)
+    let basename = fileURL.URLByDeletingPathExtension!.lastPathComponent!
 
     do {
-      let fileContent = try NSString(contentsOfFile: file, encoding: NSUTF8StringEncoding)
+      let fileContent = try NSString(contentsOfURL: fileURL, encoding: NSUTF8StringEncoding)
       return parse(fileContent, basename: basename)
     } catch let e {
       print(e)

@@ -61,7 +61,7 @@ public class SnormPlistAdapter : SnormAdapter {
 
   public override func fetch<T: SnormModel>(filter:SnormScope<T>) -> [T] {
     let objectTable = objects(T)
-    return NSArray(array: objectTable.values.array).filteredArrayUsingPredicate(filter.expression) as! [T]
+    return NSArray(array: Array(objectTable.values)).filteredArrayUsingPredicate(filter.expression) as! [T]
   }
 
   public override func insert<T: SnormModel>(insertionObjects:[T]) {

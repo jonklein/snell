@@ -18,11 +18,11 @@ class CGIAdapter {
   }
 
   func render(response:Response) {
-    print("Content-Type: \(response.contentType)", appendNewline: false)
-    print("Status: \(response.status)", appendNewline: false)
-    print("Content:", appendNewline: false)
-    print("", appendNewline: false)
-    print(response.body, appendNewline: false)
+    print("Content-Type: \(response.contentType)", terminator: "")
+    print("Status: \(response.status)", terminator: "")
+    print("Content:", terminator: "")
+    print("", terminator: "")
+    print(response.body, terminator: "")
   }
 
   func parseParams(query:String) -> [String:String] {

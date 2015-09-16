@@ -21,7 +21,7 @@ public class SnormScope<T> {
       NSPredicate(format: expression)
 
     if let p = parent {
-      self.expression = NSCompoundPredicate.andPredicateWithSubpredicates([self.expression, p.expression])
+      self.expression = NSCompoundPredicate(andPredicateWithSubpredicates: [self.expression, p.expression])
     }
   }
 
